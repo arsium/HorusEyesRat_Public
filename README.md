@@ -39,12 +39,7 @@ Sources :
 * Loading Unmanaged DLLs in Managed EXE : Class comes from : https://github.com/schellingb/DLLFromMemory-net with manual mapping for those dlls.
 * Code I used to test the loading of dll in memory : 
 
-´´´
-// dllmain.cpp : Définit le point d'entrée de l'application DLL.
-#include "pch.h"
-/*
-    |     Original Author : Arsium
-*/
+```
 BOOL APIENTRY DllMain( HMODULE hModule,
                        DWORD  ul_reason_for_call,
                        LPVOID lpReserved
@@ -61,7 +56,8 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     }
     return TRUE;
 }
-´´´
+```
+
 
 Preview :
 
