@@ -19,7 +19,7 @@ Features :
 * Lock & Unlock Keyboard
 * Empty Bin
 * Native Injection : You can inject an unmanaged DLL (C++ ,  C , D...)
-* 32 & 64 bit stubs : pay attention when you want to inject Dll (ex : 32bit = dll 32 bit and 64bit = dll 64 bit for native)
+* 32 & 64 bit stubs
 * Mass Tasks: Passwords Recovery , History Recovery , Wifi Passwords Recovery
 * Tasks Manager : Kill , Resume , Pause
 * Passwords Recovery (+35 web browsers based on chromium)
@@ -57,7 +57,10 @@ BOOL APIENTRY DllMain( HMODULE hModule,
     return TRUE;
 }
 ```
-
+Note for injection:
+* 32 bit dlls (in c++ or whatever you want) is for 32 bit stub
+* 64 bit dlls (in c++ or whatever you want) is for 64 bit stub
+* Don't inject a 32 bit dll in 64 bit stub and vice-versa (you can try if you want but the server will give you an error :))
 
 Preview :
 
