@@ -37,7 +37,7 @@ Sources :
 * Passwords Recovery : Modded Library Based on : https://github.com/0xfd3/Chrome-Password-Recovery
 * Wifi Passwords Recovery : Modded Library Based on : https://github.com/r3nhat/SharpWifiGrabber
 * Loading Unmanaged DLLs in Managed EXE : Class comes from : https://github.com/schellingb/DLLFromMemory-net with manual mapping for those dlls.
-* Code I used to test the loading of dll in memory : 
+* Code I used to test the loading of dll in memory (in C++ but also worked in D Lang) : 
 
 ```
 BOOL APIENTRY DllMain( HMODULE hModule,
