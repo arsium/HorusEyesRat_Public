@@ -33,4 +33,12 @@ Features :
 * Save all passwords | history recovered
 
 
-Preview : Coming...
+Preview :
+
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-15.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-16.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-17.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-18.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-19.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-20.png)
+![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-21.png)
