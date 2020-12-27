@@ -32,6 +32,11 @@ Features :
 * Mute | Unmute Volume
 * Save all passwords | history recovered
 
+Sources :
+
+* Passwords Recovery : Modded Library Based on : https://github.com/0xfd3/Chrome-Password-Recovery
+* Wifi Passwords Recovery : Modded Library Based on : https://github.com/r3nhat/SharpWifiGrabber
+* Loading Unmanaged DLLs in Managed EXE : Class comes from : https://github.com/schellingb/DLLFromMemory-net with manual mapping for those dlls.
 
 Preview :
 
