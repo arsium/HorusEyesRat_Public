@@ -36,8 +36,8 @@ Features :
 Preview :
 
 ![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-15.png)
-![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-16.png)
-![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-17.png)
+![Image description](https://i.postimg.cc/hf4ns3HN/Capture-d-cran-16.png)
+![Image description](https://i.postimg.cc/zLhY3mgH/Capture-d-cran-17.png)
 ![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-18.png)
 ![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-19.png)
 ![Image description](https://i.postimg.cc/T2ZwvdVH/Capture-d-cran-20.png)
