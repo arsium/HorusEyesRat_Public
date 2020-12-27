@@ -5,7 +5,7 @@ Features :
 
 
 * Blur ScreenLocker
-* Monitor Rotation (0,90,180,270)
+* Monitor Rotation (0 , 90 , 180 , 270 degrees)
 * Hide & Show Taskbar
 * Hide & Show Desktop Icons
 * Swap & Normal State Mouse Buttons
