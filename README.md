@@ -1,9 +1,15 @@
 # HorusEyesRat
 Remote Acess Tool Written in VB.NET
 
+
+
 Features : 
 
-
+* Multi-Threaded
+* Packets Serialization
+* Multi Ports Listener
+* Automation Tasks when client is connected
+* Save Settings for automation tasks
 * Blur ScreenLocker
 * Monitor Rotation (0 , 90 , 180 , 270 degrees)
 * Hide & Show Taskbar
