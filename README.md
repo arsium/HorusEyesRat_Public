@@ -8,6 +8,7 @@ Features :
 * Monitor Rotation (0 , 90 , 180 , 270 degrees)
 * Hide & Show Taskbar
 * Hide & Show Desktop Icons
+* Hide & Show Cursor
 * Swap & Normal State Mouse Buttons
 * Lock & Unlock Keyboard
 * Empty Bin
@@ -26,3 +27,4 @@ Features :
 * Save all passwords | history recovered
 
 
+Preview : Coming...
