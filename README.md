@@ -5,6 +5,7 @@ Remote Acess Tool Written in VB.NET
 
 Features : 
 
+* Supports DNS (No-IP for example)
 * Multi-Threaded
 * Packets Serialization
 * Multi Ports Listener
