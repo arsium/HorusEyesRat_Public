@@ -1,0 +1,133 @@
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Form1.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Resources.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.GenerateResource.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Custom_Form.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.MetroDropShadow.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.UserControl1.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.vbprojAssemblyReference.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\PacketLib.dll
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\PacketLib.pdb
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\PacketLib.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CopyComplete
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Settings_Form.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.dll
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\WindowsFormsAero.dll
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\XanderUI.dll
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.pdb
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Client_Form.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\Server.Builder_Form.resources
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\dnlib.dll
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\dnlib.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe.config
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.pdb
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.exe
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.pdb
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Server\bin\Debug\MRG.Controls.UI.dll
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe.config
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.xml
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\dnlib.dll
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.dll
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\dnlib.xml
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.xml
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbprojAssemblyReference.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Builder_Form.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Custom_Form.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.MetroDropShadow.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.UserControl1.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Form1.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Client_Form.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Settings_Form.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Resources.resources
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.GenerateResource.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CoreCompileInputs.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CopyComplete
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.exe
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.xml
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.xml
+D:\HorusEyesRatRemake\Server\bin\Debug\dnlib.dll
+D:\HorusEyesRatRemake\Server\bin\Debug\PacketLib.dll
+D:\HorusEyesRatRemake\Server\bin\Debug\dnlib.xml
+D:\HorusEyesRatRemake\Server\bin\Debug\PacketLib.pdb
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.vbprojAssemblyReference.cache
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Builder_Form.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Custom_Form.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.MetroDropShadow.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.UserControl1.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Form1.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Client_Form.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Settings_Form.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.Resources.resources
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.GenerateResource.cache
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CoreCompileInputs.cache
+D:\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.exe
+D:\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.xml
+D:\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.pdb
+D:\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe.config
+D:\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe
+D:\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.pdb
+D:\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.xml
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CopyComplete
+D:\HorusEyesRatRemake\Server\obj\Debug\Server.RD_Form.resources
+D:\HorusEyesRatRemake\Server\bin\Debug\PacketLib.xml
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbprojAssemblyReference.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Builder_Form.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Custom_Form.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.MetroDropShadow.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.UserControl1.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Form1.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Client_Form.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Settings_Form.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.Resources.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.RD_Form.resources
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.GenerateResource.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CoreCompileInputs.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.exe
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.xml
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\HorusEyesRat.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe.config
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.exe
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\HorusEyesRat.xml
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.dll
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.dll
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\WindowsFormsAero.dll
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\XanderUI.dll
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\MKWFGA.xml
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\obj\Debug\Server.vbproj.CopyComplete
+E:\PROJECT VBNET\HorusEyesRatRemake\Server\bin\Debug\PacketLib.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\HorusEyesRat.exe.config
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\HorusEyesRat.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\HorusEyesRat.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\HorusEyesRat.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.vbprojAssemblyReference.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Builder_Form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Custom_Form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.MetroDropShadow.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.UserControl1.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Client_Form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Settings_Form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Resources.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.RD_Form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.vbproj.GenerateResource.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.vbproj.CopyComplete
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\HorusEyesRat.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\HorusEyesRat.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\HorusEyesRat.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\PacketLib.dll
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\PacketLib.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\bin\Debug\PacketLib.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Mass_form.resources
+C:\Users\mehdi\Documents\HorusEyesRat-main\Server\obj\Debug\Server.Dark.resources

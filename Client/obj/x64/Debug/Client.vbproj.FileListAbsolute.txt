@@ -1,0 +1,10 @@
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\x64\Debug\Stub.exe.config
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\x64\Debug\Stub.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\x64\Debug\Stub.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\x64\Debug\PacketLib.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbprojAssemblyReference.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbproj.Fody.CopyLocal.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbproj.CopyComplete
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Stub.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Stub.pdb

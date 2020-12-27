@@ -1,0 +1,1187 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+HorusEyesRat
+</name>
+</assembly>
+<members>
+<member name="T:Server.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.horus_eye">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_add_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_available_updates">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_available_updates_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_available_updates_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_back_arrow">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_back_arrow_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_back_arrow_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_cancel_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_chrome_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_circled_play_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_client_management_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_close_window">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_close_window_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_close_window_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_computesssssssssssssssr">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_computesssssssssssssssr_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_computesssssssssssssssr_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_customer">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_customer_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_customer_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_customer_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_database_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_database_administrator">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_database_administrator_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_database_administrator_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_bin">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_bin_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_delete_bin_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloading_updates">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloading_updates_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloading_updates_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloads_folder">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloads_folder_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_downloads_folder_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_electronics_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_exit_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_forward_button">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_forward_button_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_forward_button_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_gears_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_genealogy">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_genealogy_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_genealogy_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_back">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_back_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_back_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_end">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_end_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_end_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_start">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_start_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_go_to_start_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_gpsd_signal_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_grand_master_key">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_grand_master_key_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_grand_master_key_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_hibernate_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_home_office_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_imac_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_in_progress">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_in_progress_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_in_progress_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_internet_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_key">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_key_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_key_2_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_key_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_lightning_bolt_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_low_battery_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_minus_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_missile_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_monitor_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_monitor_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_network">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_network_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_network_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networkdd">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networkdd_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networkdd_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_manager">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_manager_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_manager_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_managessr">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_managessr_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_networking_managessr_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_netwosrk">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_netwosrk_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_netwosrk_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offline">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offline_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offline_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offlineEE">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offlineEE_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_offlineEE_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_online_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password_reset">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password_reset_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_password_reset_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_pause_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_pause_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_pause_button_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_pdlay_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_poison_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_profilee">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_profilee_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_profilee_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_repeat_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_rest_api">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_rest_api_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_rest_api_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_restart_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_restart_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_resume_buttond_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_rorcket_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_save_as">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_save_as_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_save_as_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_save_as_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_save_as_322">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_security_wi_fi_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_security_wi_fi_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_services">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_services_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_services_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_settings">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_settings_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_settings_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_settings_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_show_passeword_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_show_property">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_show_property_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_show_property_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_shutdown_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_shutdown_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_shutdown_96__1_">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_sign_out_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_skull">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_skull_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_skull_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_sleep_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_software_installer">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_software_installer_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_software_installer_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_stack">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_stack_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_stack_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_stop_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_sync_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_tasks">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_tasks_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_tasks_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine_321">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_time_machine_961">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_to_do">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_to_do_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_to_do_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_toolbox_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_trash">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_trash_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_trash_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_vbNET">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_vbNET_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_vbNET_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wallpaper_engine_64">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_waste">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_waste_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_waste_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_website_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wired_ndetwork">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wired_ndetwork_16">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wired_ndetwork_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_workstation_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_workstation_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wrench_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_wrench_96">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.imageres_15">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
+</summary>
+</member>
+<member name="T:Server.HZH_Controls.Controls.TabControlExt">
+ <summary>
+ Class TabControlExt.
+ Implements the <see cref="T:System.Windows.Forms.TabControl" />
+ </summary>
+ <seealso cref="T:System.Windows.Forms.TabControl" />
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.#ctor">
+ <summary>
+ Initializes a new instance of the <see cref="T:Server.HZH_Controls.Controls.TabControlExt" /> class.
+ </summary>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.SetStyles">
+ <summary>
+ Sets the styles.
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.IsShowCloseBtn">
+ <summary>
+ Gets or sets a value indicating whether this instance is show close BTN.
+ </summary>
+ <value><c>true</c> if this instance is show close BTN; otherwise, <c>false</c>.</value>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt._backColor">
+ <summary>
+ The back color
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.BackColor">
+ <summary>
+ 此成员对于此控件无意义。
+ </summary>
+ <value>The color of the back.</value>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt._borderColor">
+ <summary>
+ The border color
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.BorderColor">
+ <summary>
+ Gets or sets the color of the border.
+ </summary>
+ <value>The color of the border.</value>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt._headSelectedBackColor">
+ <summary>
+ The head selected back color
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.HeadSelectedBackColor">
+ <summary>
+ Gets or sets the color of the head selected back.
+ </summary>
+ <value>The color of the head selected back.</value>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt._headSelectedBorderColor">
+ <summary>
+ The head selected border color
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.HeadSelectedBorderColor">
+ <summary>
+ Gets or sets the color of the head selected border.
+ </summary>
+ <value>The color of the head selected border.</value>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt._headerBackColor">
+ <summary>
+ The header back color
+ </summary>
+</member>
+<member name="P:Server.HZH_Controls.Controls.TabControlExt.HeaderBackColor">
+ <summary>
+ Gets or sets the color of the header back.
+ </summary>
+ <value>The color of the header back.</value>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.OnPaintBackground(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ 绘制控件的背景。
+ </summary>
+ <param name="pevent">包含有关要绘制的控件的信息的 <see cref="T:System.Windows.Forms.PaintEventArgs" />。</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTransparentBackground(System.Drawing.Graphics,System.Drawing.Rectangle)">
+ <summary>
+ TabContorl 背景色设置
+ </summary>
+ <param name="g">The g.</param>
+ <param name="clipRect">The clip rect.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.OnPaint(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ 引发 <see cref="E:System.Windows.Forms.Control.Paint" /> 事件。
+ </summary>
+ <param name="e">包含事件数据的 <see cref="T:System.Windows.Forms.PaintEventArgs" />。</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintAllTheTabs(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Paints all the tabs.
+ </summary>
+ <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTab(System.Windows.Forms.PaintEventArgs,System.Int32)">
+ <summary>
+ Paints the tab.
+ </summary>
+ <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+ <param name="index">The index.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTabBackground(System.Drawing.Graphics,System.Int32,System.Drawing.Drawing2D.GraphicsPath)">
+ <summary>
+ 设置选项卡头部颜色
+ </summary>
+ <param name="graph">The graph.</param>
+ <param name="index">The index.</param>
+ <param name="path">The path.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTabBorder(System.Drawing.Graphics,System.Int32,System.Drawing.Drawing2D.GraphicsPath)">
+ <summary>
+ 设置选项卡头部边框色
+ </summary>
+ <param name="graph">The graph.</param>
+ <param name="index">The index.</param>
+ <param name="path">The path.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTabImage(System.Drawing.Graphics,System.Int32)">
+ <summary>
+ Paints the tab image.
+ </summary>
+ <param name="g">The g.</param>
+ <param name="index">The index.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTabText(System.Drawing.Graphics,System.Int32)">
+ <summary>
+ Paints the tab text.
+ </summary>
+ <param name="graph">The graph.</param>
+ <param name="index">The index.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTheTabPageBorder(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ 设置 TabPage 内容页边框色
+ </summary>
+ <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PaintTheSelectedTab(System.Windows.Forms.PaintEventArgs)">
+ <summary>
+ Paints the selected tab.
+ </summary>
+ <param name="e">The <see cref="T:System.Windows.Forms.PaintEventArgs" /> instance containing the event data.</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.GetTabPath(System.Int32)">
+ <summary>
+ Gets the tab path.
+ </summary>
+ <param name="index">The index.</param>
+ <returns>GraphicsPath.</returns>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.SendMessage(System.IntPtr,System.Int32,System.IntPtr,System.IntPtr)">
+ <summary>
+ Sends the message.
+ </summary>
+ <param name="hWnd">The h WND.</param>
+ <param name="Msg">The MSG.</param>
+ <param name="wParam">The w parameter.</param>
+ <param name="lParam">The l parameter.</param>
+ <returns>IntPtr.</returns>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt.WM_SETFONT">
+ <summary>
+ The wm setfont
+ </summary>
+</member>
+<member name="F:Server.HZH_Controls.Controls.TabControlExt.WM_FONTCHANGE">
+ <summary>
+ The wm fontchange
+ </summary>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.OnCreateControl">
+ <summary>
+ 引发 <see cref="M:System.Windows.Forms.Control.CreateControl" /> 方法。
+ </summary>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.OnFontChanged(System.EventArgs)">
+ <summary>
+ 引发 <see cref="E:System.Windows.Forms.Control.FontChanged" /> 事件。
+ </summary>
+ <param name="e">包含事件数据的 <see cref="T:System.EventArgs" />。</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.WndProc(System.Windows.Forms.Message@)">
+ <summary>
+ 此成员重写 <see cref="M:System.Windows.Forms.Control.WndProc(System.Windows.Forms.Message@)" />。
+ </summary>
+ <param name="m">一个 Windows 消息对象。</param>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.PreProcessMessage(System.Windows.Forms.Message@)">
+ <summary>
+ 在调度键盘或输入消息之前，在消息循环内对它们进行预处理。
+ </summary>
+ <param name="msg">通过引用传递的 <see cref="T:System.Windows.Forms.Message" />，它表示要处理的消息。可能的值有 WM_KEYDOWN、WM_SYSKEYDOWN、WM_CHAR 和 WM_SYSCHAR。</param>
+ <returns>如果消息已由控件处理，则为 true；否则为 false。</returns>
+ <PermissionSet>
+   <IPermission class="System.Security.Permissions.EnvironmentPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+   <IPermission class="System.Security.Permissions.FileIOPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+   <IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence" />
+   <IPermission class="System.Diagnostics.PerformanceCounterPermission, System, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Unrestricted="true" />
+ </PermissionSet>
+</member>
+<member name="M:Server.HZH_Controls.Controls.TabControlExt.GetMouseDownTabHead(System.Drawing.Point)">
+ <summary>
+ Gets the mouse down tab head.
+ </summary>
+ <param name="point">The point.</param>
+ <returns>System.Int32.</returns>
+</member>
+</members>
+</doc>

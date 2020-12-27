@@ -1,0 +1,60 @@
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\bin\Debug\PacketLib.xml
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CopyComplete
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\bin\Debug\Stub.exe.config
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\bin\Debug\Stub.exe
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\bin\Debug\Stub.pdb
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Stub.exe
+C:\Users\mehdi\source\repos\HorusEyesRatRemake\Client\obj\Debug\Stub.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.exe.config
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.exe
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Stub.exe
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Stub.pdb
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\PacketLib.xml
+F:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CopyComplete
+D:\HorusEyesRatRemake\Client\bin\Debug\Stub.exe.config
+D:\HorusEyesRatRemake\Client\bin\Debug\Stub.exe
+D:\HorusEyesRatRemake\Client\bin\Debug\Stub.pdb
+D:\HorusEyesRatRemake\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+D:\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+D:\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+D:\HorusEyesRatRemake\Client\obj\Debug\Stub.exe
+D:\HorusEyesRatRemake\Client\obj\Debug\Stub.pdb
+D:\HorusEyesRatRemake\Client\bin\Debug\PacketLib.xml
+D:\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CopyComplete
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.exe.config
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.exe
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\Stub.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Stub.exe
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Stub.pdb
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\bin\Debug\PacketLib.xml
+E:\PROJECT VBNET\HorusEyesRatRemake\Client\obj\Debug\Client.vbproj.CopyComplete
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\bin\Debug\Stub.exe.config
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\bin\Debug\Stub.exe
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\bin\Debug\Stub.pdb
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\bin\Debug\PacketLib.xml
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Client.vbproj.CopyComplete
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Stub.exe
+C:\Users\mehdi\Documents\GitHub\HorusEyesRat\Client\obj\Debug\Stub.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Client.vbproj.CoreCompileInputs.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Stub.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Stub.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\Debug\Stub.exe.config
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\Debug\Stub.exe
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\Debug\Stub.pdb
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Client.vbproj.Fody.CopyLocal.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Client.vbprojAssemblyReference.cache
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\bin\Debug\PacketLib.xml
+C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\Debug\Client.vbproj.CopyComplete
