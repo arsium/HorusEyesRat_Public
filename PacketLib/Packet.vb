@@ -13,7 +13,8 @@ Public Class Packet
     End Class
 
     Public Enum PacketType As Integer
-        MSG = &H5057
+        CLOSE = &H5057
+        U_CLOSE = &H5055
         File = &H5056
         PLUGIN = &H0
         ID = &H1
@@ -27,6 +28,8 @@ Public Class Packet
         ERROR_LOAD_NATIVE_DLL = &H9
 
         SUCCESS_LOAD_NATIVE_DLL = &H10
+
+        PLUGIN_CS_RES = &H11
     End Enum
 
     Public Enum Packet_Subject
@@ -71,6 +74,19 @@ Public Class Packet
         BLUR_LK_STOP = &H322
 
         INJECT_NATIVE = &H323
+
+        MS_LEFT = &H325
+        MS_RIGHT = &H326
+        MS_ALL = &H327
+        MS_UNL = &H328
+        MS_MV = &H329
+
+        SET_WPP = &H330
+
+        GET_PRIV = &H331
+        GET_PRIO = &H332
+        SET_PRIO = &H333
+        CHECK_UAC = &H334
     End Enum
 
     Public Class Packet_Send

@@ -37,3 +37,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\MS\obj\Debug\MS.vbproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\MS\obj\Debug\MS.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\MS\obj\Debug\MS.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\MS\obj\Debug\MS.pdb
+Z:\HorusEyesRat-master\MS\bin\Debug\MS.dll
+Z:\HorusEyesRat-master\MS\bin\Debug\MS.pdb
+Z:\HorusEyesRat-master\MS\bin\Debug\MS.xml
+Z:\HorusEyesRat-master\MS\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\MS\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.vbproj.CopyComplete
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.dll
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.xml
+Z:\HorusEyesRat-master\MS\obj\Debug\MS.pdb

@@ -56,3 +56,13 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\PacketLib\obj\Debug\PacketLib.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\PacketLib\obj\Debug\PacketLib.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\PacketLib\obj\Debug\PacketLib.pdb
 C:\Users\mehdi\Documents\HorusEyesRat-main\PacketLib\obj\Debug\PacketLib.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\PacketLib\bin\Debug\PacketLib.dll
+Z:\HorusEyesRat-master\PacketLib\bin\Debug\PacketLib.pdb
+Z:\HorusEyesRat-master\PacketLib\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.Resources.resources
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.dll
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\PacketLib\obj\Debug\PacketLib.pdb

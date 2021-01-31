@@ -1,0 +1,16 @@
+Z:\HorusEyesRat-master\PW\bin\Release\PW.dll
+Z:\HorusEyesRat-master\PW\bin\Release\PW.pdb
+Z:\HorusEyesRat-master\PW\bin\Release\PW.xml
+Z:\HorusEyesRat-master\PW\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\PW.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\PW.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\PW.xml
+Z:\HorusEyesRat-master\PW\obj\Release\PL.Resources.resources
+Z:\HorusEyesRat-master\PW\obj\Release\PW.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\PW\obj\Release\PW.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\PW\obj\Release\PW.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\PW\obj\Release\PW.vbproj.CopyComplete
+Z:\HorusEyesRat-master\PW\obj\Release\PW.dll
+Z:\HorusEyesRat-master\PW\obj\Release\PW.xml
+Z:\HorusEyesRat-master\PW\obj\Release\PW.pdb
+Z:\HorusEyesRat-master\PW\obj\Release\PW.vbprojAssemblyReference.cache

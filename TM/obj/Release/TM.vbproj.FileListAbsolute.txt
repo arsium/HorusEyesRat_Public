@@ -1,0 +1,16 @@
+Z:\HorusEyesRat-master\TM\bin\Release\TM.dll
+Z:\HorusEyesRat-master\TM\bin\Release\TM.pdb
+Z:\HorusEyesRat-master\TM\bin\Release\TM.xml
+Z:\HorusEyesRat-master\TM\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\TM.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\TM.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\TM.xml
+Z:\HorusEyesRat-master\TM\obj\Release\PL.Resources.resources
+Z:\HorusEyesRat-master\TM\obj\Release\TM.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\TM\obj\Release\TM.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\TM\obj\Release\TM.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\TM\obj\Release\TM.vbproj.CopyComplete
+Z:\HorusEyesRat-master\TM\obj\Release\TM.dll
+Z:\HorusEyesRat-master\TM\obj\Release\TM.xml
+Z:\HorusEyesRat-master\TM\obj\Release\TM.pdb
+Z:\HorusEyesRat-master\TM\obj\Release\TM.vbprojAssemblyReference.cache

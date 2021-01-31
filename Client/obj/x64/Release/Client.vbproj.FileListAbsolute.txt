@@ -1,0 +1,11 @@
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\Stub_64.exe.config
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\Stub_64.exe
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\Stub_64.pdb
+Z:\HorusEyesRat-master\Client\obj\x64\Release\Client.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\Client\obj\x64\Release\Client.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\Server\bin\Release\Stubs\Stub_64.exe.config
+Z:\HorusEyesRat-master\Server\bin\Release\Stubs\Stub_64.exe
+Z:\HorusEyesRat-master\Server\bin\Release\Stubs\Stub_64.pdb
+Z:\HorusEyesRat-master\Client\obj\x64\Release\Client.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\Client\obj\x64\Release\Stub_64.exe
+Z:\HorusEyesRat-master\Client\obj\x64\Release\Stub_64.pdb

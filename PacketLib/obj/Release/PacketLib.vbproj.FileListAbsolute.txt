@@ -1,0 +1,10 @@
+Z:\HorusEyesRat-master\PacketLib\bin\Release\PacketLib.dll
+Z:\HorusEyesRat-master\PacketLib\bin\Release\PacketLib.pdb
+Z:\HorusEyesRat-master\PacketLib\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.Resources.resources
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.dll
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.xml
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.pdb
+Z:\HorusEyesRat-master\PacketLib\obj\Release\PacketLib.vbprojAssemblyReference.cache

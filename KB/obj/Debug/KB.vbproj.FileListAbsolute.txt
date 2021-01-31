@@ -37,3 +37,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\KB\obj\Debug\KB.vbproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\KB\obj\Debug\KB.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\KB\obj\Debug\KB.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\KB\obj\Debug\KB.pdb
+Z:\HorusEyesRat-master\KB\bin\Debug\KB.dll
+Z:\HorusEyesRat-master\KB\bin\Debug\KB.pdb
+Z:\HorusEyesRat-master\KB\bin\Debug\KB.xml
+Z:\HorusEyesRat-master\KB\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\KB\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.vbproj.CopyComplete
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.dll
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.xml
+Z:\HorusEyesRat-master\KB\obj\Debug\KB.pdb

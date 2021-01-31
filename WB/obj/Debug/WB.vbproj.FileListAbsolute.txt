@@ -24,3 +24,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\WB\obj\Debug\WB.vbproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\WB\obj\Debug\WB.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\WB\obj\Debug\WB.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\WB\obj\Debug\WB.pdb
+Z:\HorusEyesRat-master\WB\bin\Debug\WB.dll
+Z:\HorusEyesRat-master\WB\bin\Debug\WB.pdb
+Z:\HorusEyesRat-master\WB\bin\Debug\WB.xml
+Z:\HorusEyesRat-master\WB\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\WB\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.vbproj.CopyComplete
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.dll
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.xml
+Z:\HorusEyesRat-master\WB\obj\Debug\WB.pdb

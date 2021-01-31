@@ -35,3 +35,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\NW\obj\Debug\NW.vbproj.Fody.CopyLocal
 C:\Users\mehdi\Documents\HorusEyesRat-main\NW\obj\Debug\NW.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\NW\obj\Debug\NW.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\NW\obj\Debug\NW.pdb
+Z:\HorusEyesRat-master\NW\bin\Debug\NW.dll
+Z:\HorusEyesRat-master\NW\bin\Debug\NW.pdb
+Z:\HorusEyesRat-master\NW\bin\Debug\NW.xml
+Z:\HorusEyesRat-master\NW\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\NW\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.vbproj.CopyComplete
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.dll
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.xml
+Z:\HorusEyesRat-master\NW\obj\Debug\NW.pdb

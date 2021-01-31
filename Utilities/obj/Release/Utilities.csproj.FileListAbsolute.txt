@@ -1,0 +1,6 @@
+Z:\HorusEyesRat-master\Utilities\bin\Release\Utilities.dll
+Z:\HorusEyesRat-master\Utilities\bin\Release\Utilities.pdb
+Z:\HorusEyesRat-master\Utilities\obj\Release\Utilities.csprojAssemblyReference.cache
+Z:\HorusEyesRat-master\Utilities\obj\Release\Utilities.csproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\Utilities\obj\Release\Utilities.dll
+Z:\HorusEyesRat-master\Utilities\obj\Release\Utilities.pdb

@@ -8,3 +8,13 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbproj.Fo
 C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Client.vbproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Stub.exe
 C:\Users\mehdi\Documents\HorusEyesRat-main\Client\obj\x64\Debug\Stub.pdb
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Client.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Client.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Stub.exe
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Stub.pdb
+Z:\HorusEyesRat-master\Client\bin\x64\Debug\Stub.exe.config
+Z:\HorusEyesRat-master\Client\bin\x64\Debug\Stub.exe
+Z:\HorusEyesRat-master\Client\bin\x64\Debug\Stub.pdb
+Z:\HorusEyesRat-master\Client\bin\x64\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Client.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\Client\obj\x64\Debug\Client.vbproj.CopyComplete

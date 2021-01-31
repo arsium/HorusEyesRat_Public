@@ -24,3 +24,16 @@ C:\Users\mehdi\Documents\HorusEyesRat-main\TM\obj\Debug\TM.vbproj.CopyComplete
 C:\Users\mehdi\Documents\HorusEyesRat-main\TM\obj\Debug\TM.dll
 C:\Users\mehdi\Documents\HorusEyesRat-main\TM\obj\Debug\TM.xml
 C:\Users\mehdi\Documents\HorusEyesRat-main\TM\obj\Debug\TM.pdb
+Z:\HorusEyesRat-master\TM\bin\Debug\TM.dll
+Z:\HorusEyesRat-master\TM\bin\Debug\TM.pdb
+Z:\HorusEyesRat-master\TM\bin\Debug\TM.xml
+Z:\HorusEyesRat-master\TM\bin\Debug\PacketLib.xml
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.vbprojAssemblyReference.cache
+Z:\HorusEyesRat-master\TM\obj\Debug\PL.Resources.resources
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.vbproj.CopyComplete
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.dll
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.xml
+Z:\HorusEyesRat-master\TM\obj\Debug\TM.pdb

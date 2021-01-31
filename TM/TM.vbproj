@@ -30,7 +30,7 @@
     <DefineDebug>false</DefineDebug>
     <DefineTrace>true</DefineTrace>
     <Optimize>true</Optimize>
-    <OutputPath>bin\Release\</OutputPath>
+    <OutputPath>..\Server\bin\Release\Plugins\</OutputPath>
     <DocumentationFile>TM.xml</DocumentationFile>
     <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
   </PropertyGroup>
@@ -61,7 +61,7 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
-	    <Reference Include="mscorlib" />
+    <Reference Include="mscorlib" />
     <Reference Include="Microsoft.VisualBasic" />
   </ItemGroup>
   <ItemGroup>

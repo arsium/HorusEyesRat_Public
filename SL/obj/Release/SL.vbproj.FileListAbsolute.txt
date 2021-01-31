@@ -1,0 +1,16 @@
+Z:\HorusEyesRat-master\SL\bin\Release\SL.dll
+Z:\HorusEyesRat-master\SL\bin\Release\SL.pdb
+Z:\HorusEyesRat-master\SL\bin\Release\SL.xml
+Z:\HorusEyesRat-master\SL\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\SL.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\SL.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\SL.xml
+Z:\HorusEyesRat-master\SL\obj\Release\PL.Resources.resources
+Z:\HorusEyesRat-master\SL\obj\Release\SL.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\SL\obj\Release\SL.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\SL\obj\Release\SL.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\SL\obj\Release\SL.vbproj.CopyComplete
+Z:\HorusEyesRat-master\SL\obj\Release\SL.dll
+Z:\HorusEyesRat-master\SL\obj\Release\SL.xml
+Z:\HorusEyesRat-master\SL\obj\Release\SL.pdb
+Z:\HorusEyesRat-master\SL\obj\Release\SL.vbprojAssemblyReference.cache

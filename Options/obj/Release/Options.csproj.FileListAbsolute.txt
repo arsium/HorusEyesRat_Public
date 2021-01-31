@@ -1,0 +1,8 @@
+Z:\HorusEyesRat-master\Options\bin\Release\Options.dll
+Z:\HorusEyesRat-master\Options\bin\Release\Options.pdb
+Z:\HorusEyesRat-master\Options\obj\Release\Options.csproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\Options\obj\Release\Options.dll
+Z:\HorusEyesRat-master\Options\obj\Release\Options.pdb
+Z:\HorusEyesRat-master\Options\obj\Release\Interop.IWshRuntimeLibrary.dll
+Z:\HorusEyesRat-master\Options\obj\Release\Options.csproj.ResolveComReference.cache
+Z:\HorusEyesRat-master\Options\obj\Release\Options.csprojAssemblyReference.cache

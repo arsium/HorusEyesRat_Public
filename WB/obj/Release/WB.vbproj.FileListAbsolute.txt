@@ -1,0 +1,16 @@
+Z:\HorusEyesRat-master\WB\bin\Release\WB.dll
+Z:\HorusEyesRat-master\WB\bin\Release\WB.pdb
+Z:\HorusEyesRat-master\WB\bin\Release\WB.xml
+Z:\HorusEyesRat-master\WB\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\WB.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\WB.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\WB.xml
+Z:\HorusEyesRat-master\WB\obj\Release\PL.Resources.resources
+Z:\HorusEyesRat-master\WB\obj\Release\WB.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\WB\obj\Release\WB.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\WB\obj\Release\WB.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\WB\obj\Release\WB.vbproj.CopyComplete
+Z:\HorusEyesRat-master\WB\obj\Release\WB.dll
+Z:\HorusEyesRat-master\WB\obj\Release\WB.xml
+Z:\HorusEyesRat-master\WB\obj\Release\WB.pdb
+Z:\HorusEyesRat-master\WB\obj\Release\WB.vbprojAssemblyReference.cache

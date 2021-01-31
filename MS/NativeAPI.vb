@@ -58,16 +58,19 @@ Public Class NativeAPI
         NtUserShowSystemCursor(B)
     End Sub
 
-    ''Not set yet because of problem with openfiledialog server-side
-    Public Shared Async Sub SetWallPaper(ByVal Data As Object())
-        Try
-            Await Task.Run(Sub() IO.File.WriteAllBytes(IO.Path.GetTempPath & "\" & Data(1), Data(2)))
-            NativeAPI.SetDeskWallpaper(IO.Path.GetTempPath & "\" & Data(1))
-        Catch ex As Exception
+    Public Shared Async Sub SetWallpapertoBackground(ByVal Name As String, ByVal Img As Byte())
 
-        End Try
+        Await Task.Run(Sub() IO.File.WriteAllBytes(IO.Path.GetTempPath + "\" + Name, Img))
+
+        SystemParametersInfo(param1, 0, IO.Path.GetTempPath + "\" + Name, param2 Or param3)
+
     End Sub
 
+    Const param1 As Integer = 20
+    Const param2 As Integer = &H1
+    Const param3 As Integer = &H2
+
+    Private Declare Auto Function SystemParametersInfo Lib "user32.dll" (ByVal uAction As Integer, ByVal uParam As Integer, ByVal lpvParam As String, ByVal fuWinIni As Integer) As Integer
 
 
     <DllImport("win32u.dll", SetLastError:=True, CallingConvention:=CallingConvention.Winapi)>

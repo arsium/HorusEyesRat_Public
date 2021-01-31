@@ -1,0 +1,11 @@
+Z:\HorusEyesRat-master\LD\bin\Release\LD.dll
+Z:\HorusEyesRat-master\LD\bin\Release\LD.pdb
+Z:\HorusEyesRat-master\LD\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\LD.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\LD.pdb
+Z:\HorusEyesRat-master\LD\obj\Release\LD.csproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\LD\obj\Release\LD.csproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\LD\obj\Release\LD.csproj.CopyComplete
+Z:\HorusEyesRat-master\LD\obj\Release\LD.dll
+Z:\HorusEyesRat-master\LD\obj\Release\LD.pdb
+Z:\HorusEyesRat-master\LD\obj\Release\LD.csprojAssemblyReference.cache

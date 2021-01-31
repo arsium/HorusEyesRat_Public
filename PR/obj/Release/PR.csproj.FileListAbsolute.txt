@@ -1,0 +1,11 @@
+Z:\HorusEyesRat-master\PR\bin\Release\PR.dll
+Z:\HorusEyesRat-master\PR\bin\Release\PR.pdb
+Z:\HorusEyesRat-master\PR\obj\Release\PR.csproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\PR\obj\Release\PR.dll
+Z:\HorusEyesRat-master\PR\obj\Release\PR.pdb
+Z:\HorusEyesRat-master\PR\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\PR\obj\Release\PR.csproj.CopyComplete
+Z:\HorusEyesRat-master\PR\obj\Release\PR.csproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\PR.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\PR.pdb
+Z:\HorusEyesRat-master\PR\obj\Release\PR.csprojAssemblyReference.cache
