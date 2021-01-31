@@ -49,16 +49,60 @@ Partial Class Client_Form
         Dim ListViewItem24 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Show Cursor", 29)
         Dim ListViewItem25 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Start Blur Screen Locker", 32)
         Dim ListViewItem26 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Stop Blur Screen Locker", 33)
+        Dim ListViewItem27 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Lock Mouse Left Click")
+        Dim ListViewItem28 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Lock Mouse Right Click")
+        Dim ListViewItem29 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Lock Mouse Movement")
+        Dim ListViewItem30 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Lock All Mouse Interactions")
+        Dim ListViewItem31 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Unlock Mouse")
+        Dim ListViewItem32 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Change WallPaper")
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Client_Form))
+        Dim ListViewItem33 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreateTokenPrivilege")
+        Dim ListViewItem34 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeAssignPrimaryTokenPrivilege")
+        Dim ListViewItem35 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeLockMemoryPrivilege")
+        Dim ListViewItem36 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeIncreaseQuotaPrivilege")
+        Dim ListViewItem37 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeUnsolicitedInputPrivilege")
+        Dim ListViewItem38 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeMachineAccountPrivilege")
+        Dim ListViewItem39 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeTcbPrivilege")
+        Dim ListViewItem40 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeSecurityPrivilege")
+        Dim ListViewItem41 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeTakeOwnershipPrivilege")
+        Dim ListViewItem42 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeLoadDriverPrivilege")
+        Dim ListViewItem43 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeSystemProfilePrivilege")
+        Dim ListViewItem44 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeSystemtimePrivilege")
+        Dim ListViewItem45 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeProfileSingleProcessPrivilege")
+        Dim ListViewItem46 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeIncreaseBasePriorityPrivilege")
+        Dim ListViewItem47 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreatePagefilePrivilege")
+        Dim ListViewItem48 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreatePermanentPrivilege")
+        Dim ListViewItem49 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeBackupPrivilege")
+        Dim ListViewItem50 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeRestorePrivilege")
+        Dim ListViewItem51 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeShutdownPrivilege")
+        Dim ListViewItem52 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeDebugPrivilege")
+        Dim ListViewItem53 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeAuditPrivilege")
+        Dim ListViewItem54 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeSystemEnvironmentPrivilege")
+        Dim ListViewItem55 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeChangeNotifyPrivilege")
+        Dim ListViewItem56 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeRemoteShutdownPrivilege")
+        Dim ListViewItem57 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeUndockPrivilege")
+        Dim ListViewItem58 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeSyncAgentPrivilege")
+        Dim ListViewItem59 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeEnableDelegationPrivilege")
+        Dim ListViewItem60 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeManageVolumePrivilege")
+        Dim ListViewItem61 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeImpersonatePrivilege")
+        Dim ListViewItem62 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreateGlobalPrivilege")
+        Dim ListViewItem63 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeTrustedCredManAccessPrivilege")
+        Dim ListViewItem64 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeRelabelPrivilege")
+        Dim ListViewItem65 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeIncreaseWorkingSetPrivilege")
+        Dim ListViewItem66 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeTimeZonePrivilege")
+        Dim ListViewItem67 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreateSymbolicLinkPrivilege")
         Me.Pass_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RecoverPasswordsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Save_PassMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CSV_PASSWORDS = New System.Windows.Forms.ToolStripMenuItem()
         Me.Hist_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.Recover_history = New System.Windows.Forms.ToolStripMenuItem()
         Me.Save_HistoryMenu = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CSV_HISTORY = New System.Windows.Forms.ToolStripMenuItem()
         Me.W_PW_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RecoverWifiPasswordToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CSV_W_PW = New System.Windows.Forms.ToolStripMenuItem()
         Me.Tasks_MGR_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.RefreshToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.KillTaskToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -92,6 +136,7 @@ Partial Class Client_Form
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Command_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.LaunchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Loading_tasks = New MRG.Controls.UI.LoadingCircle()
         Me.Helper_Task_Label = New System.Windows.Forms.Label()
@@ -106,7 +151,25 @@ Partial Class Client_Form
         Me.Inject_Nat_ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemvoeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.TabPage7 = New System.Windows.Forms.TabPage()
+        Me.XuiCustomGroupbox4 = New XanderUI.XUICustomGroupbox()
+        Me.Label7 = New System.Windows.Forms.Label()
+        Me.Label6 = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
+        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Chk_UAC_Btn = New Server.Custom_Button()
+        Me.XuiCustomGroupbox3 = New XanderUI.XUICustomGroupbox()
+        Me.Priv_ListView = New System.Windows.Forms.ListView()
+        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Priv_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.GetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.XuiCustomGroupbox2 = New XanderUI.XUICustomGroupbox()
+        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.Label3 = New System.Windows.Forms.Label()
+        Me.Change_Prio_Btn = New Server.Custom_Button()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.Get_Prio_Btn = New Server.Custom_Button()
         Me.Pass_MenuStrip.SuspendLayout()
         Me.Hist_MenuStrip.SuspendLayout()
         Me.W_PW_MenuStrip.SuspendLayout()
@@ -122,14 +185,19 @@ Partial Class Client_Form
         Me.TabPage6.SuspendLayout()
         Me.XuiCustomGroupbox1.SuspendLayout()
         Me.ADD_DLL_NAT_MenuStrip.SuspendLayout()
+        Me.TabPage7.SuspendLayout()
+        Me.XuiCustomGroupbox4.SuspendLayout()
+        Me.XuiCustomGroupbox3.SuspendLayout()
+        Me.Priv_MenuStrip.SuspendLayout()
+        Me.XuiCustomGroupbox2.SuspendLayout()
         Me.SuspendLayout()
         '
         'Pass_MenuStrip
         '
         Me.Pass_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.Pass_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverPasswordsToolStripMenuItem, Me.Save_PassMenu})
+        Me.Pass_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverPasswordsToolStripMenuItem, Me.Save_PassMenu, Me.CSV_PASSWORDS})
         Me.Pass_MenuStrip.Name = "Pass_MenuStrip"
-        Me.Pass_MenuStrip.Size = New System.Drawing.Size(187, 72)
+        Me.Pass_MenuStrip.Size = New System.Drawing.Size(187, 106)
         '
         'RecoverPasswordsToolStripMenuItem
         '
@@ -149,12 +217,21 @@ Partial Class Client_Form
         Me.Save_PassMenu.Size = New System.Drawing.Size(186, 34)
         Me.Save_PassMenu.Text = "Save"
         '
+        'CSV_PASSWORDS
+        '
+        Me.CSV_PASSWORDS.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CSV_PASSWORDS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CSV_PASSWORDS.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
+        Me.CSV_PASSWORDS.Name = "CSV_PASSWORDS"
+        Me.CSV_PASSWORDS.Size = New System.Drawing.Size(186, 34)
+        Me.CSV_PASSWORDS.Text = "Export To .CSV"
+        '
         'Hist_MenuStrip
         '
         Me.Hist_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.Hist_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Recover_history, Me.Save_HistoryMenu})
+        Me.Hist_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Recover_history, Me.Save_HistoryMenu, Me.CSV_HISTORY})
         Me.Hist_MenuStrip.Name = "Pass_MenuStrip"
-        Me.Hist_MenuStrip.Size = New System.Drawing.Size(170, 72)
+        Me.Hist_MenuStrip.Size = New System.Drawing.Size(170, 106)
         '
         'Recover_history
         '
@@ -174,12 +251,21 @@ Partial Class Client_Form
         Me.Save_HistoryMenu.Size = New System.Drawing.Size(169, 34)
         Me.Save_HistoryMenu.Text = "Save"
         '
+        'CSV_HISTORY
+        '
+        Me.CSV_HISTORY.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CSV_HISTORY.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CSV_HISTORY.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
+        Me.CSV_HISTORY.Name = "CSV_HISTORY"
+        Me.CSV_HISTORY.Size = New System.Drawing.Size(169, 34)
+        Me.CSV_HISTORY.Text = "Export To .CSV"
+        '
         'W_PW_MenuStrip
         '
         Me.W_PW_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.W_PW_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverWifiPasswordToolStripMenuItem, Me.SaveToolStripMenuItem})
+        Me.W_PW_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverWifiPasswordToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CSV_W_PW})
         Me.W_PW_MenuStrip.Name = "W_PW_MenuStrip"
-        Me.W_PW_MenuStrip.Size = New System.Drawing.Size(206, 72)
+        Me.W_PW_MenuStrip.Size = New System.Drawing.Size(206, 106)
         '
         'RecoverWifiPasswordToolStripMenuItem
         '
@@ -198,6 +284,15 @@ Partial Class Client_Form
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(205, 34)
         Me.SaveToolStripMenuItem.Text = "Save"
+        '
+        'CSV_W_PW
+        '
+        Me.CSV_W_PW.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CSV_W_PW.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CSV_W_PW.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
+        Me.CSV_W_PW.Name = "CSV_W_PW"
+        Me.CSV_W_PW.Size = New System.Drawing.Size(205, 34)
+        Me.CSV_W_PW.Text = "Export To .CSV"
         '
         'Tasks_MGR_MenuStrip
         '
@@ -290,6 +385,7 @@ Partial Class Client_Form
         Me.TabControlExt1.Controls.Add(Me.TabPage5)
         Me.TabControlExt1.Controls.Add(Me.TabPage4)
         Me.TabControlExt1.Controls.Add(Me.TabPage6)
+        Me.TabControlExt1.Controls.Add(Me.TabPage7)
         Me.TabControlExt1.ForeColorBase = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
         Me.TabControlExt1.HeaderBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.TabControlExt1.HeadSelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
@@ -300,7 +396,7 @@ Partial Class Client_Form
         Me.TabControlExt1.Multiline = True
         Me.TabControlExt1.Name = "TabControlExt1"
         Me.TabControlExt1.SelectedIndex = 0
-        Me.TabControlExt1.Size = New System.Drawing.Size(956, 505)
+        Me.TabControlExt1.Size = New System.Drawing.Size(956, 525)
         Me.TabControlExt1.TabIndex = 0
         Me.TabControlExt1.UncloseTabIndexs = Nothing
         '
@@ -312,7 +408,7 @@ Partial Class Client_Form
         Me.TabPage1.Location = New System.Drawing.Point(104, 4)
         Me.TabPage1.Name = "TabPage1"
         Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage1.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage1.Size = New System.Drawing.Size(848, 517)
         Me.TabPage1.TabIndex = 0
         Me.TabPage1.Text = "Passwords"
         '
@@ -344,7 +440,7 @@ Partial Class Client_Form
         Me.Passwords_ListView.HideSelection = False
         Me.Passwords_ListView.Location = New System.Drawing.Point(3, 28)
         Me.Passwords_ListView.Name = "Passwords_ListView"
-        Me.Passwords_ListView.Size = New System.Drawing.Size(842, 466)
+        Me.Passwords_ListView.Size = New System.Drawing.Size(842, 486)
         Me.Passwords_ListView.TabIndex = 0
         Me.Passwords_ListView.UseCompatibleStateImageBehavior = False
         Me.Passwords_ListView.View = System.Windows.Forms.View.Details
@@ -377,7 +473,7 @@ Partial Class Client_Form
         Me.TabPage2.Location = New System.Drawing.Point(104, 4)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage2.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage2.Size = New System.Drawing.Size(848, 517)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "History"
         '
@@ -409,7 +505,7 @@ Partial Class Client_Form
         Me.Hist_ListView.HideSelection = False
         Me.Hist_ListView.Location = New System.Drawing.Point(3, 28)
         Me.Hist_ListView.Name = "Hist_ListView"
-        Me.Hist_ListView.Size = New System.Drawing.Size(842, 466)
+        Me.Hist_ListView.Size = New System.Drawing.Size(842, 486)
         Me.Hist_ListView.TabIndex = 1
         Me.Hist_ListView.UseCompatibleStateImageBehavior = False
         Me.Hist_ListView.View = System.Windows.Forms.View.Details
@@ -442,7 +538,7 @@ Partial Class Client_Form
         Me.TabPage3.Location = New System.Drawing.Point(104, 4)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage3.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage3.Size = New System.Drawing.Size(848, 517)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "Networking"
         '
@@ -474,7 +570,7 @@ Partial Class Client_Form
         Me.W_PW_ListView.HideSelection = False
         Me.W_PW_ListView.Location = New System.Drawing.Point(3, 28)
         Me.W_PW_ListView.Name = "W_PW_ListView"
-        Me.W_PW_ListView.Size = New System.Drawing.Size(842, 466)
+        Me.W_PW_ListView.Size = New System.Drawing.Size(842, 486)
         Me.W_PW_ListView.TabIndex = 0
         Me.W_PW_ListView.UseCompatibleStateImageBehavior = False
         Me.W_PW_ListView.View = System.Windows.Forms.View.Details
@@ -496,7 +592,7 @@ Partial Class Client_Form
         Me.TabPage5.Location = New System.Drawing.Point(104, 4)
         Me.TabPage5.Name = "TabPage5"
         Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage5.Size = New System.Drawing.Size(848, 517)
         Me.TabPage5.TabIndex = 4
         Me.TabPage5.Text = "Miscellaneous"
         '
@@ -513,10 +609,11 @@ Partial Class Client_Form
         Me.CMD_ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
         Me.CMD_ListView.HideSelection = False
         Me.CMD_ListView.ImeMode = System.Windows.Forms.ImeMode.Off
-        Me.CMD_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8, ListViewItem9, ListViewItem10, ListViewItem11, ListViewItem12, ListViewItem13, ListViewItem14, ListViewItem15, ListViewItem16, ListViewItem17, ListViewItem18, ListViewItem19, ListViewItem20, ListViewItem21, ListViewItem22, ListViewItem23, ListViewItem24, ListViewItem25, ListViewItem26})
+        ListViewItem31.ToolTipText = "Use to unlock any lock mouse"
+        Me.CMD_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8, ListViewItem9, ListViewItem10, ListViewItem11, ListViewItem12, ListViewItem13, ListViewItem14, ListViewItem15, ListViewItem16, ListViewItem17, ListViewItem18, ListViewItem19, ListViewItem20, ListViewItem21, ListViewItem22, ListViewItem23, ListViewItem24, ListViewItem25, ListViewItem26, ListViewItem27, ListViewItem28, ListViewItem29, ListViewItem30, ListViewItem31, ListViewItem32})
         Me.CMD_ListView.Location = New System.Drawing.Point(3, 3)
         Me.CMD_ListView.Name = "CMD_ListView"
-        Me.CMD_ListView.Size = New System.Drawing.Size(842, 491)
+        Me.CMD_ListView.Size = New System.Drawing.Size(842, 511)
         Me.CMD_ListView.SmallImageList = Me.ImageList1
         Me.CMD_ListView.TabIndex = 0
         Me.CMD_ListView.UseCompatibleStateImageBehavior = False
@@ -543,6 +640,45 @@ Partial Class Client_Form
         Me.LaunchToolStripMenuItem.Size = New System.Drawing.Size(125, 34)
         Me.LaunchToolStripMenuItem.Text = "Launch"
         '
+        'ImageList1
+        '
+        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
+        Me.ImageList1.TransparentColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.ImageList1.Images.SetKeyName(0, "icons8_shutdown_32.png")
+        Me.ImageList1.Images.SetKeyName(1, "icons8_restart_32.png")
+        Me.ImageList1.Images.SetKeyName(2, "icons8_sign_out_32.png")
+        Me.ImageList1.Images.SetKeyName(3, "icons8_poison_32.png")
+        Me.ImageList1.Images.SetKeyName(4, "icons8_minus_32.png")
+        Me.ImageList1.Images.SetKeyName(5, "icons8_plus_32.png")
+        Me.ImageList1.Images.SetKeyName(6, "icons8_mute_32.png")
+        Me.ImageList1.Images.SetKeyName(7, "icons8_poison_32.png")
+        Me.ImageList1.Images.SetKeyName(8, "icons8_sign_out_32.png")
+        Me.ImageList1.Images.SetKeyName(9, "icons8_shutdown_32.png")
+        Me.ImageList1.Images.SetKeyName(10, "icons8_restart_32.png")
+        Me.ImageList1.Images.SetKeyName(11, "icons8_stop_32.png")
+        Me.ImageList1.Images.SetKeyName(12, "icons8_hibernate_32.png")
+        Me.ImageList1.Images.SetKeyName(13, "icons8_shutdown_32.png")
+        Me.ImageList1.Images.SetKeyName(14, "icons8_25%_32.png")
+        Me.ImageList1.Images.SetKeyName(15, "icons8_50%.ico")
+        Me.ImageList1.Images.SetKeyName(16, "icons8_100%_32.png")
+        Me.ImageList1.Images.SetKeyName(17, "icons8_fraction_32.png")
+        Me.ImageList1.Images.SetKeyName(18, "icons8_audio_32.png")
+        Me.ImageList1.Images.SetKeyName(19, "icons8_voice_32.png")
+        Me.ImageList1.Images.SetKeyName(20, "icons8_empty_trash_32.png")
+        Me.ImageList1.Images.SetKeyName(21, "icons8_sleep_32.png")
+        Me.ImageList1.Images.SetKeyName(22, "icons8_enter_32.png")
+        Me.ImageList1.Images.SetKeyName(23, "icons8_restart_32.png")
+        Me.ImageList1.Images.SetKeyName(24, "icons8_poison_32.png")
+        Me.ImageList1.Images.SetKeyName(25, "icons8_no_audio_32.png")
+        Me.ImageList1.Images.SetKeyName(26, "icons8_padldock_32.png")
+        Me.ImageList1.Images.SetKeyName(27, "icons8_lodck_32.png")
+        Me.ImageList1.Images.SetKeyName(28, "icons8_invisible_32.png")
+        Me.ImageList1.Images.SetKeyName(29, "icons8_esqdye_32.png")
+        Me.ImageList1.Images.SetKeyName(30, "icons8_swap_32.png")
+        Me.ImageList1.Images.SetKeyName(31, "icons8_normal_32.png")
+        Me.ImageList1.Images.SetKeyName(32, "icons8_blue_screefn_of_death_32.png")
+        Me.ImageList1.Images.SetKeyName(33, "icons8_unlocksss.png")
+        '
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
@@ -552,7 +688,7 @@ Partial Class Client_Form
         Me.TabPage4.Location = New System.Drawing.Point(104, 4)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage4.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage4.Size = New System.Drawing.Size(848, 517)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Tasks MGR"
         '
@@ -596,7 +732,7 @@ Partial Class Client_Form
         Me.Tasks_listview.HideSelection = False
         Me.Tasks_listview.Location = New System.Drawing.Point(3, 28)
         Me.Tasks_listview.Name = "Tasks_listview"
-        Me.Tasks_listview.Size = New System.Drawing.Size(842, 466)
+        Me.Tasks_listview.Size = New System.Drawing.Size(842, 486)
         Me.Tasks_listview.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.Tasks_listview.TabIndex = 1
         Me.Tasks_listview.UseCompatibleStateImageBehavior = False
@@ -614,7 +750,7 @@ Partial Class Client_Form
         Me.TabPage6.Location = New System.Drawing.Point(104, 4)
         Me.TabPage6.Name = "TabPage6"
         Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(848, 497)
+        Me.TabPage6.Size = New System.Drawing.Size(848, 517)
         Me.TabPage6.TabIndex = 5
         Me.TabPage6.Text = "Injection | Native"
         '
@@ -627,7 +763,7 @@ Partial Class Client_Form
         Me.XuiCustomGroupbox1.Location = New System.Drawing.Point(3, 3)
         Me.XuiCustomGroupbox1.Name = "XuiCustomGroupbox1"
         Me.XuiCustomGroupbox1.ShowText = True
-        Me.XuiCustomGroupbox1.Size = New System.Drawing.Size(842, 491)
+        Me.XuiCustomGroupbox1.Size = New System.Drawing.Size(842, 511)
         Me.XuiCustomGroupbox1.TabIndex = 5
         Me.XuiCustomGroupbox1.TabStop = False
         Me.XuiCustomGroupbox1.Text = "Native Injection | For Unmanaged DLL"
@@ -644,7 +780,7 @@ Partial Class Client_Form
         Me.DLL_NAT_ListView.HideSelection = False
         Me.DLL_NAT_ListView.Location = New System.Drawing.Point(3, 16)
         Me.DLL_NAT_ListView.Name = "DLL_NAT_ListView"
-        Me.DLL_NAT_ListView.Size = New System.Drawing.Size(836, 472)
+        Me.DLL_NAT_ListView.Size = New System.Drawing.Size(836, 492)
         Me.DLL_NAT_ListView.TabIndex = 4
         Me.DLL_NAT_ListView.UseCompatibleStateImageBehavior = False
         Me.DLL_NAT_ListView.View = System.Windows.Forms.View.Details
@@ -694,51 +830,234 @@ Partial Class Client_Form
         Me.RemvoeToolStripMenuItem.Size = New System.Drawing.Size(129, 34)
         Me.RemvoeToolStripMenuItem.Text = "Remvoe"
         '
-        'ImageList1
+        'TabPage7
         '
-        Me.ImageList1.ImageStream = CType(resources.GetObject("ImageList1.ImageStream"), System.Windows.Forms.ImageListStreamer)
-        Me.ImageList1.TransparentColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.ImageList1.Images.SetKeyName(0, "icons8_shutdown_32.png")
-        Me.ImageList1.Images.SetKeyName(1, "icons8_restart_32.png")
-        Me.ImageList1.Images.SetKeyName(2, "icons8_sign_out_32.png")
-        Me.ImageList1.Images.SetKeyName(3, "icons8_poison_32.png")
-        Me.ImageList1.Images.SetKeyName(4, "icons8_minus_32.png")
-        Me.ImageList1.Images.SetKeyName(5, "icons8_plus_32.png")
-        Me.ImageList1.Images.SetKeyName(6, "icons8_mute_32.png")
-        Me.ImageList1.Images.SetKeyName(7, "icons8_poison_32.png")
-        Me.ImageList1.Images.SetKeyName(8, "icons8_sign_out_32.png")
-        Me.ImageList1.Images.SetKeyName(9, "icons8_shutdown_32.png")
-        Me.ImageList1.Images.SetKeyName(10, "icons8_restart_32.png")
-        Me.ImageList1.Images.SetKeyName(11, "icons8_stop_32.png")
-        Me.ImageList1.Images.SetKeyName(12, "icons8_hibernate_32.png")
-        Me.ImageList1.Images.SetKeyName(13, "icons8_shutdown_32.png")
-        Me.ImageList1.Images.SetKeyName(14, "icons8_25%_32.png")
-        Me.ImageList1.Images.SetKeyName(15, "icons8_50%.ico")
-        Me.ImageList1.Images.SetKeyName(16, "icons8_100%_32.png")
-        Me.ImageList1.Images.SetKeyName(17, "icons8_fraction_32.png")
-        Me.ImageList1.Images.SetKeyName(18, "icons8_audio_32.png")
-        Me.ImageList1.Images.SetKeyName(19, "icons8_voice_32.png")
-        Me.ImageList1.Images.SetKeyName(20, "icons8_empty_trash_32.png")
-        Me.ImageList1.Images.SetKeyName(21, "icons8_sleep_32.png")
-        Me.ImageList1.Images.SetKeyName(22, "icons8_enter_32.png")
-        Me.ImageList1.Images.SetKeyName(23, "icons8_restart_32.png")
-        Me.ImageList1.Images.SetKeyName(24, "icons8_poison_32.png")
-        Me.ImageList1.Images.SetKeyName(25, "icons8_no_audio_32.png")
-        Me.ImageList1.Images.SetKeyName(26, "icons8_padldock_32.png")
-        Me.ImageList1.Images.SetKeyName(27, "icons8_lodck_32.png")
-        Me.ImageList1.Images.SetKeyName(28, "icons8_invisible_32.png")
-        Me.ImageList1.Images.SetKeyName(29, "icons8_esqdye_32.png")
-        Me.ImageList1.Images.SetKeyName(30, "icons8_swap_32.png")
-        Me.ImageList1.Images.SetKeyName(31, "icons8_normal_32.png")
-        Me.ImageList1.Images.SetKeyName(32, "icons8_blue_screefn_of_death_32.png")
-        Me.ImageList1.Images.SetKeyName(33, "icons8_unlocksss.png")
+        Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox4)
+        Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox3)
+        Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox2)
+        Me.TabPage7.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage7.Name = "TabPage7"
+        Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage7.Size = New System.Drawing.Size(848, 517)
+        Me.TabPage7.TabIndex = 6
+        Me.TabPage7.Text = "Native"
+        '
+        'XuiCustomGroupbox4
+        '
+        Me.XuiCustomGroupbox4.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox4.BorderWidth = 1
+        Me.XuiCustomGroupbox4.Controls.Add(Me.Label7)
+        Me.XuiCustomGroupbox4.Controls.Add(Me.Label6)
+        Me.XuiCustomGroupbox4.Controls.Add(Me.Label5)
+        Me.XuiCustomGroupbox4.Controls.Add(Me.Label4)
+        Me.XuiCustomGroupbox4.Controls.Add(Me.Chk_UAC_Btn)
+        Me.XuiCustomGroupbox4.Location = New System.Drawing.Point(6, 392)
+        Me.XuiCustomGroupbox4.Name = "XuiCustomGroupbox4"
+        Me.XuiCustomGroupbox4.ShowText = True
+        Me.XuiCustomGroupbox4.Size = New System.Drawing.Size(326, 112)
+        Me.XuiCustomGroupbox4.TabIndex = 12
+        Me.XuiCustomGroupbox4.TabStop = False
+        Me.XuiCustomGroupbox4.Text = "UAC"
+        Me.XuiCustomGroupbox4.TextColor = System.Drawing.Color.DodgerBlue
+        '
+        'Label7
+        '
+        Me.Label7.AutoSize = True
+        Me.Label7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label7.Location = New System.Drawing.Point(25, 54)
+        Me.Label7.Name = "Label7"
+        Me.Label7.Size = New System.Drawing.Size(13, 13)
+        Me.Label7.TabIndex = 14
+        Me.Label7.Text = "?"
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label6
+        '
+        Me.Label6.AutoSize = True
+        Me.Label6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label6.Location = New System.Drawing.Point(25, 89)
+        Me.Label6.Name = "Label6"
+        Me.Label6.Size = New System.Drawing.Size(13, 13)
+        Me.Label6.TabIndex = 13
+        Me.Label6.Text = "?"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label5.Location = New System.Drawing.Point(25, 72)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(13, 13)
+        Me.Label5.TabIndex = 11
+        Me.Label5.Text = "?"
+        Me.Label5.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label4.Location = New System.Drawing.Point(6, 72)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(13, 13)
+        Me.Label4.TabIndex = 11
+        Me.Label4.Text = "?"
+        Me.Label4.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Chk_UAC_Btn
+        '
+        Me.Chk_UAC_Btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Chk_UAC_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Chk_UAC_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Chk_UAC_Btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Chk_UAC_Btn.Location = New System.Drawing.Point(6, 19)
+        Me.Chk_UAC_Btn.Name = "Chk_UAC_Btn"
+        Me.Chk_UAC_Btn.Size = New System.Drawing.Size(314, 29)
+        Me.Chk_UAC_Btn.TabIndex = 11
+        Me.Chk_UAC_Btn.Text = "Check UAC"
+        Me.Chk_UAC_Btn.UseVisualStyleBackColor = True
+        '
+        'XuiCustomGroupbox3
+        '
+        Me.XuiCustomGroupbox3.AutoSize = True
+        Me.XuiCustomGroupbox3.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox3.BorderWidth = 1
+        Me.XuiCustomGroupbox3.Controls.Add(Me.Priv_ListView)
+        Me.XuiCustomGroupbox3.Location = New System.Drawing.Point(6, 6)
+        Me.XuiCustomGroupbox3.Name = "XuiCustomGroupbox3"
+        Me.XuiCustomGroupbox3.ShowText = True
+        Me.XuiCustomGroupbox3.Size = New System.Drawing.Size(831, 245)
+        Me.XuiCustomGroupbox3.TabIndex = 11
+        Me.XuiCustomGroupbox3.TabStop = False
+        Me.XuiCustomGroupbox3.Text = "Privileges"
+        Me.XuiCustomGroupbox3.TextColor = System.Drawing.Color.DodgerBlue
+        '
+        'Priv_ListView
+        '
+        Me.Priv_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Priv_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader15, Me.ColumnHeader16})
+        Me.Priv_ListView.ContextMenuStrip = Me.Priv_MenuStrip
+        Me.Priv_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Priv_ListView.HideSelection = False
+        Me.Priv_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem33, ListViewItem34, ListViewItem35, ListViewItem36, ListViewItem37, ListViewItem38, ListViewItem39, ListViewItem40, ListViewItem41, ListViewItem42, ListViewItem43, ListViewItem44, ListViewItem45, ListViewItem46, ListViewItem47, ListViewItem48, ListViewItem49, ListViewItem50, ListViewItem51, ListViewItem52, ListViewItem53, ListViewItem54, ListViewItem55, ListViewItem56, ListViewItem57, ListViewItem58, ListViewItem59, ListViewItem60, ListViewItem61, ListViewItem62, ListViewItem63, ListViewItem64, ListViewItem65, ListViewItem66, ListViewItem67})
+        Me.Priv_ListView.Location = New System.Drawing.Point(6, 19)
+        Me.Priv_ListView.Name = "Priv_ListView"
+        Me.Priv_ListView.Size = New System.Drawing.Size(819, 207)
+        Me.Priv_ListView.TabIndex = 0
+        Me.Priv_ListView.UseCompatibleStateImageBehavior = False
+        Me.Priv_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader15
+        '
+        Me.ColumnHeader15.Text = "Privileges"
+        Me.ColumnHeader15.Width = 356
+        '
+        'ColumnHeader16
+        '
+        Me.ColumnHeader16.Text = "Status"
+        Me.ColumnHeader16.Width = 299
+        '
+        'Priv_MenuStrip
+        '
+        Me.Priv_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Priv_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GetToolStripMenuItem})
+        Me.Priv_MenuStrip.Name = "Priv_MenuStrip"
+        Me.Priv_MenuStrip.Size = New System.Drawing.Size(93, 26)
+        '
+        'GetToolStripMenuItem
+        '
+        Me.GetToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.GetToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GetToolStripMenuItem.Name = "GetToolStripMenuItem"
+        Me.GetToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
+        Me.GetToolStripMenuItem.Text = "Get"
+        '
+        'XuiCustomGroupbox2
+        '
+        Me.XuiCustomGroupbox2.AutoSize = True
+        Me.XuiCustomGroupbox2.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox2.BorderWidth = 1
+        Me.XuiCustomGroupbox2.Controls.Add(Me.ComboBox1)
+        Me.XuiCustomGroupbox2.Controls.Add(Me.Label3)
+        Me.XuiCustomGroupbox2.Controls.Add(Me.Change_Prio_Btn)
+        Me.XuiCustomGroupbox2.Controls.Add(Me.Label2)
+        Me.XuiCustomGroupbox2.Controls.Add(Me.Get_Prio_Btn)
+        Me.XuiCustomGroupbox2.Location = New System.Drawing.Point(6, 257)
+        Me.XuiCustomGroupbox2.Name = "XuiCustomGroupbox2"
+        Me.XuiCustomGroupbox2.ShowText = True
+        Me.XuiCustomGroupbox2.Size = New System.Drawing.Size(499, 129)
+        Me.XuiCustomGroupbox2.TabIndex = 10
+        Me.XuiCustomGroupbox2.TabStop = False
+        Me.XuiCustomGroupbox2.Text = "Priority"
+        Me.XuiCustomGroupbox2.TextColor = System.Drawing.Color.DodgerBlue
+        '
+        'ComboBox1
+        '
+        Me.ComboBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.ComboBox1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.ComboBox1.FormattingEnabled = True
+        Me.ComboBox1.Items.AddRange(New Object() {"NORMAL_PRIORITY_CLASS", "ABOVE_NORMAL_PRIORITY_CLASS", "HIGH_PRIORITY_CLASS", "BELOW_NORMAL_PRIORITY_CLASS", "IDLE_PRIORITY_CLASS"})
+        Me.ComboBox1.Location = New System.Drawing.Point(6, 19)
+        Me.ComboBox1.Name = "ComboBox1"
+        Me.ComboBox1.Size = New System.Drawing.Size(439, 21)
+        Me.ComboBox1.TabIndex = 1
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label3.Location = New System.Drawing.Point(455, 54)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(13, 13)
+        Me.Label3.TabIndex = 9
+        Me.Label3.Text = "?"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Change_Prio_Btn
+        '
+        Me.Change_Prio_Btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Change_Prio_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Change_Prio_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Change_Prio_Btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Change_Prio_Btn.Location = New System.Drawing.Point(6, 46)
+        Me.Change_Prio_Btn.Name = "Change_Prio_Btn"
+        Me.Change_Prio_Btn.Size = New System.Drawing.Size(439, 29)
+        Me.Change_Prio_Btn.TabIndex = 7
+        Me.Change_Prio_Btn.Text = "Change Priority"
+        Me.Change_Prio_Btn.UseVisualStyleBackColor = True
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label2.Location = New System.Drawing.Point(455, 89)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(13, 13)
+        Me.Label2.TabIndex = 7
+        Me.Label2.Text = "?"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'Get_Prio_Btn
+        '
+        Me.Get_Prio_Btn.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Get_Prio_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Get_Prio_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Get_Prio_Btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Get_Prio_Btn.Location = New System.Drawing.Point(6, 81)
+        Me.Get_Prio_Btn.Name = "Get_Prio_Btn"
+        Me.Get_Prio_Btn.Size = New System.Drawing.Size(439, 29)
+        Me.Get_Prio_Btn.TabIndex = 8
+        Me.Get_Prio_Btn.Text = "Get Priority"
+        Me.Get_Prio_Btn.UseVisualStyleBackColor = True
         '
         'Client_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(968, 554)
+        Me.ClientSize = New System.Drawing.Size(968, 574)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Custom_Button1)
@@ -761,6 +1080,14 @@ Partial Class Client_Form
         Me.TabPage6.ResumeLayout(False)
         Me.XuiCustomGroupbox1.ResumeLayout(False)
         Me.ADD_DLL_NAT_MenuStrip.ResumeLayout(False)
+        Me.TabPage7.ResumeLayout(False)
+        Me.TabPage7.PerformLayout()
+        Me.XuiCustomGroupbox4.ResumeLayout(False)
+        Me.XuiCustomGroupbox4.PerformLayout()
+        Me.XuiCustomGroupbox3.ResumeLayout(False)
+        Me.Priv_MenuStrip.ResumeLayout(False)
+        Me.XuiCustomGroupbox2.ResumeLayout(False)
+        Me.XuiCustomGroupbox2.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -822,4 +1149,26 @@ Partial Class Client_Form
     Friend WithEvents RemvoeToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents Inject_Nat_ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents XuiCustomGroupbox1 As XanderUI.XUICustomGroupbox
+    Friend WithEvents TabPage7 As TabPage
+    Friend WithEvents Priv_ListView As ListView
+    Friend WithEvents ColumnHeader15 As ColumnHeader
+    Friend WithEvents ColumnHeader16 As ColumnHeader
+    Friend WithEvents Priv_MenuStrip As ContextMenuStrip
+    Friend WithEvents GetToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Get_Prio_Btn As Custom_Button
+    Friend WithEvents Change_Prio_Btn As Custom_Button
+    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents Label3 As Label
+    Friend WithEvents XuiCustomGroupbox2 As XanderUI.XUICustomGroupbox
+    Friend WithEvents XuiCustomGroupbox3 As XanderUI.XUICustomGroupbox
+    Friend WithEvents XuiCustomGroupbox4 As XanderUI.XUICustomGroupbox
+    Friend WithEvents Label5 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Chk_UAC_Btn As Custom_Button
+    Friend WithEvents Label7 As Label
+    Friend WithEvents Label6 As Label
+    Friend WithEvents CSV_W_PW As ToolStripMenuItem
+    Friend WithEvents CSV_PASSWORDS As ToolStripMenuItem
+    Friend WithEvents CSV_HISTORY As ToolStripMenuItem
 End Class

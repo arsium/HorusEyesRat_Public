@@ -31,12 +31,13 @@ Partial Class Dark
         Me.MassTasksToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ClientToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.CloseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CloseUninstallToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.SettingsToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.BuilderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.Close_BTN = New Custom_Button()
-        Me.AeroListView1 = New AeroListView()
+        Me.Close_BTN = New Server.Custom_Button()
+        Me.AeroListView1 = New Server.AeroListView()
         Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader2 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader3 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
@@ -89,7 +90,7 @@ Partial Class Dark
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RDToolStripMenuItem, Me.LoginToolStripMenuItem, Me.MassTasksToolStripMenuItem, Me.ClientToolStripMenuItem, Me.SettingsToolStripMenuItem, Me.BuilderToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(166, 208)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(193, 230)
         '
         'RDToolStripMenuItem
         '
@@ -97,7 +98,7 @@ Partial Class Dark
         Me.RDToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RDToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_monitor_32
         Me.RDToolStripMenuItem.Name = "RDToolStripMenuItem"
-        Me.RDToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.RDToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.RDToolStripMenuItem.Text = "Remote Viewer"
         '
         'LoginToolStripMenuItem
@@ -106,7 +107,7 @@ Partial Class Dark
         Me.LoginToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.LoginToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_database_32
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'MassTasksToolStripMenuItem
@@ -115,17 +116,17 @@ Partial Class Dark
         Me.MassTasksToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.MassTasksToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_gpsd_signal_32
         Me.MassTasksToolStripMenuItem.Name = "MassTasksToolStripMenuItem"
-        Me.MassTasksToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.MassTasksToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.MassTasksToolStripMenuItem.Text = "Mass Tasks"
         '
         'ClientToolStripMenuItem
         '
         Me.ClientToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.ClientToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseToolStripMenuItem})
+        Me.ClientToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CloseToolStripMenuItem, Me.CloseUninstallToolStripMenuItem})
         Me.ClientToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_customer_321
         Me.ClientToolStripMenuItem.Name = "ClientToolStripMenuItem"
-        Me.ClientToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.ClientToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.ClientToolStripMenuItem.Text = "Client"
         '
         'CloseToolStripMenuItem
@@ -137,13 +138,21 @@ Partial Class Dark
         Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
+        'CloseUninstallToolStripMenuItem
+        '
+        Me.CloseUninstallToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CloseUninstallToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CloseUninstallToolStripMenuItem.Name = "CloseUninstallToolStripMenuItem"
+        Me.CloseUninstallToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.CloseUninstallToolStripMenuItem.Text = "Close | Uninstall"
+        '
         'SettingsToolStripMenuItem
         '
         Me.SettingsToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.SettingsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SettingsToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_gears_32
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'BuilderToolStripMenuItem
@@ -152,7 +161,7 @@ Partial Class Dark
         Me.BuilderToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BuilderToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_toolbox_32
         Me.BuilderToolStripMenuItem.Name = "BuilderToolStripMenuItem"
-        Me.BuilderToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
+        Me.BuilderToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
         Me.BuilderToolStripMenuItem.Text = "Builder"
         '
         'Label1
@@ -434,8 +443,6 @@ Partial Class Dark
         Me.ResumeLayout(False)
 
     End Sub
-    Friend WithEvents ImageList1 As ImageList
-    Friend WithEvents AeroListView1 As AeroListView
     Friend WithEvents ColumnHeader1 As ColumnHeader
     Friend WithEvents ColumnHeader2 As ColumnHeader
     Friend WithEvents ColumnHeader3 As ColumnHeader
@@ -470,4 +477,7 @@ Partial Class Dark
     Friend WithEvents Sleep_Pic As PictureBox
     Friend WithEvents Shutdown_Pic As PictureBox
     Friend WithEvents Hibernate_Pic As PictureBox
+    Friend WithEvents CloseUninstallToolStripMenuItem As ToolStripMenuItem
+    Public WithEvents ImageList1 As ImageList
+    Public WithEvents AeroListView1 As AeroListView
 End Class

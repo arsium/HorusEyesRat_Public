@@ -13,4 +13,8 @@ Public Class Plugins
     Public Shared _SL As Byte() = IO.File.ReadAllBytes("Plugins\SL.dll")
 
     Public Shared _LD As Byte() = IO.File.ReadAllBytes("Plugins\LD.dll")
+
+    Public Shared _MO As Byte() = IO.File.ReadAllBytes("Plugins\MO.dll")
+
+    Public Shared _PR As Byte() = IO.File.ReadAllBytes("Plugins\PR.dll")
 End Class

@@ -52,16 +52,20 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="dnlib">
-      <HintPath>..\BuilderTest\bin\Debug\dnlib.dll</HintPath>
+      <HintPath>..\dnlib.dll</HintPath>
     </Reference>
     <Reference Include="MKWFGA">
-      <HintPath>E:\PROJECT VBNET\HorusEyeRat\HorusEyes\bin\Debug\MKWFGA.dll</HintPath>
+      <HintPath>..\MKWFGA.dll</HintPath>
     </Reference>
     <Reference Include="MRG.Controls.UI">
-      <HintPath>..\..\..\..\Desktop\UI\MRG.Controls.UI.dll</HintPath>
+      <HintPath>..\MRG.Controls.UI.dll</HintPath>
     </Reference>
-    <Reference Include="PacketLib">
-      <HintPath>..\PacketLib\bin\Debug\PacketLib.dll</HintPath>
+    <Reference Include="Native">
+      <HintPath>F:\Personal\C#\AV_Evasion_Tool-3.0\AV_Evasion_Tool-3.0\Native\bin\Debug\Native.dll</HintPath>
+    </Reference>
+    <Reference Include="PacketLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\PacketLib\bin\Release\PacketLib.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
@@ -73,11 +77,14 @@
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Net.Http" />
+    <Reference Include="Utilities">
+      <HintPath>..\Utilities\bin\Release\Utilities.dll</HintPath>
+    </Reference>
     <Reference Include="WindowsFormsAero">
-      <HintPath>E:\PROJECT VBNET\HorusEyeRat\HorusEyes\bin\Debug\WindowsFormsAero.dll</HintPath>
+      <HintPath>..\WindowsFormsAero.dll</HintPath>
     </Reference>
     <Reference Include="XanderUI">
-      <HintPath>E:\PROJECT VBNET\HorusEyeRat\HorusEyes\bin\Debug\XanderUI.dll</HintPath>
+      <HintPath>..\XanderUI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -678,6 +685,7 @@
     <None Include="Resources\icons8-wrench-96.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\icons8_microsoft_excel_2019_32.png" />
     <None Include="Resources\icons8_electronics_32.png" />
     <None Include="Resources\icons8_minus_32.png" />
     <None Include="Resources\icons8_add_32.png" />

