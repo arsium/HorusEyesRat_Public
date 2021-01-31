@@ -32,6 +32,12 @@ Features :
 * Decrease Volume
 * Mute | Unmute Volume
 * Save all passwords | history recovered
+* Export History | Passwords as .csv file
+* Installation : Set a task in TaskScheduler | Hidden from startup + copy file in local user path hidden
+* Ability to change your client priority
+* Ability to ask for privileges
+* Check UAC at different levels (if enable or not)
+
 
 Sources :
 
