@@ -7,6 +7,7 @@ Features :
 
 * Supports DNS (No-IP for example)
 * Multi-Threaded
+* Asynchronous
 * Packets Serialization
 * Multi Ports Listener
 * Automation Tasks when client is connected
