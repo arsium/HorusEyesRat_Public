@@ -1,4 +1,5 @@
 ﻿Imports System.Runtime.InteropServices
+Imports System.Windows.Forms
 
 Public Class NativeHelper
     <DllImport("user32.dll", CharSet:=CharSet.Auto, CallingConvention:=CallingConvention.StdCall)>
@@ -23,45 +24,89 @@ Public Class KeyBoardHooking
     Private Const WM_KEYDOWN As Short = &H100S
     Private Const WM_SYSKEYDOWN As Integer = &H104
 
+    <DllImport("user32.dll", CharSet:=CharSet.Auto, SetLastError:=True)>
+    Public Shared Function SetWindowsHookEx(ByVal id As Integer, ByVal callback As LowLevelKeyboardProc, ByVal hMod As IntPtr, ByVal dwThreadId As UInteger) As IntPtr
+
+    End Function
+    <DllImport("kernel32.dll", CharSet:=CharSet.Auto, SetLastError:=True)>
+    Public Shared Function GetModuleHandle(ByVal name As String) As IntPtr
+
+    End Function
+
+    <StructLayout(LayoutKind.Sequential)>
     Public Structure KBDLLHOOKSTRUCT
-        Public vkCode As Integer
+        Public key As Keys
         Public scanCode As Integer
         Public flags As Integer
         Public time As Integer
-        Public dwExtraInfo As Integer
+        Public extra As IntPtr
     End Structure
 
-    Private Declare Function UnhookWindowsHookEx Lib "user32" (ByVal hHook As Integer) As Integer
+    Public Delegate Function LowLevelKeyboardProc(ByVal nCode As Integer, ByVal wParam As IntPtr, ByVal lParam As IntPtr) As IntPtr
 
-    Private Declare Function SetWindowsHookEx Lib "user32" Alias "SetWindowsHookExA" (ByVal idHook As Integer, ByVal lpfn As KeyboardHookDelegate, ByVal hmod As Integer, ByVal dwThreadId As Integer) As Integer
+    <DllImport("user32.dll", CharSet:=CharSet.Auto, SetLastError:=True)>
+    Public Shared Function UnhookWindowsHookEx(ByVal hook As IntPtr) As Boolean
 
-    Private Declare Function CallNextHookEx Lib "user32" (ByVal hHook As Integer, ByVal nCode As Integer, ByVal wParam As Integer, ByVal lParam As KBDLLHOOKSTRUCT) As Integer
+    End Function
+    <DllImport("user32.dll", CharSet:=CharSet.Auto, SetLastError:=True)>
+    Public Shared Function CallNextHookEx(ByVal hook As IntPtr, ByVal nCode As Integer, ByVal wp As IntPtr, ByVal lp As IntPtr) As IntPtr
 
-    Private Delegate Function KeyboardHookDelegate(ByVal Code As Integer, ByVal wParam As Integer, ByRef lParam As KBDLLHOOKSTRUCT) As Integer
+    End Function
 
-    Private callback As KeyboardHookDelegate
+    <DllImport("user32.dll", CharSet:=CharSet.Auto)>
+    Public Shared Function GetAsyncKeyState(ByVal key As Keys) As Short
 
+    End Function
+    Public Shared ptrHook As IntPtr
+    Public Shared callback As LowLevelKeyboardProc
     Public Sub HookKeyboard()
 
-        callback = New KeyboardHookDelegate(AddressOf KeyboardCallback)
+        callback = New LowLevelKeyboardProc(AddressOf BlockKey)
 
         SetWindowsHookEx(13, callback, Process.GetCurrentProcess.MainModule.BaseAddress, 0)
 
     End Sub
 
-    Public Function KeyboardCallback(ByVal Code As Integer, ByVal wParam As Integer, ByRef lParam As KBDLLHOOKSTRUCT) As Integer
+    Public Shared Function BlockKey(ByVal nCode As Integer, ByVal wp As IntPtr, ByVal lp As IntPtr)
 
-        Dim Key = lParam.vkCode
+        If nCode >= 0 Then
 
-        If wParam = WM_KEYDOWN Or wParam = WM_SYSKEYDOWN Then
-            'If we can block events
-            If Code >= 0 Then
-                If Key = 91 Or Key = 92 Then
-                    Return 1 'Block event
-                End If
+            If wp = &H100 Then
+
+                Return wp
+
             End If
+
+            If wp = &H101 Then
+
+                Return wp
+
+            End If
+
+
+            If wp = &H105 Then
+
+                Return wp
+
+
+            End If
+
+            If wp = &H104 Then
+                Return wp
+            End If
+
+        Else
+
         End If
 
+        ' Return NativeAPI.CallNextHookEx(NativeAPI.ptrHook, nCode, wp, lp)
+
+
+
+        '   Else
+
+        '  Return CallNextHookEx(ptrHook, nCode, wp, lp)
+        ' End If
     End Function
 
 End Class

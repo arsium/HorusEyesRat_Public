@@ -24,12 +24,10 @@ Public Class Packet
         TASKS = &H6
         RD = &H7
         PLUGIN_C# = &H8
-
         ERROR_LOAD_NATIVE_DLL = &H9
-
         SUCCESS_LOAD_NATIVE_DLL = &H10
-
         PLUGIN_CS_RES = &H11
+        FM = &H12
     End Enum
 
     Public Enum Packet_Subject
@@ -87,6 +85,20 @@ Public Class Packet
         GET_PRIO = &H332
         SET_PRIO = &H333
         CHECK_UAC = &H334
+
+        GET_DISK = &H336
+        GET_FORWARD_PATH = &H337
+        GET_BACK_PATH = &H338
+        DW_FILE = &H339
+        DEL_FILE = &H340
+        PUT_BIN_FILE = &H341
+        MK_DIR = &H342
+        OPEN_FILE = &H343
+    End Enum
+
+    Public Enum File_Manager_Helper
+        FILE = &H1
+        DIR = &H2
     End Enum
 
     Public Class Packet_Send

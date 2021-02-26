@@ -28,16 +28,16 @@ Partial Class Settings_Form
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("9080")
         Me.Button1 = New WindowsFormsAero.Button()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.AeroListView1 = New AeroListView()
+        Me.AeroListView1 = New Server.AeroListView()
         Me.ContextMenuStrip1 = New System.Windows.Forms.ContextMenuStrip(Me.components)
         Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.RemoveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.Pass_CHK = New System.Windows.Forms.CheckBox()
         Me.Hist_CHK = New System.Windows.Forms.CheckBox()
         Me.WF_CHK = New System.Windows.Forms.CheckBox()
-        Me.AeroGroupBox1 = New AeroGroupBox()
+        Me.AeroGroupBox1 = New Server.AeroGroupBox()
         Me.Button2 = New WindowsFormsAero.Button()
-        Me.Custom_Button1 = New Custom_Button()
+        Me.Custom_Button1 = New Server.Custom_Button()
         Me.Label1 = New System.Windows.Forms.Label()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ContextMenuStrip1.SuspendLayout()
@@ -119,10 +119,11 @@ Partial Class Settings_Form
         'Pass_CHK
         '
         Me.Pass_CHK.AutoSize = True
+        Me.Pass_CHK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Pass_CHK.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Pass_CHK.Location = New System.Drawing.Point(6, 19)
         Me.Pass_CHK.Name = "Pass_CHK"
-        Me.Pass_CHK.Size = New System.Drawing.Size(77, 17)
+        Me.Pass_CHK.Size = New System.Drawing.Size(74, 17)
         Me.Pass_CHK.TabIndex = 24
         Me.Pass_CHK.Text = "Passwords"
         Me.Pass_CHK.UseVisualStyleBackColor = True
@@ -130,10 +131,11 @@ Partial Class Settings_Form
         'Hist_CHK
         '
         Me.Hist_CHK.AutoSize = True
+        Me.Hist_CHK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Hist_CHK.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Hist_CHK.Location = New System.Drawing.Point(98, 19)
         Me.Hist_CHK.Name = "Hist_CHK"
-        Me.Hist_CHK.Size = New System.Drawing.Size(58, 17)
+        Me.Hist_CHK.Size = New System.Drawing.Size(55, 17)
         Me.Hist_CHK.TabIndex = 25
         Me.Hist_CHK.Text = "History"
         Me.Hist_CHK.UseVisualStyleBackColor = True
@@ -141,10 +143,11 @@ Partial Class Settings_Form
         'WF_CHK
         '
         Me.WF_CHK.AutoSize = True
+        Me.WF_CHK.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.WF_CHK.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.WF_CHK.Location = New System.Drawing.Point(162, 19)
         Me.WF_CHK.Name = "WF_CHK"
-        Me.WF_CHK.Size = New System.Drawing.Size(98, 17)
+        Me.WF_CHK.Size = New System.Drawing.Size(95, 17)
         Me.WF_CHK.TabIndex = 26
         Me.WF_CHK.Text = "Wifi Passwords"
         Me.WF_CHK.UseVisualStyleBackColor = True

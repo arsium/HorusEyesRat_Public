@@ -1,4 +1,4 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+﻿<Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Client_Form
     Inherits Custom_Form
 
@@ -23,7 +23,8 @@ Partial Class Client_Form
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Log Out", 22)
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Client_Form))
+        Dim ListViewItem1 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Log Out", 0)
         Dim ListViewItem2 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Reboot", 23)
         Dim ListViewItem3 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Shutdown", 13)
         Dim ListViewItem4 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Suspend", 21)
@@ -55,7 +56,6 @@ Partial Class Client_Form
         Dim ListViewItem30 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Lock All Mouse Interactions")
         Dim ListViewItem31 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Unlock Mouse")
         Dim ListViewItem32 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("Change WallPaper")
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Client_Form))
         Dim ListViewItem33 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeCreateTokenPrivilege")
         Dim ListViewItem34 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeAssignPrimaryTokenPrivilege")
         Dim ListViewItem35 As System.Windows.Forms.ListViewItem = New System.Windows.Forms.ListViewItem("SeLockMemoryPrivilege")
@@ -108,6 +108,29 @@ Partial Class Client_Form
         Me.KillTaskToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.PauseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ResumseToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Command_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.LaunchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.Priv_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.GetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ADD_DLL_NAT_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.Inject_Nat_ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.RemvoeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FM_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
+        Me.RefreshToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AllToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CurrentDirectoryToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.GoForwardToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.BackToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.MoveToBinToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DeleteToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.EmptyBinToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.DownloadFileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.LaunchToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FolderToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.CreateDirectoryToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Custom_Button1 = New Server.Custom_Button()
@@ -132,25 +155,22 @@ Partial Class Client_Form
         Me.ColumnHeader9 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.ColumnHeader10 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage5 = New System.Windows.Forms.TabPage()
+        Me.XuiCustomGroupbox5 = New XanderUI.XUICustomGroupbox()
         Me.CMD_ListView = New Server.AeroListView()
         Me.ColumnHeader12 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Command_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.LaunchToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ImageList1 = New System.Windows.Forms.ImageList(Me.components)
+        Me.XuiCustomGroupbox3 = New XanderUI.XUICustomGroupbox()
+        Me.Priv_ListView = New System.Windows.Forms.ListView()
+        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.XuiCustomGroupbox1 = New XanderUI.XUICustomGroupbox()
+        Me.DLL_NAT_ListView = New System.Windows.Forms.ListView()
+        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.Loading_tasks = New MRG.Controls.UI.LoadingCircle()
         Me.Helper_Task_Label = New System.Windows.Forms.Label()
         Me.Tasks_listview = New System.Windows.Forms.ListView()
         Me.ColumnHeader11 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.TabPage6 = New System.Windows.Forms.TabPage()
-        Me.XuiCustomGroupbox1 = New XanderUI.XUICustomGroupbox()
-        Me.DLL_NAT_ListView = New System.Windows.Forms.ListView()
-        Me.ColumnHeader13 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader14 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ADD_DLL_NAT_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.Inject_Nat_ToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AddToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.RemvoeToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TabPage7 = New System.Windows.Forms.TabPage()
         Me.XuiCustomGroupbox4 = New XanderUI.XUICustomGroupbox()
         Me.Label7 = New System.Windows.Forms.Label()
@@ -158,46 +178,46 @@ Partial Class Client_Form
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Chk_UAC_Btn = New Server.Custom_Button()
-        Me.XuiCustomGroupbox3 = New XanderUI.XUICustomGroupbox()
-        Me.Priv_ListView = New System.Windows.Forms.ListView()
-        Me.ColumnHeader15 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.ColumnHeader16 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
-        Me.Priv_MenuStrip = New System.Windows.Forms.ContextMenuStrip(Me.components)
-        Me.GetToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.XuiCustomGroupbox2 = New XanderUI.XUICustomGroupbox()
         Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Change_Prio_Btn = New Server.Custom_Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Get_Prio_Btn = New Server.Custom_Button()
+        Me.TabPage6 = New System.Windows.Forms.TabPage()
+        Me.Path_Lab = New System.Windows.Forms.Label()
+        Me.Disk_ComboBox = New System.Windows.Forms.ComboBox()
+        Me.FM_ListView = New System.Windows.Forms.ListView()
         Me.Pass_MenuStrip.SuspendLayout()
         Me.Hist_MenuStrip.SuspendLayout()
         Me.W_PW_MenuStrip.SuspendLayout()
         Me.Tasks_MGR_MenuStrip.SuspendLayout()
+        Me.Command_MenuStrip.SuspendLayout()
+        Me.Priv_MenuStrip.SuspendLayout()
+        Me.ADD_DLL_NAT_MenuStrip.SuspendLayout()
+        Me.FM_MenuStrip.SuspendLayout()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.TabControlExt1.SuspendLayout()
         Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
         Me.TabPage5.SuspendLayout()
-        Me.Command_MenuStrip.SuspendLayout()
-        Me.TabPage4.SuspendLayout()
-        Me.TabPage6.SuspendLayout()
+        Me.XuiCustomGroupbox5.SuspendLayout()
+        Me.XuiCustomGroupbox3.SuspendLayout()
         Me.XuiCustomGroupbox1.SuspendLayout()
-        Me.ADD_DLL_NAT_MenuStrip.SuspendLayout()
+        Me.TabPage4.SuspendLayout()
         Me.TabPage7.SuspendLayout()
         Me.XuiCustomGroupbox4.SuspendLayout()
-        Me.XuiCustomGroupbox3.SuspendLayout()
-        Me.Priv_MenuStrip.SuspendLayout()
         Me.XuiCustomGroupbox2.SuspendLayout()
+        Me.TabPage6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Pass_MenuStrip
         '
-        Me.Pass_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Pass_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.Pass_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverPasswordsToolStripMenuItem, Me.Save_PassMenu, Me.CSV_PASSWORDS})
         Me.Pass_MenuStrip.Name = "Pass_MenuStrip"
-        Me.Pass_MenuStrip.Size = New System.Drawing.Size(187, 106)
+        Me.Pass_MenuStrip.Size = New System.Drawing.Size(183, 94)
         '
         'RecoverPasswordsToolStripMenuItem
         '
@@ -205,7 +225,7 @@ Partial Class Client_Form
         Me.RecoverPasswordsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RecoverPasswordsToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_show_passeword_32
         Me.RecoverPasswordsToolStripMenuItem.Name = "RecoverPasswordsToolStripMenuItem"
-        Me.RecoverPasswordsToolStripMenuItem.Size = New System.Drawing.Size(186, 34)
+        Me.RecoverPasswordsToolStripMenuItem.Size = New System.Drawing.Size(182, 30)
         Me.RecoverPasswordsToolStripMenuItem.Text = "Recover Passwords"
         '
         'Save_PassMenu
@@ -214,7 +234,7 @@ Partial Class Client_Form
         Me.Save_PassMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Save_PassMenu.Image = Global.Server.My.Resources.Resources.icons8_save_as_322
         Me.Save_PassMenu.Name = "Save_PassMenu"
-        Me.Save_PassMenu.Size = New System.Drawing.Size(186, 34)
+        Me.Save_PassMenu.Size = New System.Drawing.Size(182, 30)
         Me.Save_PassMenu.Text = "Save"
         '
         'CSV_PASSWORDS
@@ -223,15 +243,15 @@ Partial Class Client_Form
         Me.CSV_PASSWORDS.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CSV_PASSWORDS.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
         Me.CSV_PASSWORDS.Name = "CSV_PASSWORDS"
-        Me.CSV_PASSWORDS.Size = New System.Drawing.Size(186, 34)
+        Me.CSV_PASSWORDS.Size = New System.Drawing.Size(182, 30)
         Me.CSV_PASSWORDS.Text = "Export To .CSV"
         '
         'Hist_MenuStrip
         '
-        Me.Hist_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Hist_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.Hist_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Recover_history, Me.Save_HistoryMenu, Me.CSV_HISTORY})
         Me.Hist_MenuStrip.Name = "Pass_MenuStrip"
-        Me.Hist_MenuStrip.Size = New System.Drawing.Size(170, 106)
+        Me.Hist_MenuStrip.Size = New System.Drawing.Size(166, 94)
         '
         'Recover_history
         '
@@ -239,7 +259,7 @@ Partial Class Client_Form
         Me.Recover_history.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Recover_history.Image = Global.Server.My.Resources.Resources.icons8_time_machine_321
         Me.Recover_history.Name = "Recover_history"
-        Me.Recover_history.Size = New System.Drawing.Size(169, 34)
+        Me.Recover_history.Size = New System.Drawing.Size(165, 30)
         Me.Recover_history.Text = "Recover History"
         '
         'Save_HistoryMenu
@@ -248,7 +268,7 @@ Partial Class Client_Form
         Me.Save_HistoryMenu.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Save_HistoryMenu.Image = Global.Server.My.Resources.Resources.icons8_save_as_322
         Me.Save_HistoryMenu.Name = "Save_HistoryMenu"
-        Me.Save_HistoryMenu.Size = New System.Drawing.Size(169, 34)
+        Me.Save_HistoryMenu.Size = New System.Drawing.Size(165, 30)
         Me.Save_HistoryMenu.Text = "Save"
         '
         'CSV_HISTORY
@@ -257,15 +277,15 @@ Partial Class Client_Form
         Me.CSV_HISTORY.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CSV_HISTORY.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
         Me.CSV_HISTORY.Name = "CSV_HISTORY"
-        Me.CSV_HISTORY.Size = New System.Drawing.Size(169, 34)
+        Me.CSV_HISTORY.Size = New System.Drawing.Size(165, 30)
         Me.CSV_HISTORY.Text = "Export To .CSV"
         '
         'W_PW_MenuStrip
         '
-        Me.W_PW_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.W_PW_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.W_PW_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RecoverWifiPasswordToolStripMenuItem, Me.SaveToolStripMenuItem, Me.CSV_W_PW})
         Me.W_PW_MenuStrip.Name = "W_PW_MenuStrip"
-        Me.W_PW_MenuStrip.Size = New System.Drawing.Size(206, 106)
+        Me.W_PW_MenuStrip.Size = New System.Drawing.Size(202, 94)
         '
         'RecoverWifiPasswordToolStripMenuItem
         '
@@ -273,7 +293,7 @@ Partial Class Client_Form
         Me.RecoverWifiPasswordToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RecoverWifiPasswordToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_security_wi_fi_321
         Me.RecoverWifiPasswordToolStripMenuItem.Name = "RecoverWifiPasswordToolStripMenuItem"
-        Me.RecoverWifiPasswordToolStripMenuItem.Size = New System.Drawing.Size(205, 34)
+        Me.RecoverWifiPasswordToolStripMenuItem.Size = New System.Drawing.Size(201, 30)
         Me.RecoverWifiPasswordToolStripMenuItem.Text = "Recover Wifi Password"
         '
         'SaveToolStripMenuItem
@@ -282,7 +302,7 @@ Partial Class Client_Form
         Me.SaveToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SaveToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_save_as_322
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(205, 34)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(201, 30)
         Me.SaveToolStripMenuItem.Text = "Save"
         '
         'CSV_W_PW
@@ -291,16 +311,16 @@ Partial Class Client_Form
         Me.CSV_W_PW.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CSV_W_PW.Image = Global.Server.My.Resources.Resources.icons8_microsoft_excel_2019_32
         Me.CSV_W_PW.Name = "CSV_W_PW"
-        Me.CSV_W_PW.Size = New System.Drawing.Size(205, 34)
+        Me.CSV_W_PW.Size = New System.Drawing.Size(201, 30)
         Me.CSV_W_PW.Text = "Export To .CSV"
         '
         'Tasks_MGR_MenuStrip
         '
         Me.Tasks_MGR_MenuStrip.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.Tasks_MGR_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Tasks_MGR_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.Tasks_MGR_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem, Me.KillTaskToolStripMenuItem, Me.PauseToolStripMenuItem, Me.ResumseToolStripMenuItem})
         Me.Tasks_MGR_MenuStrip.Name = "Tasks_MGR_MenuStrip"
-        Me.Tasks_MGR_MenuStrip.Size = New System.Drawing.Size(129, 140)
+        Me.Tasks_MGR_MenuStrip.Size = New System.Drawing.Size(125, 124)
         '
         'RefreshToolStripMenuItem
         '
@@ -308,7 +328,7 @@ Partial Class Client_Form
         Me.RefreshToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RefreshToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_repeat_32
         Me.RefreshToolStripMenuItem.Name = "RefreshToolStripMenuItem"
-        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(128, 34)
+        Me.RefreshToolStripMenuItem.Size = New System.Drawing.Size(124, 30)
         Me.RefreshToolStripMenuItem.Text = "Refresh"
         '
         'KillTaskToolStripMenuItem
@@ -317,7 +337,7 @@ Partial Class Client_Form
         Me.KillTaskToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.KillTaskToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_stop_32
         Me.KillTaskToolStripMenuItem.Name = "KillTaskToolStripMenuItem"
-        Me.KillTaskToolStripMenuItem.Size = New System.Drawing.Size(128, 34)
+        Me.KillTaskToolStripMenuItem.Size = New System.Drawing.Size(124, 30)
         Me.KillTaskToolStripMenuItem.Text = "Kill Task"
         '
         'PauseToolStripMenuItem
@@ -326,7 +346,7 @@ Partial Class Client_Form
         Me.PauseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.PauseToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_pause_321
         Me.PauseToolStripMenuItem.Name = "PauseToolStripMenuItem"
-        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(128, 34)
+        Me.PauseToolStripMenuItem.Size = New System.Drawing.Size(124, 30)
         Me.PauseToolStripMenuItem.Text = "Pause"
         '
         'ResumseToolStripMenuItem
@@ -335,301 +355,15 @@ Partial Class Client_Form
         Me.ResumseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ResumseToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_pdlay_32
         Me.ResumseToolStripMenuItem.Name = "ResumseToolStripMenuItem"
-        Me.ResumseToolStripMenuItem.Size = New System.Drawing.Size(128, 34)
+        Me.ResumseToolStripMenuItem.Size = New System.Drawing.Size(124, 30)
         Me.ResumseToolStripMenuItem.Text = "Resume"
-        '
-        'Label1
-        '
-        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label1.Location = New System.Drawing.Point(38, 6)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(130, 23)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "255.255.255.255:65535"
-        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Location = New System.Drawing.Point(7, 3)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
-        Me.PictureBox1.TabIndex = 3
-        Me.PictureBox1.TabStop = False
-        '
-        'Custom_Button1
-        '
-        Me.Custom_Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Custom_Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Custom_Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
-        Me.Custom_Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
-        Me.Custom_Button1.ForeColor = System.Drawing.Color.White
-        Me.Custom_Button1.Location = New System.Drawing.Point(940, 0)
-        Me.Custom_Button1.Name = "Custom_Button1"
-        Me.Custom_Button1.Size = New System.Drawing.Size(28, 28)
-        Me.Custom_Button1.TabIndex = 1
-        Me.Custom_Button1.Text = "X"
-        Me.Custom_Button1.UseVisualStyleBackColor = True
-        '
-        'TabControlExt1
-        '
-        Me.TabControlExt1.Alignment = System.Windows.Forms.TabAlignment.Left
-        Me.TabControlExt1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.TabControlExt1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabControlExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabControlExt1.CloseBtnColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(51, Byte), Integer))
-        Me.TabControlExt1.Controls.Add(Me.TabPage1)
-        Me.TabControlExt1.Controls.Add(Me.TabPage2)
-        Me.TabControlExt1.Controls.Add(Me.TabPage3)
-        Me.TabControlExt1.Controls.Add(Me.TabPage5)
-        Me.TabControlExt1.Controls.Add(Me.TabPage4)
-        Me.TabControlExt1.Controls.Add(Me.TabPage6)
-        Me.TabControlExt1.Controls.Add(Me.TabPage7)
-        Me.TabControlExt1.ForeColorBase = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.TabControlExt1.HeaderBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabControlExt1.HeadSelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.TabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabControlExt1.IsShowCloseBtn = False
-        Me.TabControlExt1.ItemSize = New System.Drawing.Size(0, 100)
-        Me.TabControlExt1.Location = New System.Drawing.Point(7, 37)
-        Me.TabControlExt1.Multiline = True
-        Me.TabControlExt1.Name = "TabControlExt1"
-        Me.TabControlExt1.SelectedIndex = 0
-        Me.TabControlExt1.Size = New System.Drawing.Size(956, 525)
-        Me.TabControlExt1.TabIndex = 0
-        Me.TabControlExt1.UncloseTabIndexs = Nothing
-        '
-        'TabPage1
-        '
-        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabPage1.Controls.Add(Me.Loading_PW)
-        Me.TabPage1.Controls.Add(Me.Passwords_ListView)
-        Me.TabPage1.Location = New System.Drawing.Point(104, 4)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage1.Size = New System.Drawing.Size(848, 517)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "Passwords"
-        '
-        'Loading_PW
-        '
-        Me.Loading_PW.Active = False
-        Me.Loading_PW.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Loading_PW.InnerCircleRadius = 5
-        Me.Loading_PW.Location = New System.Drawing.Point(6, 3)
-        Me.Loading_PW.Name = "Loading_PW"
-        Me.Loading_PW.NumberSpoke = 12
-        Me.Loading_PW.OuterCircleRadius = 11
-        Me.Loading_PW.RotationSpeed = 100
-        Me.Loading_PW.Size = New System.Drawing.Size(28, 25)
-        Me.Loading_PW.SpokeThickness = 2
-        Me.Loading_PW.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
-        Me.Loading_PW.TabIndex = 6
-        Me.Loading_PW.Text = "LoadingCircle2"
-        Me.Loading_PW.Visible = False
-        '
-        'Passwords_ListView
-        '
-        Me.Passwords_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Passwords_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Passwords_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
-        Me.Passwords_ListView.ContextMenuStrip = Me.Pass_MenuStrip
-        Me.Passwords_ListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Passwords_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Passwords_ListView.HideSelection = False
-        Me.Passwords_ListView.Location = New System.Drawing.Point(3, 28)
-        Me.Passwords_ListView.Name = "Passwords_ListView"
-        Me.Passwords_ListView.Size = New System.Drawing.Size(842, 486)
-        Me.Passwords_ListView.TabIndex = 0
-        Me.Passwords_ListView.UseCompatibleStateImageBehavior = False
-        Me.Passwords_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader1
-        '
-        Me.ColumnHeader1.Text = "URL"
-        Me.ColumnHeader1.Width = 247
-        '
-        'ColumnHeader2
-        '
-        Me.ColumnHeader2.Text = "Username"
-        Me.ColumnHeader2.Width = 103
-        '
-        'ColumnHeader3
-        '
-        Me.ColumnHeader3.Text = "Password"
-        Me.ColumnHeader3.Width = 212
-        '
-        'ColumnHeader4
-        '
-        Me.ColumnHeader4.Text = "Application"
-        Me.ColumnHeader4.Width = 254
-        '
-        'TabPage2
-        '
-        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabPage2.Controls.Add(Me.Loading_Hist)
-        Me.TabPage2.Controls.Add(Me.Hist_ListView)
-        Me.TabPage2.Location = New System.Drawing.Point(104, 4)
-        Me.TabPage2.Name = "TabPage2"
-        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage2.Size = New System.Drawing.Size(848, 517)
-        Me.TabPage2.TabIndex = 1
-        Me.TabPage2.Text = "History"
-        '
-        'Loading_Hist
-        '
-        Me.Loading_Hist.Active = False
-        Me.Loading_Hist.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Loading_Hist.InnerCircleRadius = 5
-        Me.Loading_Hist.Location = New System.Drawing.Point(6, 3)
-        Me.Loading_Hist.Name = "Loading_Hist"
-        Me.Loading_Hist.NumberSpoke = 12
-        Me.Loading_Hist.OuterCircleRadius = 11
-        Me.Loading_Hist.RotationSpeed = 100
-        Me.Loading_Hist.Size = New System.Drawing.Size(28, 25)
-        Me.Loading_Hist.SpokeThickness = 2
-        Me.Loading_Hist.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
-        Me.Loading_Hist.TabIndex = 7
-        Me.Loading_Hist.Text = "LoadingCircle2"
-        Me.Loading_Hist.Visible = False
-        '
-        'Hist_ListView
-        '
-        Me.Hist_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Hist_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.Hist_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
-        Me.Hist_ListView.ContextMenuStrip = Me.Hist_MenuStrip
-        Me.Hist_ListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.Hist_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Hist_ListView.HideSelection = False
-        Me.Hist_ListView.Location = New System.Drawing.Point(3, 28)
-        Me.Hist_ListView.Name = "Hist_ListView"
-        Me.Hist_ListView.Size = New System.Drawing.Size(842, 486)
-        Me.Hist_ListView.TabIndex = 1
-        Me.Hist_ListView.UseCompatibleStateImageBehavior = False
-        Me.Hist_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader5
-        '
-        Me.ColumnHeader5.Text = "Application"
-        Me.ColumnHeader5.Width = 142
-        '
-        'ColumnHeader6
-        '
-        Me.ColumnHeader6.Text = "Title"
-        Me.ColumnHeader6.Width = 215
-        '
-        'ColumnHeader7
-        '
-        Me.ColumnHeader7.Text = "URL"
-        Me.ColumnHeader7.Width = 289
-        '
-        'ColumnHeader8
-        '
-        Me.ColumnHeader8.Text = "Last Visit"
-        Me.ColumnHeader8.Width = 201
-        '
-        'TabPage3
-        '
-        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabPage3.Controls.Add(Me.Loading_W_PW)
-        Me.TabPage3.Controls.Add(Me.W_PW_ListView)
-        Me.TabPage3.Location = New System.Drawing.Point(104, 4)
-        Me.TabPage3.Name = "TabPage3"
-        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage3.Size = New System.Drawing.Size(848, 517)
-        Me.TabPage3.TabIndex = 2
-        Me.TabPage3.Text = "Networking"
-        '
-        'Loading_W_PW
-        '
-        Me.Loading_W_PW.Active = False
-        Me.Loading_W_PW.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        Me.Loading_W_PW.InnerCircleRadius = 5
-        Me.Loading_W_PW.Location = New System.Drawing.Point(6, 3)
-        Me.Loading_W_PW.Name = "Loading_W_PW"
-        Me.Loading_W_PW.NumberSpoke = 12
-        Me.Loading_W_PW.OuterCircleRadius = 11
-        Me.Loading_W_PW.RotationSpeed = 100
-        Me.Loading_W_PW.Size = New System.Drawing.Size(28, 25)
-        Me.Loading_W_PW.SpokeThickness = 2
-        Me.Loading_W_PW.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
-        Me.Loading_W_PW.TabIndex = 8
-        Me.Loading_W_PW.Text = "LoadingCircle2"
-        Me.Loading_W_PW.Visible = False
-        '
-        'W_PW_ListView
-        '
-        Me.W_PW_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.W_PW_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.W_PW_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader10})
-        Me.W_PW_ListView.ContextMenuStrip = Me.W_PW_MenuStrip
-        Me.W_PW_ListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.W_PW_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.W_PW_ListView.HideSelection = False
-        Me.W_PW_ListView.Location = New System.Drawing.Point(3, 28)
-        Me.W_PW_ListView.Name = "W_PW_ListView"
-        Me.W_PW_ListView.Size = New System.Drawing.Size(842, 486)
-        Me.W_PW_ListView.TabIndex = 0
-        Me.W_PW_ListView.UseCompatibleStateImageBehavior = False
-        Me.W_PW_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader9
-        '
-        Me.ColumnHeader9.Text = "SSID"
-        Me.ColumnHeader9.Width = 197
-        '
-        'ColumnHeader10
-        '
-        Me.ColumnHeader10.Text = "Password"
-        Me.ColumnHeader10.Width = 174
-        '
-        'TabPage5
-        '
-        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabPage5.Controls.Add(Me.CMD_ListView)
-        Me.TabPage5.Location = New System.Drawing.Point(104, 4)
-        Me.TabPage5.Name = "TabPage5"
-        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage5.Size = New System.Drawing.Size(848, 517)
-        Me.TabPage5.TabIndex = 4
-        Me.TabPage5.Text = "Miscellaneous"
-        '
-        'CMD_ListView
-        '
-        Me.CMD_ListView.Alignment = System.Windows.Forms.ListViewAlignment.[Default]
-        Me.CMD_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.CMD_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.CMD_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader12})
-        Me.CMD_ListView.ContextMenuStrip = Me.Command_MenuStrip
-        Me.CMD_ListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.CMD_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.CMD_ListView.FullRowSelect = True
-        Me.CMD_ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
-        Me.CMD_ListView.HideSelection = False
-        Me.CMD_ListView.ImeMode = System.Windows.Forms.ImeMode.Off
-        ListViewItem31.ToolTipText = "Use to unlock any lock mouse"
-        Me.CMD_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8, ListViewItem9, ListViewItem10, ListViewItem11, ListViewItem12, ListViewItem13, ListViewItem14, ListViewItem15, ListViewItem16, ListViewItem17, ListViewItem18, ListViewItem19, ListViewItem20, ListViewItem21, ListViewItem22, ListViewItem23, ListViewItem24, ListViewItem25, ListViewItem26, ListViewItem27, ListViewItem28, ListViewItem29, ListViewItem30, ListViewItem31, ListViewItem32})
-        Me.CMD_ListView.Location = New System.Drawing.Point(3, 3)
-        Me.CMD_ListView.Name = "CMD_ListView"
-        Me.CMD_ListView.Size = New System.Drawing.Size(842, 511)
-        Me.CMD_ListView.SmallImageList = Me.ImageList1
-        Me.CMD_ListView.TabIndex = 0
-        Me.CMD_ListView.UseCompatibleStateImageBehavior = False
-        Me.CMD_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader12
-        '
-        Me.ColumnHeader12.Text = "Command"
-        Me.ColumnHeader12.Width = 835
         '
         'Command_MenuStrip
         '
-        Me.Command_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Command_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
         Me.Command_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.LaunchToolStripMenuItem})
         Me.Command_MenuStrip.Name = "Command_MenuStrip"
-        Me.Command_MenuStrip.Size = New System.Drawing.Size(126, 38)
+        Me.Command_MenuStrip.Size = New System.Drawing.Size(122, 34)
         '
         'LaunchToolStripMenuItem
         '
@@ -637,7 +371,7 @@ Partial Class Client_Form
         Me.LaunchToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.LaunchToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_rorcket_32
         Me.LaunchToolStripMenuItem.Name = "LaunchToolStripMenuItem"
-        Me.LaunchToolStripMenuItem.Size = New System.Drawing.Size(125, 34)
+        Me.LaunchToolStripMenuItem.Size = New System.Drawing.Size(121, 30)
         Me.LaunchToolStripMenuItem.Text = "Launch"
         '
         'ImageList1
@@ -679,6 +413,568 @@ Partial Class Client_Form
         Me.ImageList1.Images.SetKeyName(32, "icons8_blue_screefn_of_death_32.png")
         Me.ImageList1.Images.SetKeyName(33, "icons8_unlocksss.png")
         '
+        'Priv_MenuStrip
+        '
+        Me.Priv_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
+        Me.Priv_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GetToolStripMenuItem})
+        Me.Priv_MenuStrip.Name = "Priv_MenuStrip"
+        Me.Priv_MenuStrip.Size = New System.Drawing.Size(93, 26)
+        '
+        'GetToolStripMenuItem
+        '
+        Me.GetToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.GetToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GetToolStripMenuItem.Name = "GetToolStripMenuItem"
+        Me.GetToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
+        Me.GetToolStripMenuItem.Text = "Get"
+        '
+        'ADD_DLL_NAT_MenuStrip
+        '
+        Me.ADD_DLL_NAT_MenuStrip.BackColor = System.Drawing.SystemColors.Control
+        Me.ADD_DLL_NAT_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.ADD_DLL_NAT_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Inject_Nat_ToolStripMenuItem, Me.AddToolStripMenuItem, Me.RemvoeToolStripMenuItem})
+        Me.ADD_DLL_NAT_MenuStrip.Name = "ADD_DLL_NAT_MenuStrip"
+        Me.ADD_DLL_NAT_MenuStrip.Size = New System.Drawing.Size(126, 94)
+        '
+        'Inject_Nat_ToolStripMenuItem
+        '
+        Me.Inject_Nat_ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Inject_Nat_ToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Inject_Nat_ToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_electronics_32
+        Me.Inject_Nat_ToolStripMenuItem.Name = "Inject_Nat_ToolStripMenuItem"
+        Me.Inject_Nat_ToolStripMenuItem.Size = New System.Drawing.Size(125, 30)
+        Me.Inject_Nat_ToolStripMenuItem.Text = "Inject"
+        '
+        'AddToolStripMenuItem
+        '
+        Me.AddToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.AddToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.AddToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_add_32
+        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
+        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(125, 30)
+        Me.AddToolStripMenuItem.Text = "Add"
+        '
+        'RemvoeToolStripMenuItem
+        '
+        Me.RemvoeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.RemvoeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RemvoeToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_minus_32
+        Me.RemvoeToolStripMenuItem.Name = "RemvoeToolStripMenuItem"
+        Me.RemvoeToolStripMenuItem.Size = New System.Drawing.Size(125, 30)
+        Me.RemvoeToolStripMenuItem.Text = "Remvoe"
+        '
+        'FM_MenuStrip
+        '
+        Me.FM_MenuStrip.ImageScalingSize = New System.Drawing.Size(24, 24)
+        Me.FM_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RefreshToolStripMenuItem1, Me.GoForwardToolStripMenuItem, Me.BackToolStripMenuItem, Me.FileToolStripMenuItem, Me.FolderToolStripMenuItem})
+        Me.FM_MenuStrip.LayoutStyle = System.Windows.Forms.ToolStripLayoutStyle.HorizontalStackWithOverflow
+        Me.FM_MenuStrip.Name = "FM_MenuStrip"
+        Me.FM_MenuStrip.RenderMode = System.Windows.Forms.ToolStripRenderMode.Professional
+        Me.FM_MenuStrip.Size = New System.Drawing.Size(189, 176)
+        Me.FM_MenuStrip.TabStop = True
+        '
+        'RefreshToolStripMenuItem1
+        '
+        Me.RefreshToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.RefreshToolStripMenuItem1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AllToolStripMenuItem, Me.CurrentDirectoryToolStripMenuItem})
+        Me.RefreshToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.RefreshToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.icons8n_refresh_32
+        Me.RefreshToolStripMenuItem1.Name = "RefreshToolStripMenuItem1"
+        Me.RefreshToolStripMenuItem1.Size = New System.Drawing.Size(188, 30)
+        Me.RefreshToolStripMenuItem1.Text = "Refresh"
+        Me.RefreshToolStripMenuItem1.ToolTipText = "Get Disks and C Path"
+        '
+        'AllToolStripMenuItem
+        '
+        Me.AllToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.AllToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.AllToolStripMenuItem.Name = "AllToolStripMenuItem"
+        Me.AllToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.AllToolStripMenuItem.Text = "All"
+        '
+        'CurrentDirectoryToolStripMenuItem
+        '
+        Me.CurrentDirectoryToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CurrentDirectoryToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CurrentDirectoryToolStripMenuItem.Name = "CurrentDirectoryToolStripMenuItem"
+        Me.CurrentDirectoryToolStripMenuItem.Size = New System.Drawing.Size(165, 22)
+        Me.CurrentDirectoryToolStripMenuItem.Text = "Current Directory"
+        '
+        'GoForwardToolStripMenuItem
+        '
+        Me.GoForwardToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.GoForwardToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.GoForwardToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_goback
+        Me.GoForwardToolStripMenuItem.Name = "GoForwardToolStripMenuItem"
+        Me.GoForwardToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.GoForwardToolStripMenuItem.Text = "Go Forward"
+        '
+        'BackToolStripMenuItem
+        '
+        Me.BackToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.BackToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.BackToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_back_32
+        Me.BackToolStripMenuItem.Name = "BackToolStripMenuItem"
+        Me.BackToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.BackToolStripMenuItem.Text = "Back"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.MoveToBinToolStripMenuItem1, Me.DeleteToolStripMenuItem1, Me.EmptyBinToolStripMenuItem1, Me.DownloadFileToolStripMenuItem, Me.LaunchToolStripMenuItem1})
+        Me.FileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.FileToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_file_32
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Overflow = System.Windows.Forms.ToolStripItemOverflow.AsNeeded
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.FileToolStripMenuItem.Text = "File"
+        '
+        'MoveToBinToolStripMenuItem1
+        '
+        Me.MoveToBinToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.MoveToBinToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.MoveToBinToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.icons8_fulld_trash_32
+        Me.MoveToBinToolStripMenuItem1.Name = "MoveToBinToolStripMenuItem1"
+        Me.MoveToBinToolStripMenuItem1.Size = New System.Drawing.Size(188, 30)
+        Me.MoveToBinToolStripMenuItem1.Text = "Move To Bin"
+        '
+        'DeleteToolStripMenuItem1
+        '
+        Me.DeleteToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.DeleteToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DeleteToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.icons8_remove_32
+        Me.DeleteToolStripMenuItem1.Name = "DeleteToolStripMenuItem1"
+        Me.DeleteToolStripMenuItem1.Size = New System.Drawing.Size(188, 30)
+        Me.DeleteToolStripMenuItem1.Text = "Delete"
+        '
+        'EmptyBinToolStripMenuItem1
+        '
+        Me.EmptyBinToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.EmptyBinToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.EmptyBinToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.icons8_empty_trasfh_32
+        Me.EmptyBinToolStripMenuItem1.Name = "EmptyBinToolStripMenuItem1"
+        Me.EmptyBinToolStripMenuItem1.Size = New System.Drawing.Size(188, 30)
+        Me.EmptyBinToolStripMenuItem1.Text = "Empty Bin"
+        '
+        'DownloadFileToolStripMenuItem
+        '
+        Me.DownloadFileToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.DownloadFileToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DownloadFileToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_download_32
+        Me.DownloadFileToolStripMenuItem.Name = "DownloadFileToolStripMenuItem"
+        Me.DownloadFileToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.DownloadFileToolStripMenuItem.Text = "Download"
+        '
+        'LaunchToolStripMenuItem1
+        '
+        Me.LaunchToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.LaunchToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.LaunchToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.icons8_Open_Document_32
+        Me.LaunchToolStripMenuItem1.Name = "LaunchToolStripMenuItem1"
+        Me.LaunchToolStripMenuItem1.Size = New System.Drawing.Size(188, 30)
+        Me.LaunchToolStripMenuItem1.Text = "Launch"
+        '
+        'FolderToolStripMenuItem
+        '
+        Me.FolderToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.FolderToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.CreateDirectoryToolStripMenuItem1})
+        Me.FolderToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.FolderToolStripMenuItem.Image = Global.Server.My.Resources.Resources.folder
+        Me.FolderToolStripMenuItem.Name = "FolderToolStripMenuItem"
+        Me.FolderToolStripMenuItem.Size = New System.Drawing.Size(188, 30)
+        Me.FolderToolStripMenuItem.Text = "Folder"
+        '
+        'CreateDirectoryToolStripMenuItem1
+        '
+        Me.CreateDirectoryToolStripMenuItem1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CreateDirectoryToolStripMenuItem1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CreateDirectoryToolStripMenuItem1.Image = Global.Server.My.Resources.Resources.foldermk1
+        Me.CreateDirectoryToolStripMenuItem1.Name = "CreateDirectoryToolStripMenuItem1"
+        Me.CreateDirectoryToolStripMenuItem1.Size = New System.Drawing.Size(159, 22)
+        Me.CreateDirectoryToolStripMenuItem1.Text = "Create Directory"
+        '
+        'Label1
+        '
+        Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Label1.Location = New System.Drawing.Point(38, 6)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(130, 23)
+        Me.Label1.TabIndex = 2
+        Me.Label1.Text = "255.255.255.255:65535"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
+        '
+        'PictureBox1
+        '
+        Me.PictureBox1.Location = New System.Drawing.Point(7, 3)
+        Me.PictureBox1.Name = "PictureBox1"
+        Me.PictureBox1.Size = New System.Drawing.Size(30, 30)
+        Me.PictureBox1.TabIndex = 3
+        Me.PictureBox1.TabStop = False
+        '
+        'Custom_Button1
+        '
+        Me.Custom_Button1.Anchor = CType((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.Custom_Button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Custom_Button1.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
+        Me.Custom_Button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Custom_Button1.ForeColor = System.Drawing.Color.White
+        Me.Custom_Button1.Location = New System.Drawing.Point(1227, 0)
+        Me.Custom_Button1.Name = "Custom_Button1"
+        Me.Custom_Button1.Size = New System.Drawing.Size(28, 28)
+        Me.Custom_Button1.TabIndex = 1
+        Me.Custom_Button1.Text = "X"
+        Me.Custom_Button1.UseVisualStyleBackColor = True
+        '
+        'TabControlExt1
+        '
+        Me.TabControlExt1.Alignment = System.Windows.Forms.TabAlignment.Left
+        Me.TabControlExt1.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.TabControlExt1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabControlExt1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabControlExt1.CloseBtnColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(85, Byte), Integer), CType(CType(51, Byte), Integer))
+        Me.TabControlExt1.Controls.Add(Me.TabPage1)
+        Me.TabControlExt1.Controls.Add(Me.TabPage2)
+        Me.TabControlExt1.Controls.Add(Me.TabPage3)
+        Me.TabControlExt1.Controls.Add(Me.TabPage5)
+        Me.TabControlExt1.Controls.Add(Me.TabPage4)
+        Me.TabControlExt1.Controls.Add(Me.TabPage7)
+        Me.TabControlExt1.Controls.Add(Me.TabPage6)
+        Me.TabControlExt1.ForeColorBase = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.TabControlExt1.HeaderBackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabControlExt1.HeadSelectedBackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.TabControlExt1.HeadSelectedBorderColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabControlExt1.IsShowCloseBtn = False
+        Me.TabControlExt1.ItemSize = New System.Drawing.Size(0, 100)
+        Me.TabControlExt1.Location = New System.Drawing.Point(7, 37)
+        Me.TabControlExt1.Multiline = True
+        Me.TabControlExt1.Name = "TabControlExt1"
+        Me.TabControlExt1.SelectedIndex = 0
+        Me.TabControlExt1.Size = New System.Drawing.Size(1243, 525)
+        Me.TabControlExt1.TabIndex = 0
+        Me.TabControlExt1.UncloseTabIndexs = Nothing
+        '
+        'TabPage1
+        '
+        Me.TabPage1.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage1.Controls.Add(Me.Loading_PW)
+        Me.TabPage1.Controls.Add(Me.Passwords_ListView)
+        Me.TabPage1.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
+        Me.TabPage1.Size = New System.Drawing.Size(1135, 517)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "Passwords"
+        '
+        'Loading_PW
+        '
+        Me.Loading_PW.Active = False
+        Me.Loading_PW.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Loading_PW.InnerCircleRadius = 5
+        Me.Loading_PW.Location = New System.Drawing.Point(6, 3)
+        Me.Loading_PW.Name = "Loading_PW"
+        Me.Loading_PW.NumberSpoke = 12
+        Me.Loading_PW.OuterCircleRadius = 11
+        Me.Loading_PW.RotationSpeed = 100
+        Me.Loading_PW.Size = New System.Drawing.Size(28, 25)
+        Me.Loading_PW.SpokeThickness = 2
+        Me.Loading_PW.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
+        Me.Loading_PW.TabIndex = 6
+        Me.Loading_PW.Text = "LoadingCircle2"
+        Me.Loading_PW.Visible = False
+        '
+        'Passwords_ListView
+        '
+        Me.Passwords_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Passwords_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Passwords_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1, Me.ColumnHeader2, Me.ColumnHeader3, Me.ColumnHeader4})
+        Me.Passwords_ListView.ContextMenuStrip = Me.Pass_MenuStrip
+        Me.Passwords_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Passwords_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Passwords_ListView.HideSelection = False
+        Me.Passwords_ListView.Location = New System.Drawing.Point(3, 28)
+        Me.Passwords_ListView.Name = "Passwords_ListView"
+        Me.Passwords_ListView.Size = New System.Drawing.Size(1129, 486)
+        Me.Passwords_ListView.TabIndex = 0
+        Me.Passwords_ListView.UseCompatibleStateImageBehavior = False
+        Me.Passwords_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "URL"
+        Me.ColumnHeader1.Width = 247
+        '
+        'ColumnHeader2
+        '
+        Me.ColumnHeader2.Text = "Username"
+        Me.ColumnHeader2.Width = 103
+        '
+        'ColumnHeader3
+        '
+        Me.ColumnHeader3.Text = "Password"
+        Me.ColumnHeader3.Width = 212
+        '
+        'ColumnHeader4
+        '
+        Me.ColumnHeader4.Text = "Application"
+        Me.ColumnHeader4.Width = 254
+        '
+        'TabPage2
+        '
+        Me.TabPage2.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage2.Controls.Add(Me.Loading_Hist)
+        Me.TabPage2.Controls.Add(Me.Hist_ListView)
+        Me.TabPage2.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage2.Name = "TabPage2"
+        Me.TabPage2.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
+        Me.TabPage2.Size = New System.Drawing.Size(1135, 517)
+        Me.TabPage2.TabIndex = 1
+        Me.TabPage2.Text = "History"
+        '
+        'Loading_Hist
+        '
+        Me.Loading_Hist.Active = False
+        Me.Loading_Hist.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Loading_Hist.InnerCircleRadius = 5
+        Me.Loading_Hist.Location = New System.Drawing.Point(6, 3)
+        Me.Loading_Hist.Name = "Loading_Hist"
+        Me.Loading_Hist.NumberSpoke = 12
+        Me.Loading_Hist.OuterCircleRadius = 11
+        Me.Loading_Hist.RotationSpeed = 100
+        Me.Loading_Hist.Size = New System.Drawing.Size(28, 25)
+        Me.Loading_Hist.SpokeThickness = 2
+        Me.Loading_Hist.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
+        Me.Loading_Hist.TabIndex = 7
+        Me.Loading_Hist.Text = "LoadingCircle2"
+        Me.Loading_Hist.Visible = False
+        '
+        'Hist_ListView
+        '
+        Me.Hist_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Hist_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Hist_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader5, Me.ColumnHeader6, Me.ColumnHeader7, Me.ColumnHeader8})
+        Me.Hist_ListView.ContextMenuStrip = Me.Hist_MenuStrip
+        Me.Hist_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Hist_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Hist_ListView.HideSelection = False
+        Me.Hist_ListView.Location = New System.Drawing.Point(3, 28)
+        Me.Hist_ListView.Name = "Hist_ListView"
+        Me.Hist_ListView.Size = New System.Drawing.Size(1129, 486)
+        Me.Hist_ListView.TabIndex = 1
+        Me.Hist_ListView.UseCompatibleStateImageBehavior = False
+        Me.Hist_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader5
+        '
+        Me.ColumnHeader5.Text = "Application"
+        Me.ColumnHeader5.Width = 142
+        '
+        'ColumnHeader6
+        '
+        Me.ColumnHeader6.Text = "Title"
+        Me.ColumnHeader6.Width = 215
+        '
+        'ColumnHeader7
+        '
+        Me.ColumnHeader7.Text = "URL"
+        Me.ColumnHeader7.Width = 289
+        '
+        'ColumnHeader8
+        '
+        Me.ColumnHeader8.Text = "Last Visit"
+        Me.ColumnHeader8.Width = 201
+        '
+        'TabPage3
+        '
+        Me.TabPage3.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage3.Controls.Add(Me.Loading_W_PW)
+        Me.TabPage3.Controls.Add(Me.W_PW_ListView)
+        Me.TabPage3.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage3.Name = "TabPage3"
+        Me.TabPage3.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
+        Me.TabPage3.Size = New System.Drawing.Size(1135, 517)
+        Me.TabPage3.TabIndex = 2
+        Me.TabPage3.Text = "Networking"
+        '
+        'Loading_W_PW
+        '
+        Me.Loading_W_PW.Active = False
+        Me.Loading_W_PW.Color = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        Me.Loading_W_PW.InnerCircleRadius = 5
+        Me.Loading_W_PW.Location = New System.Drawing.Point(6, 3)
+        Me.Loading_W_PW.Name = "Loading_W_PW"
+        Me.Loading_W_PW.NumberSpoke = 12
+        Me.Loading_W_PW.OuterCircleRadius = 11
+        Me.Loading_W_PW.RotationSpeed = 100
+        Me.Loading_W_PW.Size = New System.Drawing.Size(28, 25)
+        Me.Loading_W_PW.SpokeThickness = 2
+        Me.Loading_W_PW.StylePreset = MRG.Controls.UI.LoadingCircle.StylePresets.MacOSX
+        Me.Loading_W_PW.TabIndex = 8
+        Me.Loading_W_PW.Text = "LoadingCircle2"
+        Me.Loading_W_PW.Visible = False
+        '
+        'W_PW_ListView
+        '
+        Me.W_PW_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.W_PW_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.W_PW_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader9, Me.ColumnHeader10})
+        Me.W_PW_ListView.ContextMenuStrip = Me.W_PW_MenuStrip
+        Me.W_PW_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.W_PW_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.W_PW_ListView.HideSelection = False
+        Me.W_PW_ListView.Location = New System.Drawing.Point(3, 28)
+        Me.W_PW_ListView.Name = "W_PW_ListView"
+        Me.W_PW_ListView.Size = New System.Drawing.Size(1129, 486)
+        Me.W_PW_ListView.TabIndex = 0
+        Me.W_PW_ListView.UseCompatibleStateImageBehavior = False
+        Me.W_PW_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader9
+        '
+        Me.ColumnHeader9.Text = "SSID"
+        Me.ColumnHeader9.Width = 197
+        '
+        'ColumnHeader10
+        '
+        Me.ColumnHeader10.Text = "Password"
+        Me.ColumnHeader10.Width = 174
+        '
+        'TabPage5
+        '
+        Me.TabPage5.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage5.Controls.Add(Me.XuiCustomGroupbox5)
+        Me.TabPage5.Controls.Add(Me.XuiCustomGroupbox3)
+        Me.TabPage5.Controls.Add(Me.XuiCustomGroupbox1)
+        Me.TabPage5.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage5.Name = "TabPage5"
+        Me.TabPage5.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage5.Size = New System.Drawing.Size(1135, 517)
+        Me.TabPage5.TabIndex = 4
+        Me.TabPage5.Text = "Miscellaneous"
+        '
+        'XuiCustomGroupbox5
+        '
+        Me.XuiCustomGroupbox5.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox5.BorderWidth = 1
+        Me.XuiCustomGroupbox5.Controls.Add(Me.CMD_ListView)
+        Me.XuiCustomGroupbox5.Location = New System.Drawing.Point(6, 6)
+        Me.XuiCustomGroupbox5.Name = "XuiCustomGroupbox5"
+        Me.XuiCustomGroupbox5.ShowText = True
+        Me.XuiCustomGroupbox5.Size = New System.Drawing.Size(520, 235)
+        Me.XuiCustomGroupbox5.TabIndex = 12
+        Me.XuiCustomGroupbox5.TabStop = False
+        Me.XuiCustomGroupbox5.Text = "Commands"
+        Me.XuiCustomGroupbox5.TextColor = System.Drawing.Color.DodgerBlue
+        '
+        'CMD_ListView
+        '
+        Me.CMD_ListView.Alignment = System.Windows.Forms.ListViewAlignment.[Default]
+        Me.CMD_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.CMD_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.CMD_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader12})
+        Me.CMD_ListView.ContextMenuStrip = Me.Command_MenuStrip
+        Me.CMD_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.CMD_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.CMD_ListView.FullRowSelect = True
+        Me.CMD_ListView.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable
+        Me.CMD_ListView.HideSelection = False
+        Me.CMD_ListView.ImeMode = System.Windows.Forms.ImeMode.Off
+        ListViewItem31.ToolTipText = "Use to unlock any lock mouse"
+        Me.CMD_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem1, ListViewItem2, ListViewItem3, ListViewItem4, ListViewItem5, ListViewItem6, ListViewItem7, ListViewItem8, ListViewItem9, ListViewItem10, ListViewItem11, ListViewItem12, ListViewItem13, ListViewItem14, ListViewItem15, ListViewItem16, ListViewItem17, ListViewItem18, ListViewItem19, ListViewItem20, ListViewItem21, ListViewItem22, ListViewItem23, ListViewItem24, ListViewItem25, ListViewItem26, ListViewItem27, ListViewItem28, ListViewItem29, ListViewItem30, ListViewItem31, ListViewItem32})
+        Me.CMD_ListView.Location = New System.Drawing.Point(3, 16)
+        Me.CMD_ListView.Name = "CMD_ListView"
+        Me.CMD_ListView.Size = New System.Drawing.Size(514, 216)
+        Me.CMD_ListView.TabIndex = 0
+        Me.CMD_ListView.UseCompatibleStateImageBehavior = False
+        Me.CMD_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader12
+        '
+        Me.ColumnHeader12.Text = "Command"
+        Me.ColumnHeader12.Width = 835
+        '
+        'XuiCustomGroupbox3
+        '
+        Me.XuiCustomGroupbox3.AutoSize = True
+        Me.XuiCustomGroupbox3.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox3.BorderWidth = 1
+        Me.XuiCustomGroupbox3.Controls.Add(Me.Priv_ListView)
+        Me.XuiCustomGroupbox3.Location = New System.Drawing.Point(532, 6)
+        Me.XuiCustomGroupbox3.Name = "XuiCustomGroupbox3"
+        Me.XuiCustomGroupbox3.ShowText = True
+        Me.XuiCustomGroupbox3.Size = New System.Drawing.Size(398, 235)
+        Me.XuiCustomGroupbox3.TabIndex = 11
+        Me.XuiCustomGroupbox3.TabStop = False
+        Me.XuiCustomGroupbox3.Text = "Privileges"
+        Me.XuiCustomGroupbox3.TextColor = System.Drawing.Color.DodgerBlue
+        '
+        'Priv_ListView
+        '
+        Me.Priv_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Priv_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader15, Me.ColumnHeader16})
+        Me.Priv_ListView.ContextMenuStrip = Me.Priv_MenuStrip
+        Me.Priv_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.Priv_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Priv_ListView.HideSelection = False
+        Me.Priv_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem33, ListViewItem34, ListViewItem35, ListViewItem36, ListViewItem37, ListViewItem38, ListViewItem39, ListViewItem40, ListViewItem41, ListViewItem42, ListViewItem43, ListViewItem44, ListViewItem45, ListViewItem46, ListViewItem47, ListViewItem48, ListViewItem49, ListViewItem50, ListViewItem51, ListViewItem52, ListViewItem53, ListViewItem54, ListViewItem55, ListViewItem56, ListViewItem57, ListViewItem58, ListViewItem59, ListViewItem60, ListViewItem61, ListViewItem62, ListViewItem63, ListViewItem64, ListViewItem65, ListViewItem66, ListViewItem67})
+        Me.Priv_ListView.Location = New System.Drawing.Point(3, 16)
+        Me.Priv_ListView.Name = "Priv_ListView"
+        Me.Priv_ListView.Size = New System.Drawing.Size(392, 216)
+        Me.Priv_ListView.TabIndex = 0
+        Me.Priv_ListView.UseCompatibleStateImageBehavior = False
+        Me.Priv_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader15
+        '
+        Me.ColumnHeader15.Text = "Privileges"
+        Me.ColumnHeader15.Width = 176
+        '
+        'ColumnHeader16
+        '
+        Me.ColumnHeader16.Text = "Status"
+        Me.ColumnHeader16.Width = 150
+        '
+        'XuiCustomGroupbox1
+        '
+        Me.XuiCustomGroupbox1.BorderColor = System.Drawing.Color.DodgerBlue
+        Me.XuiCustomGroupbox1.BorderWidth = 1
+        Me.XuiCustomGroupbox1.Controls.Add(Me.DLL_NAT_ListView)
+        Me.XuiCustomGroupbox1.Location = New System.Drawing.Point(6, 252)
+        Me.XuiCustomGroupbox1.Name = "XuiCustomGroupbox1"
+        Me.XuiCustomGroupbox1.ShowText = True
+        Me.XuiCustomGroupbox1.Size = New System.Drawing.Size(520, 259)
+        Me.XuiCustomGroupbox1.TabIndex = 5
+        Me.XuiCustomGroupbox1.TabStop = False
+        Me.XuiCustomGroupbox1.Text = "Native Injection | For Unmanaged DLL"
+        Me.XuiCustomGroupbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
+        '
+        'DLL_NAT_ListView
+        '
+        Me.DLL_NAT_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.DLL_NAT_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.DLL_NAT_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader13, Me.ColumnHeader14})
+        Me.DLL_NAT_ListView.ContextMenuStrip = Me.ADD_DLL_NAT_MenuStrip
+        Me.DLL_NAT_ListView.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.DLL_NAT_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.DLL_NAT_ListView.HideSelection = False
+        Me.DLL_NAT_ListView.Location = New System.Drawing.Point(3, 16)
+        Me.DLL_NAT_ListView.Name = "DLL_NAT_ListView"
+        Me.DLL_NAT_ListView.Size = New System.Drawing.Size(514, 240)
+        Me.DLL_NAT_ListView.TabIndex = 4
+        Me.DLL_NAT_ListView.UseCompatibleStateImageBehavior = False
+        Me.DLL_NAT_ListView.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader13
+        '
+        Me.ColumnHeader13.Text = "FilePath"
+        Me.ColumnHeader13.Width = 709
+        '
+        'ColumnHeader14
+        '
+        Me.ColumnHeader14.Text = "Size"
+        Me.ColumnHeader14.Width = 117
+        '
         'TabPage4
         '
         Me.TabPage4.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
@@ -688,7 +984,7 @@ Partial Class Client_Form
         Me.TabPage4.Location = New System.Drawing.Point(104, 4)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3, 28, 3, 3)
-        Me.TabPage4.Size = New System.Drawing.Size(848, 517)
+        Me.TabPage4.Size = New System.Drawing.Size(1135, 517)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "Tasks MGR"
         '
@@ -732,7 +1028,7 @@ Partial Class Client_Form
         Me.Tasks_listview.HideSelection = False
         Me.Tasks_listview.Location = New System.Drawing.Point(3, 28)
         Me.Tasks_listview.Name = "Tasks_listview"
-        Me.Tasks_listview.Size = New System.Drawing.Size(842, 486)
+        Me.Tasks_listview.Size = New System.Drawing.Size(1129, 486)
         Me.Tasks_listview.Sorting = System.Windows.Forms.SortOrder.Ascending
         Me.Tasks_listview.TabIndex = 1
         Me.Tasks_listview.UseCompatibleStateImageBehavior = False
@@ -743,105 +1039,17 @@ Partial Class Client_Form
         Me.ColumnHeader11.Text = "Name"
         Me.ColumnHeader11.Width = 258
         '
-        'TabPage6
-        '
-        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.TabPage6.Controls.Add(Me.XuiCustomGroupbox1)
-        Me.TabPage6.Location = New System.Drawing.Point(104, 4)
-        Me.TabPage6.Name = "TabPage6"
-        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage6.Size = New System.Drawing.Size(848, 517)
-        Me.TabPage6.TabIndex = 5
-        Me.TabPage6.Text = "Injection | Native"
-        '
-        'XuiCustomGroupbox1
-        '
-        Me.XuiCustomGroupbox1.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.XuiCustomGroupbox1.BorderWidth = 1
-        Me.XuiCustomGroupbox1.Controls.Add(Me.DLL_NAT_ListView)
-        Me.XuiCustomGroupbox1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.XuiCustomGroupbox1.Location = New System.Drawing.Point(3, 3)
-        Me.XuiCustomGroupbox1.Name = "XuiCustomGroupbox1"
-        Me.XuiCustomGroupbox1.ShowText = True
-        Me.XuiCustomGroupbox1.Size = New System.Drawing.Size(842, 511)
-        Me.XuiCustomGroupbox1.TabIndex = 5
-        Me.XuiCustomGroupbox1.TabStop = False
-        Me.XuiCustomGroupbox1.Text = "Native Injection | For Unmanaged DLL"
-        Me.XuiCustomGroupbox1.TextColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(120, Byte), Integer), CType(CType(215, Byte), Integer))
-        '
-        'DLL_NAT_ListView
-        '
-        Me.DLL_NAT_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.DLL_NAT_ListView.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.DLL_NAT_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader13, Me.ColumnHeader14})
-        Me.DLL_NAT_ListView.ContextMenuStrip = Me.ADD_DLL_NAT_MenuStrip
-        Me.DLL_NAT_ListView.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.DLL_NAT_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.DLL_NAT_ListView.HideSelection = False
-        Me.DLL_NAT_ListView.Location = New System.Drawing.Point(3, 16)
-        Me.DLL_NAT_ListView.Name = "DLL_NAT_ListView"
-        Me.DLL_NAT_ListView.Size = New System.Drawing.Size(836, 492)
-        Me.DLL_NAT_ListView.TabIndex = 4
-        Me.DLL_NAT_ListView.UseCompatibleStateImageBehavior = False
-        Me.DLL_NAT_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader13
-        '
-        Me.ColumnHeader13.Text = "FilePath"
-        Me.ColumnHeader13.Width = 709
-        '
-        'ColumnHeader14
-        '
-        Me.ColumnHeader14.Text = "Size"
-        Me.ColumnHeader14.Width = 117
-        '
-        'ADD_DLL_NAT_MenuStrip
-        '
-        Me.ADD_DLL_NAT_MenuStrip.BackColor = System.Drawing.SystemColors.Control
-        Me.ADD_DLL_NAT_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.ADD_DLL_NAT_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.Inject_Nat_ToolStripMenuItem, Me.AddToolStripMenuItem, Me.RemvoeToolStripMenuItem})
-        Me.ADD_DLL_NAT_MenuStrip.Name = "ADD_DLL_NAT_MenuStrip"
-        Me.ADD_DLL_NAT_MenuStrip.Size = New System.Drawing.Size(130, 106)
-        '
-        'Inject_Nat_ToolStripMenuItem
-        '
-        Me.Inject_Nat_ToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Inject_Nat_ToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Inject_Nat_ToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_electronics_32
-        Me.Inject_Nat_ToolStripMenuItem.Name = "Inject_Nat_ToolStripMenuItem"
-        Me.Inject_Nat_ToolStripMenuItem.Size = New System.Drawing.Size(129, 34)
-        Me.Inject_Nat_ToolStripMenuItem.Text = "Inject"
-        '
-        'AddToolStripMenuItem
-        '
-        Me.AddToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.AddToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.AddToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_add_32
-        Me.AddToolStripMenuItem.Name = "AddToolStripMenuItem"
-        Me.AddToolStripMenuItem.Size = New System.Drawing.Size(129, 34)
-        Me.AddToolStripMenuItem.Text = "Add"
-        '
-        'RemvoeToolStripMenuItem
-        '
-        Me.RemvoeToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.RemvoeToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.RemvoeToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_minus_32
-        Me.RemvoeToolStripMenuItem.Name = "RemvoeToolStripMenuItem"
-        Me.RemvoeToolStripMenuItem.Size = New System.Drawing.Size(129, 34)
-        Me.RemvoeToolStripMenuItem.Text = "Remvoe"
-        '
         'TabPage7
         '
         Me.TabPage7.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox4)
-        Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox3)
         Me.TabPage7.Controls.Add(Me.XuiCustomGroupbox2)
         Me.TabPage7.Location = New System.Drawing.Point(104, 4)
         Me.TabPage7.Name = "TabPage7"
         Me.TabPage7.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage7.Size = New System.Drawing.Size(848, 517)
+        Me.TabPage7.Size = New System.Drawing.Size(1135, 517)
         Me.TabPage7.TabIndex = 6
-        Me.TabPage7.Text = "Native"
+        Me.TabPage7.Text = "Details"
         '
         'XuiCustomGroupbox4
         '
@@ -852,7 +1060,7 @@ Partial Class Client_Form
         Me.XuiCustomGroupbox4.Controls.Add(Me.Label5)
         Me.XuiCustomGroupbox4.Controls.Add(Me.Label4)
         Me.XuiCustomGroupbox4.Controls.Add(Me.Chk_UAC_Btn)
-        Me.XuiCustomGroupbox4.Location = New System.Drawing.Point(6, 392)
+        Me.XuiCustomGroupbox4.Location = New System.Drawing.Point(6, 164)
         Me.XuiCustomGroupbox4.Name = "XuiCustomGroupbox4"
         Me.XuiCustomGroupbox4.ShowText = True
         Me.XuiCustomGroupbox4.Size = New System.Drawing.Size(326, 112)
@@ -918,64 +1126,8 @@ Partial Class Client_Form
         Me.Chk_UAC_Btn.Text = "Check UAC"
         Me.Chk_UAC_Btn.UseVisualStyleBackColor = True
         '
-        'XuiCustomGroupbox3
-        '
-        Me.XuiCustomGroupbox3.AutoSize = True
-        Me.XuiCustomGroupbox3.BorderColor = System.Drawing.Color.DodgerBlue
-        Me.XuiCustomGroupbox3.BorderWidth = 1
-        Me.XuiCustomGroupbox3.Controls.Add(Me.Priv_ListView)
-        Me.XuiCustomGroupbox3.Location = New System.Drawing.Point(6, 6)
-        Me.XuiCustomGroupbox3.Name = "XuiCustomGroupbox3"
-        Me.XuiCustomGroupbox3.ShowText = True
-        Me.XuiCustomGroupbox3.Size = New System.Drawing.Size(831, 245)
-        Me.XuiCustomGroupbox3.TabIndex = 11
-        Me.XuiCustomGroupbox3.TabStop = False
-        Me.XuiCustomGroupbox3.Text = "Privileges"
-        Me.XuiCustomGroupbox3.TextColor = System.Drawing.Color.DodgerBlue
-        '
-        'Priv_ListView
-        '
-        Me.Priv_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.Priv_ListView.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader15, Me.ColumnHeader16})
-        Me.Priv_ListView.ContextMenuStrip = Me.Priv_MenuStrip
-        Me.Priv_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Priv_ListView.HideSelection = False
-        Me.Priv_ListView.Items.AddRange(New System.Windows.Forms.ListViewItem() {ListViewItem33, ListViewItem34, ListViewItem35, ListViewItem36, ListViewItem37, ListViewItem38, ListViewItem39, ListViewItem40, ListViewItem41, ListViewItem42, ListViewItem43, ListViewItem44, ListViewItem45, ListViewItem46, ListViewItem47, ListViewItem48, ListViewItem49, ListViewItem50, ListViewItem51, ListViewItem52, ListViewItem53, ListViewItem54, ListViewItem55, ListViewItem56, ListViewItem57, ListViewItem58, ListViewItem59, ListViewItem60, ListViewItem61, ListViewItem62, ListViewItem63, ListViewItem64, ListViewItem65, ListViewItem66, ListViewItem67})
-        Me.Priv_ListView.Location = New System.Drawing.Point(6, 19)
-        Me.Priv_ListView.Name = "Priv_ListView"
-        Me.Priv_ListView.Size = New System.Drawing.Size(819, 207)
-        Me.Priv_ListView.TabIndex = 0
-        Me.Priv_ListView.UseCompatibleStateImageBehavior = False
-        Me.Priv_ListView.View = System.Windows.Forms.View.Details
-        '
-        'ColumnHeader15
-        '
-        Me.ColumnHeader15.Text = "Privileges"
-        Me.ColumnHeader15.Width = 356
-        '
-        'ColumnHeader16
-        '
-        Me.ColumnHeader16.Text = "Status"
-        Me.ColumnHeader16.Width = 299
-        '
-        'Priv_MenuStrip
-        '
-        Me.Priv_MenuStrip.ImageScalingSize = New System.Drawing.Size(28, 28)
-        Me.Priv_MenuStrip.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.GetToolStripMenuItem})
-        Me.Priv_MenuStrip.Name = "Priv_MenuStrip"
-        Me.Priv_MenuStrip.Size = New System.Drawing.Size(93, 26)
-        '
-        'GetToolStripMenuItem
-        '
-        Me.GetToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.GetToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.GetToolStripMenuItem.Name = "GetToolStripMenuItem"
-        Me.GetToolStripMenuItem.Size = New System.Drawing.Size(92, 22)
-        Me.GetToolStripMenuItem.Text = "Get"
-        '
         'XuiCustomGroupbox2
         '
-        Me.XuiCustomGroupbox2.AutoSize = True
         Me.XuiCustomGroupbox2.BorderColor = System.Drawing.Color.DodgerBlue
         Me.XuiCustomGroupbox2.BorderWidth = 1
         Me.XuiCustomGroupbox2.Controls.Add(Me.ComboBox1)
@@ -983,10 +1135,10 @@ Partial Class Client_Form
         Me.XuiCustomGroupbox2.Controls.Add(Me.Change_Prio_Btn)
         Me.XuiCustomGroupbox2.Controls.Add(Me.Label2)
         Me.XuiCustomGroupbox2.Controls.Add(Me.Get_Prio_Btn)
-        Me.XuiCustomGroupbox2.Location = New System.Drawing.Point(6, 257)
+        Me.XuiCustomGroupbox2.Location = New System.Drawing.Point(6, 6)
         Me.XuiCustomGroupbox2.Name = "XuiCustomGroupbox2"
         Me.XuiCustomGroupbox2.ShowText = True
-        Me.XuiCustomGroupbox2.Size = New System.Drawing.Size(499, 129)
+        Me.XuiCustomGroupbox2.Size = New System.Drawing.Size(452, 152)
         Me.XuiCustomGroupbox2.TabIndex = 10
         Me.XuiCustomGroupbox2.TabStop = False
         Me.XuiCustomGroupbox2.Text = "Priority"
@@ -1008,7 +1160,7 @@ Partial Class Client_Form
         '
         Me.Label3.AutoSize = True
         Me.Label3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label3.Location = New System.Drawing.Point(455, 54)
+        Me.Label3.Location = New System.Drawing.Point(3, 78)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(13, 13)
         Me.Label3.TabIndex = 9
@@ -1032,7 +1184,7 @@ Partial Class Client_Form
         '
         Me.Label2.AutoSize = True
         Me.Label2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Label2.Location = New System.Drawing.Point(455, 89)
+        Me.Label2.Location = New System.Drawing.Point(3, 126)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(13, 13)
         Me.Label2.TabIndex = 7
@@ -1045,19 +1197,70 @@ Partial Class Client_Form
         Me.Get_Prio_Btn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.FromArgb(CType(CType(10, Byte), Integer), CType(CType(130, Byte), Integer), CType(CType(225, Byte), Integer))
         Me.Get_Prio_Btn.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.Get_Prio_Btn.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
-        Me.Get_Prio_Btn.Location = New System.Drawing.Point(6, 81)
+        Me.Get_Prio_Btn.Location = New System.Drawing.Point(6, 94)
         Me.Get_Prio_Btn.Name = "Get_Prio_Btn"
         Me.Get_Prio_Btn.Size = New System.Drawing.Size(439, 29)
         Me.Get_Prio_Btn.TabIndex = 8
         Me.Get_Prio_Btn.Text = "Get Priority"
         Me.Get_Prio_Btn.UseVisualStyleBackColor = True
         '
+        'TabPage6
+        '
+        Me.TabPage6.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.TabPage6.Controls.Add(Me.Path_Lab)
+        Me.TabPage6.Controls.Add(Me.Disk_ComboBox)
+        Me.TabPage6.Controls.Add(Me.FM_ListView)
+        Me.TabPage6.Location = New System.Drawing.Point(104, 4)
+        Me.TabPage6.Name = "TabPage6"
+        Me.TabPage6.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage6.Size = New System.Drawing.Size(1135, 517)
+        Me.TabPage6.TabIndex = 7
+        Me.TabPage6.Text = "File Manager"
+        '
+        'Path_Lab
+        '
+        Me.Path_Lab.AutoSize = True
+        Me.Path_Lab.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.Path_Lab.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Path_Lab.Location = New System.Drawing.Point(187, 25)
+        Me.Path_Lab.Name = "Path_Lab"
+        Me.Path_Lab.Size = New System.Drawing.Size(30, 13)
+        Me.Path_Lab.TabIndex = 19
+        Me.Path_Lab.Text = "Path"
+        '
+        'Disk_ComboBox
+        '
+        Me.Disk_ComboBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.Disk_ComboBox.FlatStyle = System.Windows.Forms.FlatStyle.Flat
+        Me.Disk_ComboBox.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.Disk_ComboBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.Disk_ComboBox.FormattingEnabled = True
+        Me.Disk_ComboBox.Location = New System.Drawing.Point(6, 22)
+        Me.Disk_ComboBox.Name = "Disk_ComboBox"
+        Me.Disk_ComboBox.Size = New System.Drawing.Size(175, 21)
+        Me.Disk_ComboBox.TabIndex = 18
+        '
+        'FM_ListView
+        '
+        Me.FM_ListView.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
+        Me.FM_ListView.BorderStyle = System.Windows.Forms.BorderStyle.None
+        Me.FM_ListView.ContextMenuStrip = Me.FM_MenuStrip
+        Me.FM_ListView.Font = New System.Drawing.Font("Segoe UI", 8.25!)
+        Me.FM_ListView.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
+        Me.FM_ListView.HideSelection = False
+        Me.FM_ListView.Location = New System.Drawing.Point(6, 49)
+        Me.FM_ListView.Name = "FM_ListView"
+        Me.FM_ListView.Size = New System.Drawing.Size(1123, 462)
+        Me.FM_ListView.Sorting = System.Windows.Forms.SortOrder.Ascending
+        Me.FM_ListView.TabIndex = 17
+        Me.FM_ListView.UseCompatibleStateImageBehavior = False
+        '
         'Client_Form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(968, 574)
+        Me.ClientSize = New System.Drawing.Size(1255, 574)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.Custom_Button1)
@@ -1069,25 +1272,28 @@ Partial Class Client_Form
         Me.Hist_MenuStrip.ResumeLayout(False)
         Me.W_PW_MenuStrip.ResumeLayout(False)
         Me.Tasks_MGR_MenuStrip.ResumeLayout(False)
+        Me.Command_MenuStrip.ResumeLayout(False)
+        Me.Priv_MenuStrip.ResumeLayout(False)
+        Me.ADD_DLL_NAT_MenuStrip.ResumeLayout(False)
+        Me.FM_MenuStrip.ResumeLayout(False)
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.TabControlExt1.ResumeLayout(False)
         Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
         Me.TabPage5.ResumeLayout(False)
-        Me.Command_MenuStrip.ResumeLayout(False)
-        Me.TabPage4.ResumeLayout(False)
-        Me.TabPage6.ResumeLayout(False)
+        Me.TabPage5.PerformLayout()
+        Me.XuiCustomGroupbox5.ResumeLayout(False)
+        Me.XuiCustomGroupbox3.ResumeLayout(False)
         Me.XuiCustomGroupbox1.ResumeLayout(False)
-        Me.ADD_DLL_NAT_MenuStrip.ResumeLayout(False)
+        Me.TabPage4.ResumeLayout(False)
         Me.TabPage7.ResumeLayout(False)
-        Me.TabPage7.PerformLayout()
         Me.XuiCustomGroupbox4.ResumeLayout(False)
         Me.XuiCustomGroupbox4.PerformLayout()
-        Me.XuiCustomGroupbox3.ResumeLayout(False)
-        Me.Priv_MenuStrip.ResumeLayout(False)
         Me.XuiCustomGroupbox2.ResumeLayout(False)
         Me.XuiCustomGroupbox2.PerformLayout()
+        Me.TabPage6.ResumeLayout(False)
+        Me.TabPage6.PerformLayout()
         Me.ResumeLayout(False)
 
     End Sub
@@ -1140,7 +1346,6 @@ Partial Class Client_Form
     Friend WithEvents ImageList1 As ImageList
     Friend WithEvents Command_MenuStrip As ContextMenuStrip
     Friend WithEvents LaunchToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents TabPage6 As TabPage
     Friend WithEvents DLL_NAT_ListView As ListView
     Friend WithEvents ColumnHeader13 As ColumnHeader
     Friend WithEvents ColumnHeader14 As ColumnHeader
@@ -1171,4 +1376,23 @@ Partial Class Client_Form
     Friend WithEvents CSV_W_PW As ToolStripMenuItem
     Friend WithEvents CSV_PASSWORDS As ToolStripMenuItem
     Friend WithEvents CSV_HISTORY As ToolStripMenuItem
+    Friend WithEvents XuiCustomGroupbox5 As XanderUI.XUICustomGroupbox
+    Friend WithEvents TabPage6 As TabPage
+    Friend WithEvents Disk_ComboBox As ComboBox
+    Friend WithEvents FM_ListView As ListView
+    Friend WithEvents FM_MenuStrip As ContextMenuStrip
+    Friend WithEvents RefreshToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents Path_Lab As Label
+    Friend WithEvents GoForwardToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents BackToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents MoveToBinToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DeleteToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents EmptyBinToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents DownloadFileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents FolderToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CreateDirectoryToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents AllToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents CurrentDirectoryToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents LaunchToolStripMenuItem1 As ToolStripMenuItem
 End Class

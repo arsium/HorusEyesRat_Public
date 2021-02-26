@@ -22,6 +22,21 @@ HorusEyesRat
   les recherches de ressources à l'aide de cette classe de ressource fortement typée.
 </summary>
 </member>
+<member name="P:Server.My.Resources.Resources.folder">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.foldermk">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.foldermk1">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Server.My.Resources.Resources.horus_eye">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
@@ -43,6 +58,11 @@ HorusEyesRat
 </summary>
 </member>
 <member name="P:Server.My.Resources.Resources.icons8_available_updates_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_back_32">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -192,6 +212,11 @@ HorusEyesRat
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Server.My.Resources.Resources.icons8_download_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Server.My.Resources.Resources.icons8_downloading_updates">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
@@ -227,7 +252,17 @@ HorusEyesRat
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Server.My.Resources.Resources.icons8_empty_trasfh_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Server.My.Resources.Resources.icons8_exit_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_file_32">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -243,6 +278,11 @@ HorusEyesRat
 </summary>
 </member>
 <member name="P:Server.My.Resources.Resources.icons8_forward_button_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_fulld_trash_32">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -308,6 +348,11 @@ HorusEyesRat
 </summary>
 </member>
 <member name="P:Server.My.Resources.Resources.icons8_go_to_start_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_goback">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -532,6 +577,11 @@ HorusEyesRat
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:Server.My.Resources.Resources.icons8_Open_Document_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:Server.My.Resources.Resources.icons8_password">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
@@ -598,6 +648,11 @@ HorusEyesRat
 </summary>
 </member>
 <member name="P:Server.My.Resources.Resources.icons8_profilee_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.icons8_remove_32">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
@@ -967,7 +1022,12 @@ HorusEyesRat
   Recherche une ressource localisée de type System.Drawing.Bitmap.
 </summary>
 </member>
-<member name="P:Server.My.Resources.Resources.imageres_15">
+<member name="P:Server.My.Resources.Resources.icons8n_refresh_32">
+<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Server.My.Resources.Resources.imageres_151">
 <summary>
   Recherche une ressource localisée de type System.Drawing.Icon semblable à (Icône).
 </summary>

@@ -2,7 +2,6 @@ Z:\HorusEyesRat-master\ClassLibrary1\bin\Release\ClassLibrary1.dll
 Z:\HorusEyesRat-master\ClassLibrary1\bin\Release\ClassLibrary1.pdb
 Z:\HorusEyesRat-master\ClassLibrary1\bin\Release\ClassLibrary1.xml
 Z:\HorusEyesRat-master\ClassLibrary1\bin\Release\PacketLib.xml
-Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClientDll.vbprojAssemblyReference.cache
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClassLibrary1.Resources.resources
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClientDll.vbproj.GenerateResource.cache
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClientDll.vbproj.CoreCompileInputs.cache
@@ -11,3 +10,4 @@ Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClientDll.vbproj.CopyComplete
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClassLibrary1.dll
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClassLibrary1.xml
 Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClassLibrary1.pdb
+Z:\HorusEyesRat-master\ClassLibrary1\obj\Release\ClientDll.vbprojAssemblyReference.cache

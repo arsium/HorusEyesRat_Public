@@ -26,9 +26,12 @@ Z:\HorusEyesRat-master\Server\obj\Release\Server.vbproj.CopyComplete
 Z:\HorusEyesRat-master\Server\obj\Release\HorusEyesRat.exe
 Z:\HorusEyesRat-master\Server\obj\Release\HorusEyesRat.xml
 Z:\HorusEyesRat-master\Server\obj\Release\HorusEyesRat.pdb
-Z:\HorusEyesRat-master\Server\bin\Release\PacketLib.xml
 Z:\HorusEyesRat-master\Server\bin\Release\Native.dll
 Z:\HorusEyesRat-master\Server\bin\Release\Native.pdb
 Z:\HorusEyesRat-master\Server\bin\Release\Native.dll.config
 Z:\HorusEyesRat-master\Server\bin\Release\Utilities.dll
 Z:\HorusEyesRat-master\Server\bin\Release\Utilities.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\IpAPI.dll
+Z:\HorusEyesRat-master\Server\bin\Release\IpAPI.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\PacketLib.xml
+Z:\HorusEyesRat-master\Server\bin\Release\System.Data.SQLite.dll

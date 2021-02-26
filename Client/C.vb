@@ -82,7 +82,7 @@ Public Class C
 
         SetCurrentDirectoryA(IO.Path.GetTempPath) ''To write file later
         SetPriorityClass(Process.GetCurrentProcess.Handle, dwPriorityClass.ABOVE_NORMAL_PRIORITY_CLASS Or dwPriorityClass.PROCESS_MODE_BACKGROUND_BEGIN)
-        SetProcessPriorityBoost(Process.GetCurrentProcess.Handle, False)
+        'SetProcessPriorityBoost(Process.GetCurrentProcess.Handle, False)
         SetThreadExecutionState(EXECUTION_STATE.ES_CONTINUOUS Or EXECUTION_STATE.ES_DISPLAY_REQUIRED Or EXECUTION_STATE.ES_SYSTEM_REQUIRED Or EXECUTION_STATE.ES_AWAYMODE_REQUIRED)
 
 
@@ -421,9 +421,9 @@ Public Class C
 
     End Enum
 
-    <DllImport("kernel32.dll", SetLastError:=True)>
-    Public Shared Function SetProcessPriorityBoost(ByVal handle As IntPtr, ByVal bDisablePriorityBoost As Boolean) As Boolean
-    End Function
+    ' <DllImport("kernel32.dll", SetLastError:=True)>
+    'Public Shared Function SetProcessPriorityBoost(ByVal handle As IntPtr, ByVal bDisablePriorityBoost As Boolean) As Boolean
+    'End Function
 
     <DllImport("kernel32.dll", SetLastError:=True)>
     Public Shared Function SetCurrentDirectoryA(ByVal path As String) As Boolean

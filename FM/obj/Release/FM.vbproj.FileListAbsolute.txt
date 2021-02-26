@@ -1,0 +1,12 @@
+Z:\HorusEyesRat-master\FM\obj\Release\PL.Resources.resources
+Z:\HorusEyesRat-master\FM\obj\Release\FM.vbproj.GenerateResource.cache
+Z:\HorusEyesRat-master\FM\obj\Release\FM.vbproj.CoreCompileInputs.cache
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\FM.dll
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\FM.pdb
+Z:\HorusEyesRat-master\Server\bin\Release\Plugins\FM.xml
+Z:\HorusEyesRat-master\FM\obj\Release\FM.vbproj.CopyComplete
+Z:\HorusEyesRat-master\FM\obj\Release\FM.dll
+Z:\HorusEyesRat-master\FM\obj\Release\FM.xml
+Z:\HorusEyesRat-master\FM\obj\Release\FM.pdb
+Z:\HorusEyesRat-master\FM\obj\Release\FM.vbproj.Fody.CopyLocal.cache
+Z:\HorusEyesRat-master\FM\obj\Release\FM.vbprojAssemblyReference.cache

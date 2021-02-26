@@ -58,6 +58,7 @@ Public Class Form1
         Me.WindowState = Windows.Forms.FormWindowState.Maximized
         NativeHelper.SetWindowPos(k, NativeHelper.HWND_TOPMOST, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, Screen.PrimaryScreen.Bounds.X, Screen.PrimaryScreen.Bounds.Y, NativeHelper.SWP_NOMOVE Or NativeHelper.SWP_NOSIZE Or NativeHelper.SWP_NOREDRAW Or NativeHelper.SWP_DEFERERASE)
         Aero.SetAero10(k)
+
         Dim o As New KeyBoardHooking
         o.HookKeyboard()
 

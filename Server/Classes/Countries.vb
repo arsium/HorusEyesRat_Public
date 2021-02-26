@@ -4,61 +4,33 @@
 Public Class Countries
 
     Public Shared x As Integer = 0
-
-    Public Shared Function countryinfo(ByVal IP As String)
-
+    Public Shared ListOfFlags As New List(Of String)
+    Public Shared Function countryinfo(ByVal IP As String, ByRef ClientDetails As IPAPI.IP)
         Try
+            Dim Details As IPAPI.IP = IPAPI.IPAPI.GetDetails(IP, 10000)
 
-            Dim wc As New WebClient()
+            ClientDetails = Details
 
-            Dim data = wc.DownloadString("http://ip-api.com/json/" & IP)
-
-            Dim op = data.Replace("""status"":""success""", "")
-
-            Dim l = op.Replace("{", "")
-
-            Dim k = l.Replace("}", "")
-
-            Dim n = k.Replace(Chr(34), " ")
-
-            Dim last = n.Replace(",", Environment.NewLine)
-
-            If data.Contains("status") And data.Contains("success") Then
-
-                For Each j As String In Split(last, Environment.NewLine)
-
-                    If j.Contains("countryCode") Then
-
-                        Dim az As String() = Split(j, ":")
-
-                        Return az(1)
-
-                    End If
-
-                Next
-
+            If Details.status = "success" Then
+                Return Details.countryCode
             Else
 
                 Return "LOCALIP"
-
             End If
 
         Catch ex As Exception
 
             Return "NOCONNECTIONORLOCAL"
-
         End Try
-
     End Function
 
-    Public Shared Sub GetFlags(ByVal IPP As String, ByVal ImageLi As ImageList, ByVal ListVItem As AeroListView, ByVal iD As Object(), ByVal Port As String)
+    Public Shared Sub GetFlags(ByVal IPP As String, ByVal ImageLi As ImageList, ByVal ListVItem As AeroListView, ByVal iD As Object(), ByVal Port As String, ByRef ClientDetails As IPAPI.IP)
         ''https://datahub.io/core/country-list#resource-data
-
         Dim IPPV2 As String() = Split(IPP, ":")
 
-        Dim ReadFLG As String() = IO.File.ReadAllLines("FLGS.txt")
+        'Dim ReadFLG As String() = IO.File.ReadAllLines("FLGS.txt")
 
-        Dim test As String = countryinfo(IPPV2(0))
+        Dim test As String = countryinfo(IPPV2(0), ClientDetails)
 
         Dim u As Image
 
@@ -94,7 +66,7 @@ Public Class Countries
 
         Else
 
-            For Each i As String In ReadFLG
+            For Each i As String In ListOfFlags
 
                 If test.ToUpper.Contains(i) Or test.ToLower.Contains(i) Then
 
@@ -134,6 +106,14 @@ Public Class Countries
 
         End If
 
+
+        Dim today = Date.Today
+        Dim day = today.Day
+        Dim month = today.Month
+
+
     End Sub
+
+
 
 End Class

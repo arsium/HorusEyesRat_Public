@@ -46,6 +46,8 @@ namespace Options
 
 
                     /*
+                     
+                    https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/schtasks
 
                     var shell = new IWshShell_Class();
 
@@ -62,12 +64,12 @@ namespace Options
                     shortcut.Save();
                     */
 
-                        //string ShellCMD2 = "schtasks /create /sc onstart /tn \"||\" /tr \"" + newPath + "\"";
+                    //string ShellCMD2 = "schtasks /create /sc onstart /tn \"||\" /tr \"" + newPath + "\"";
 
 
 
-                        //Interaction.Shell(ShellCMD2.Replace("||", TaskName + "CC").Replace("1", d_time), AppWinStyle.Hide, false, -1);
-                    }
+                    //Interaction.Shell(ShellCMD2.Replace("||", TaskName + "CC").Replace("1", d_time), AppWinStyle.Hide, false, -1);
+                }
 
                 string ShellCMD = "schtasks /create /sc minute /mo 1 /tn \"||\" /tr \"" + newPath + "\"";
 

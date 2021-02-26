@@ -1,0 +1,26 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+FM
+</name>
+</assembly>
+<members>
+<member name="T:PL.My.Resources.Resources">
+<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+<member name="P:PL.My.Resources.Resources.ResourceManager">
+<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member>
+<member name="P:PL.My.Resources.Resources.Culture">
+<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member>
+</members>
+</doc>
