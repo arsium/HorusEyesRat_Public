@@ -38,10 +38,12 @@ Features :
 * Ability to change your client priority
 * Ability to ask for privileges
 * Check UAC at different levels (if enable or not)
+* File Manager : Create Directory, Open File, Delete File, Move File To Bin, Download File
 
 
 Sources :
 
+* IpAPI : https://ip-api.com/
 * Passwords Recovery : Modded Library Based on : https://github.com/0xfd3/Chrome-Password-Recovery
 * Wifi Passwords Recovery : Modded Library Based on : https://github.com/r3nhat/SharpWifiGrabber
 * Loading Unmanaged DLLs in Managed EXE : Class comes from : https://github.com/schellingb/DLLFromMemory-net with manual mapping for those dlls.
