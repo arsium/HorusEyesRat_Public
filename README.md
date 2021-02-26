@@ -72,6 +72,7 @@ Note for injection:
 * 32 bit dlls (in c++ or whatever you want) is for 32 bit stub
 * 64 bit dlls (in c++ or whatever you want) is for 64 bit stub
 * Don't inject a 32 bit dll in 64 bit stub and vice-versa (you can try if you want but the server will give you an error :))
+* To use File Manager, make Refresh => All
 
 Preview :
 
