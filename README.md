@@ -1,6 +1,7 @@
 # HorusEyesRat
 Remote Acess Tool Written in VB.NET
-
+ Server : .NET 4.8
+ Client : .NET 4.5
 
 
 Features : 
