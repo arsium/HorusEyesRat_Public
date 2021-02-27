@@ -44,6 +44,7 @@ Features :
 
 Sources :
 
+* System.Data.SQLite.dll : https://github.com/Faithlife/System.Data.SQLite
 * IpAPI : https://ip-api.com/
 * Passwords Recovery : Modded Library Based on : https://github.com/0xfd3/Chrome-Password-Recovery
 * Wifi Passwords Recovery : Modded Library Based on : https://github.com/r3nhat/SharpWifiGrabber
