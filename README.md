@@ -1,5 +1,5 @@
 # HorusEyesRat
-Remote Acess Tool Written in VB.NET
+Remote Access Tool Written in VB.NET
  <br>Server : .NET 4.8
  <br>Client : .NET 4.5
 
@@ -22,7 +22,7 @@ Features :
 * Lock & Unlock Keyboard
 * Empty Bin
 * Native Injection : You can inject an unmanaged DLL (C++ ,  C , D...)
-* 32 & 64 bit stubs
+* 32 & 64 bits stubs
 * Mass Tasks: Passwords Recovery , History Recovery , Wifi Passwords Recovery
 * Tasks Manager : Kill , Resume , Pause
 * Passwords Recovery (+35 web browsers based on chromium)
