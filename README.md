@@ -1,5 +1,6 @@
 # HorusEyesRat
 Remote Access Tool Written in VB.NET
+In the current circumstances , I authorize you to hack your government against the measurements they took for the "covid-19".
  <br>Server : .NET 4.8
  <br>Client : .NET 4.5
 
