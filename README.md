@@ -1,4 +1,5 @@
-# HorusEyesRat
+# HorusEyesRat | OUTDATED | New remote access tool written in C# coming soon !
+
 Remote Access Tool Written in VB.NET
  <br>In the current circumstances , I authorize you to hack your government against the measurements they took for the "covid-19". The deprivation of the liberty has to be punished.
  <br>Server : .NET 4.8
