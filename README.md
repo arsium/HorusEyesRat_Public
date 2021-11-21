@@ -1,4 +1,4 @@
-# HorusEyesRat | OUTDATED | New remote acces tool available written in C# !
+# HorusEyesRat | OUTDATED | New remote acces tool available written in C# here : https://github.com/arsium/EagleMonitor !
 
 Remote Access Tool Written in VB.NET
  <br>In the current circumstances , I authorize you to hack your government against the measurements they took for the "covid-19". The deprivation of the liberty has to be punished.
